@@ -1,0 +1,68 @@
+\usepackage[brazil]{babel} % section and appendix headings in Portuguese
+\usepackage{setspace} % line spacing
+\usepackage{times} % font times new roman
+\usepackage[bottom=2cm,top=3cm,left=3cm,right=2cm]{geometry} % margins ABNT
+\usepackage{ragged2e} % justified text
+\usepackage{graphicx} % figures
+\usepackage{float} % position of contents right after text
+\usepackage{subcaption}  % subcaptions for figures, tables etc
+\usepackage{caption} % captions for figures, tables etc
+\usepackage{hyperref} % hyperlinks for references, figures and tables
+\usepackage{multirow} % multirow tables
+\usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-full-initials=no]{abntex2cite}
+\citebrackets() % parenthesis brackets for citations
+\setlength\parindent{0pt} % no indentation
+% \renewcommand{\citeonline}{#1}
+
+\setcounter{secnumdepth}{5} % section numbering depth
+\setcounter{tocdepth}{5} % table of contents depth
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]} % paragraph margin adjustment
+\let\endchangemargin=\endlist % paragraph margin adjustment
+
+\usepackage{titlesec} % section headings format
+\titleformat{name=\section,numberless}{\filcenter\normalfont\normalsize\bfseries\uppercase}{}{0em}{}
+\titleformat{\section}{\normalfont\normalsize\bfseries\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\uppercase}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\itshape}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}{\normalfont\normalsize}{\thesubparagraph}{1em}{}
+
+
+\DeclareCaptionType[fileext=loc]{quadro}[Quadro][Lista de Quadros] % create float type for frames, similar to tables
+
+\usepackage{tocbasic} % table of contents format
+
+\DeclareTOCStyleEntry[
+  entrynumberformat=\entrynumberwithprefix{\figurename},
+  dynnumwidth
+%   numsep=1em
+]{tocline}{figure}
+
+\DeclareTOCStyleEntry[
+    entrynumberformat=\entrynumberwithprefix{\tablename},
+    dynnumwidth
+    %   numsep=1em
+]{tocline}{table}
+        
+\newcommand\entrynumberwithprefix[2]{#1\enspace#2-\enspace}
+\captionsetup{labelsep=endash} % caption label separator '-'
+
+\usepackage{showframe} % just for the example
+\usepackage{tocloft}
+
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftlottitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hspace*{\fill}}
+\renewcommand{\cftloftitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hspace*{\fill}}
+
+
+\usepackage{titletoc} % table of contents alignment
+\dottedcontents{section}[2cm]{\bfseries}{2cm}{0.5pc}
+\dottedcontents{subsection}[2cm]{}{2cm}{0.5pc}
+\dottedcontents{subsubsection}[2cm]{\bfseries}{2cm}{0.5pc}
+\dottedcontents{paragraph}[2cm]{\itshape}{2cm}{0.5pc}
+\dottedcontents{subparagraph}[2cm]{}{2cm}{0.5pc}
+\renewcommand{\contentsname}{\centering Contents}
