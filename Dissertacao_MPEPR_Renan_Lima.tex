@@ -145,23 +145,35 @@
 
     % Abstract
         \section*{\fontsize{12}{14} \selectfont \center ABSTRACT}
-        \input{cap0/abstract}
+        \textit{\input{cap0/abstract}}
 
         \vspace{1cm}
-        \noindent \textbf{Keywords:} \input{cap0/keywords}
+        \noindent \textit{\textbf{Keywords:} \input{cap0/keywords}}
         \pagebreak
     
     % Lista de figuras
-        \listoffigures
+        {%
+        \let\oldnumberline\numberline%
+        \renewcommand{\numberline}{\figurename~\oldnumberline}%
+        \listoffigures%
+        }
         \thispagestyle{empty} % remove page number
         \pagebreak
 
     % Lista de quadros
-        \listof{quadro}{LISTA DE QUADROS}
+        {%
+        \let\oldnumberline\numberline%
+        \renewcommand{\numberline}{Quadro~\oldnumberline}%
+        \listof{quadro}{LISTA DE QUADROS}%
+        }
         \pagebreak
 
     % Lista de tabelas
-        \listoftables
+        {%
+        \let\oldnumberline\numberline%
+        \renewcommand{\numberline}{\tablename~\oldnumberline}%
+        \listoftables%
+        }
         \thispagestyle{empty} % remove page number
         \pagebreak
 
@@ -288,12 +300,12 @@
         \renewcommand{\refname}{}
         \bibliography{./referencias/referencias}
         
-
+    \pagebreak
     \appendix
     \section*{APÊNDICE A - Descrição}
         \addcontentsline{toc}{section}{\protect\numberline{}APÊNDICE A - Descrição}
         
-
+    \pagebreak
     \appendix
     \section*{ANEXO A - Descrição}
         \addcontentsline{toc}{section}{\protect\numberline{}ANEXO A - Descrição}
