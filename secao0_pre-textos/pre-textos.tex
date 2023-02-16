@@ -1,0 +1,183 @@
+% capa
+    \onehalfspacing \begin{center}
+        UNIVERSIDADE FEDERAL DE ITAJUBÁ\\
+        CAMPUS DE ITABIRA \\
+        MESTRADO PROFISSIONAL EM ENGENHARIA DE PRODUÇÃO 
+    \end{center}
+    \vspace{5cm}
+    \center \AuthorName
+    \vspace{5cm}
+    \center \Title \Subtitle
+    \null\vfil
+    \center \Location
+    \center \Year
+    \pagestyle{empty}
+    \pagebreak
+
+% folha de rosto
+    \center \AuthorName
+    \vspace{9cm}
+    \center \Title \Subtitle
+
+    \vspace{4cm}
+    \begin{changemargin}{8cm}{0cm} 
+        \begin{fontsize}{10}{12} \selectfont
+            Dissertação submetida ao Mestrado Profissional em Engenharia de Produção da Universidade Federal de Itajubá - campus de Itabira para a obtenção do título de mestre em Engenharia de Produção - mestrado profissional.  
+            
+            Orientador: \Supervisor
+        \end{fontsize}
+    \end{changemargin}
+    \null\vfil
+    \center \Location
+    \center \Year
+    \pagebreak
+
+% folha de identificação
+    \center
+
+    \null\vfil \vspace{12cm}
+
+    Ficha de identificação da obra
+
+    \fbox{\begin{minipage}{12cm} \center
+        A ficha de identificação da obra é elaborada pelo próprio autor.
+
+        Orientações em:
+
+        XXXX
+        \null\vfil \vspace{6cm}
+    \end{minipage}}
+    \pagebreak
+
+% folha de aprovação
+    \center
+    \AuthorName
+    \vspace{1cm}
+
+    \Title \Subtitle
+    \vspace{1cm}
+
+
+    O presente trabalho em nível de mestrado foi avaliado e aprovado por banca 
+    
+    examinadora composta pelos seguintes membros:
+
+    \vspace{1cm}    
+    Prof.(a) XXXX Dr.(a)
+    Instituição XXXX
+    
+    \vspace{1cm}    
+    Prof.(a) XXXX Dr.(a)
+    Instituição XXXX
+    
+    \vspace{1cm}    
+    Prof.(a) XXXX Dr.(a)
+    Instituição XXXX
+    
+    \vspace{1cm}    
+    \justifying \noindent \hspace{1.5cm} Certificamos que esta é a \textbf{versão original e final} do trabalho de conclusão que foi julgado adequado para obtenção do título de mestre em Engenharia de Produção - mestrado profissional obtido pelo Mestrado Profissional em Engenharia de Produção.
+
+    \center
+    \vspace{3cm}
+    \hspace{2cm} \hrulefill \hspace{2cm}
+
+    Coordenação do Mestrado Profissional em Engenharia de Produção
+
+    \vspace{1cm}
+    \hspace{2cm} \hrulefill \hspace{2cm}
+
+    \Supervisor,
+
+    Orientador(a)
+
+    \null\vfil
+    \Location, \Year.
+
+    \pagebreak
+
+% Dedicatória
+    \null\vfil
+    \begin{changemargin}{5cm}{0cm} 
+        \input{secao0_pre-textos/dedicatoria}
+    \end{changemargin}
+    \pagebreak
+
+% Agradecimentos
+    \center \fontsize{12}{14} \selectfont \section*{AGRADECIMENTOS}
+    \justifying
+    \hspace{1.5cm} \input{secao0_pre-textos/agradecimentos}
+    \pagebreak
+
+% Epígrafe
+    \null\vfil
+    \begin{changemargin}{5cm}{0cm} 
+        \justifying
+        \hspace{1.5cm} "A vida é uma viagem, e o objetivo é chegar ao fim com a bagagem certa." \textit{Robert Louis Stevenson}
+    \end{changemargin}
+    \pagebreak
+
+% Resumo
+    \section*{\fontsize{12}{14} \selectfont RESUMO}
+    \input{secao0_pre-textos/resumo}
+
+    \vspace{1cm}
+
+    \noindent \textbf{Palavras-chave:} \input{secao0_pre-textos/palavras_chaves}
+
+    \pagebreak
+
+% Abstract
+    \section*{\fontsize{12}{14} \selectfont \center ABSTRACT}
+    \textit{\input{secao0_pre-textos/abstract}}
+
+    \vspace{1cm}
+    \noindent \textit{\textbf{Keywords:} \input{secao0_pre-textos/keywords}}
+    \pagebreak
+
+% Lista de figuras
+    {%
+    \let\oldnumberline\numberline%
+    \renewcommand{\numberline}{\figurename~\oldnumberline}%
+    \listoffigures%
+    }
+    \thispagestyle{empty} % remove page number
+    \pagebreak
+
+% Lista de quadros
+    {%
+    \let\oldnumberline\numberline%
+    \renewcommand{\numberline}{Quadro~\oldnumberline}%
+    \listof{quadro}{LISTA DE QUADROS}%
+    }
+    \pagebreak
+
+% Lista de tabelas
+    {%
+    \let\oldnumberline\numberline%
+    \renewcommand{\numberline}{\tablename~\oldnumberline}%
+    \listoftables%
+    }
+    \thispagestyle{empty} % remove page number
+    \pagebreak
+
+% Lista de abreviaturas
+    % \listofabbreviations
+    \pagebreak
+
+% Lista de símbolos
+    % \listofsymbols
+    \pagebreak
+
+% Sumário
+    \doublespacing
+    \tableofcontents
+    \onehalfspacing
+    \thispagestyle{empty} % remove page number
+    \pagebreak
+
+% Página em branco
+    \thispagestyle{empty}
+    \null\vfil
+    \pagebreak
+
+\pagestyle{myheadings} % numbering top right
