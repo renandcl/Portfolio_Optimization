@@ -9,10 +9,13 @@
 \usepackage{caption} % captions for figures, tables etc
 \usepackage[hidelinks]{hyperref} % hyperlinks for references, figures and tables without highlight box
 \usepackage{multirow} % multirow tables
+\usepackage[automake,nonumberlist,acronym]{glossaries} % glossary and acronyms list
 \usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-full-initials=no]{abntex2cite}
 \citebrackets() % parenthesis brackets for citations
+
+\makeglossaries % create glossary and acronyms list
+
 \setlength\parindent{0pt} % no indentation
-% \renewcommand{\citeonline}{#1}
 
 \setcounter{secnumdepth}{5} % section numbering depth
 \setcounter{tocdepth}{5} % table of contents depth

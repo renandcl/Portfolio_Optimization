@@ -1,0 +1,56 @@
+\glsdefs@newdocentry{RBC}%
+{%
+name={\acronymfont {\glsentryshort {RBC}}},%
+sort={RBC},%
+type={acronym},%
+first={RBC},%
+firstplural={RBCs},%
+text={RBC},%
+plural={RBCs},%
+description={Raciocínio Baseado em Casos},%
+descriptionplural={Raciocínio Baseado em Casos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Raciocínio Baseado em Casos},%
+longplural={Raciocínio Baseado em Casoss},%
+short={RBC},%
+shortplural={RBCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{IA}%
+{%
+name={\acronymfont {\glsentryshort {IA}}},%
+sort={IA},%
+type={acronym},%
+first={IA},%
+firstplural={IAs},%
+text={IA},%
+plural={IAs},%
+description={Inteligência Artifial},%
+descriptionplural={Inteligência Artifial},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inteligência Artifial},%
+longplural={Inteligência Artifials},%
+short={IA},%
+shortplural={IAs},%
+counter={page},%
+parent={},%
+%
+}%
+
