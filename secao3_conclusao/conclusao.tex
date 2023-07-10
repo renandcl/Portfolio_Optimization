@@ -1,3 +1,17 @@
-\section{CONCLUSÃO}
+\begin{section}{CONCLUSÃO}
+    
+        \ipar Em conclusão, este estudo teve como objetivo aplicar redes neurais na previsão do índice Sharpe para seleção de carteiras de investimento. Para isso, foi realizada uma revisão bibliográfica para identificar as referências relevantes e as técnicas utilizadas na construção de carteiras de investimento, além de obter dados históricos e econômicos necessários para a análise.
 
-    \hspace{1.5cm} As conclusões devem responder às questões da pesquisa, em relação aos objetivos e às hipóteses. Devem ser breves, podendo apresentar recomendações e sugestões para trabalhos futuros.
+        \ipar A construção dos modelos de previsão dependeu da coleta e preparação de dados históricos de ativos financeiros e dados de mercado, levando em consideração a qualidade e a padronização das diferentes fontes. A etapa de construção dos modelos envolveu a otimização das carteiras de investimento com base no índice Sharpe, considerando parâmetros reais e utilizando métodos de programação não linear. Também foi aplicada a seleção da carteira de investimento usando redes neurais, após o processo de otimização, sendo avaliadas diferentes estruturas para identificar a mais adequada ao problema.
+
+        \ipar Ao avaliar o desempenho da seleção de carteiras de investimento, verificou-se que o modelo sem restrições obteve um melhor desempenho em termos de tempo de otimização e índice Sharpe. Por outro lado, o modelo com restrições e o uso de heurísticas apresentaram um desempenho inferior, embora tenham atendido à restrição de perda máxima, com exceção do modelo com início aleatório.
+
+        \ipar Em relação aos resultados das redes neurais, conclui-se que elas não apresentaram resultados superiores às carteiras de investimento, mas mostraram resultados superiores ao índice Ibovespa. A rede neural \acrshort{LSTM}+Atenção de Bahdanau obteve o melhor desempenho, contudo, abaixo do desempenho da carteira de 60 dias. Por outro lado, a rede neural GRU+Atenção de Bahdanau teve o pior desempenho, ficando abaixo do índice Ibovespa em alguns momentos.
+
+        \ipar Portanto, com base nos resultados obtidos, pode-se concluir que a aplicação de redes neurais na previsão do índice Sharpe para seleção de carteiras de investimento não superou o desempenho das carteiras, mas mostrou vantagens em relação ao índice \acrshort{IBOVESPA}. Essas descobertas contribuem para o avanço do conhecimento na área de finanças e destacam a importância de considerar abordagens baseadas em redes neurais como uma ferramenta adicional na seleção de carteiras de investimento.
+
+        \ipar Para trabalhos futuros sugere-se a aplicação de dados financeiros de análise técnica no treinamento das de redes neurais. Além disso, sugere-se a aplicação de redes neurais em outros modelos de otimização para a seleção da carteira de melhor desempenho, como o \acrshort{CVaR}.
+
+\end{section}
+
+\pagebreak

@@ -1,47 +1,985 @@
+%%%%%%%%%%%%%%%%%%%%%%%% Introdução %%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{sethi2021nobel,
+  title={Nobel Laureate Harry Markowitz: Creator of the Modern Portfolio Theory},
+  author={Sethi, Suresh},
+  journal={Management and Business Review},
+  volume={1},
+  number={2},
+  year={2021}
+}
 
 
-@article{Mansini2014,
+@article{markowitz1952portfolio,
+   abstract = {The purpose of this paper is to present the likelihood methods for the analysis of cointegration in VAR models with Gaussian errors, seasonal dummies, and constant terms. We discuss likelihood ratio tests of cointegration rank and find the asymptotic distribution of the test statistics. We characterize the maximum likelihood estimator of the cointegrating relations and formulate tests of structural hypotheses about these relations. We show that the asymptotic distribution of the maximum likelihood estimator is mixed Gaussian. Once a certain eigenvalue problem is solved and the eigenvectors and eigenvalues calculated, one can conduct inference on the cointegrating rank using some nonstandard distributions, and test hypotheses about cointegrating relations using the x2 distribution.},
+   author = {Harry Markowitz},
+   doi = {10.2307/2975974},
+   issn = {00221082, 15406261},
+   issue = {1},
+   journal = {The Journal of Finance},
+   pages = {77-91},
+   title = {Portfolio Selection},
+   volume = {7},
+   year = {1952},
+}
+
+
+@article{sharpe1964capital,
+   author = {William F. Sharpe},
+   doi = {10.1111/j.1540-6261.1964.tb02865.x},
+   issn = {15406261},
+   issue = {3},
+   journal = {The Journal of Finance},
+   pages = {425-442},
+   title = {CAPITAL ASSET PRICES: A THEORY OF MARKET EQUILIBRIUM UNDER CONDITIONS OF RISK},
+   volume = {19},
+   year = {1964},
+}
+
+
+@article{lintner1965valuation,
+   abstract = {N/A},
+   author = {John Lintner},
+   doi = {10.2307/1924119},
+   issn = {00346535},
+   issue = {1},
+   journal = {The Review of Economics and Statistics},
+   title = {The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets},
+   volume = {47},
+   year = {1965},
+}
+
+
+@article{sharpe1994sharpe,
+   author = {William F. Sharpe},
+   abstract = {Over twenty-five years ago, in sharpe (1966) I introduced a measure for the performance of mutual funds and proposed the term reward-to-variability ratio to descripe it (the measure is also descriped in Sharpe [1975]). While the measure has gained considerable popularity, the name has not. Other authors have termed the original version the Sharpe index (Radcliff [1990, p. 286] and Haugen [1993, p. 315]), the Sharpe Measure (Bodie, Kane, and Marcus [1993, p. 804], Elton and Gruber [1991, p. 652], and Reilly [1993, p. 24]), or the Sharpe Ratio (Morningstar [1993, p. 24]). Generalized versions have also appeared under various names (see, for example, BARRA [1992, P. 21] and Capaul, Rowley, and Sharpe [1993, p. 33]). Bowing to increasingly common usage, this article refers to both the original measure and more generalized versions as the Sharpe Ratio. My goal here is to go well beyond the discussion of the original measure in Sharpe [1966] and Sharpe [1975], providing more generality and covering a broader range of applications.},
+   doi = {10.3905/jpm.1994.409501},
+   issn = {0095-4918},
+   issue = {1},
+   journal = {The Journal of Portfolio Management},
+   title = {The Sharpe Ratio},
+   volume = {21},
+   year = {1994},
+}
+
+
+@article{treynor1973use,
+   abstract = {The capital asset pricing model suggests that any premium for risk bearing will be associated with market, rather than specific risk. If investors in the aggregate are risk averse, then an investment in the market asset-explicit or implicit-offers a premium. A portfolio devoid of specific risk is called "perfectly diversified." In other words "perfect diversification" does not mean the absence of risk nor does it mean an optimally balanced portfolio, except in the case of zero. In general, a given security may play two different roles simultaneously. It may hold a temporary position based entirely on expected independent return and appraisal risk. As price fluctuates and the investor's information changes, the optimum position changes. It may also hold a position resulting purely from the fact that the security in question constitutes part of the market portfolio. The latter position changes as market expectations change but is virtually independent of expectations regarding independent return on the security.},
+   author = {Jack L. Treynor and Fischer Black},
+   doi = {10.1086/295508},
+   issn = {0021-9398},
+   issue = {1},
+   journal = {The Journal of Business},
+   title = {How to Use Security Analysis to Improve Portfolio Selection},
+   volume = {46},
+   year = {1973},
+}
+
+
+@article{sharpe1966mutual,
+   abstract = {The article focuses on mutual fund performance. Within the last few years considerable progress has been made in three closely related areas the theory of portfolio selection, the theory of the pricing of capital assets under conditions of risk, and the general behavior of stock-market prices. Results obtained in all three areas are relevant for evaluating mutual fund performance. Unfortunately, few of the studies of mutual funds have taken advantage of the substantial backlog of theoretical and empirical material made available by recent studies in these related areas. Drawing on results obtained in the field of portfolio analysis, economist Jack L. Treynor has suggested a new predictor of mutual fund performance, one that differs from virtually all those used previously by incorporating the volatiity of a fund's return in a simple yet meaningful manner. This paper attempts to extend Treynor's work by subjecting his proposed measure to empirical test in order to evaluate its predictive ability.},
+   author = {William F. Sharpe},
+   doi = {10.1086/294846},
+   issn = {0021-9398},
+   issue = {S1},
+   journal = {The Journal of Business},
+   title = {Mutual Fund Performance},
+   volume = {39},
+   year = {1966},
+}
+
+
+@inproceedings{maree2022balancing,
+   abstract = {Stock portfolio optimization is the process of continuous reallocation of funds to a selection of stocks. This is a particularly well-suited problem for reinforcement learning, as daily rewards are compounding and objective functions may include more than just profit, e.g., risk and sustainability. We developed a novel utility function with the Sharpe ratio representing risk and the environmental, social, and governance score (ESG) representing sustainability. We show that a state- of-the-art policy gradient method - multi-agent deep deterministic policy gradients (MADDPG) - fails to find the optimum policy due to flat policy gradients and we therefore replaced gradient descent with a genetic algorithm for parameter optimization. We show that our system outperforms MADDPG while improving on deep Q-learning approaches by allowing for continuous action spaces. Crucially, by incorporating risk and sustainability criteria in the utility function, we improve on the state-of-the-art in reinforcement learning for portfolio optimization; risk and sustainability are essential in any modern trading strategy, and we propose a system that does not merely report these metrics, but that actively optimizes the portfolio to improve on them.},
+   author = {Chari Maree and Christian W. Omlin},
+   doi = {10.1109/CIFEr52523.2022.9776048},
+   journal = {2022 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics, CIFEr 2022 - Proceedings},
+   title = {Balancing Profit, Risk, and Sustainability for Portfolio Management},
+   year = {2022},
+}
+
+
+@article{aithal2023real,
+   abstract = {There are 1641 companies listed on the National Stock Exchange of India. It is undoubtedly infeasible for a retail investor to invest in all the stocks. It is a well-known fact that the portfolio&#x2019;s return is an average return of all its constituent stocks, and risk will be less than or equal to the maximum risk of all the portfolio components. This paper is unique as it elaborates on the entire portfolio selection, optimization, and management process. Portfolio selection is accomplished through the K-Means algorithm. Optimization is achieved utilizing the genetic algorithm, and a sliding window is applied for portfolio management. Four different ways of portfolio calculation, namely, equally-weighted portfolio, global minimum variance portfolio, market cap-weighted portfolio, and maximum Sharpe ratio portfolio, are applied. The results depict that all three optimized portfolios outperform the Nifty index. The dataset for the study is obtained from globaldatafeeds.in.},
+   author = {Prakash K. Aithal and M. Geetha and U. Dinesh Acharya and Basri Savitha and Parthiv Menon},
+   doi = {10.1109/ACCESS.2023.3263260},
+   issn = {21693536},
+   journal = {IEEE Access},
+   keywords = {K-means algorithm,Portfolio selection,equally-weighted portfolio,global minimum variance portfolio,maximum sharpe ratio portfolio,metaheuristic algorithms,portfolio management,portfolio optimization,real-time,sliding window},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Real-Time Portfolio Management System Utilizing Machine Learning Techniques},
+   year = {2023},
+}
+
+
+@article{zhou2023twostage,
+   abstract = {The traditional portfolio theory has relied heavily on historical asset returns while ignoring future information. Based on ensemble learning and maximum Sharpe ratio portfolio theory, this paper proposes a two-stage portfolio optimization method by considering asset forecast information, aiming to improve the performance and robustness of a portfolio. In the first stage, concerning the underlying asset selection, we integrate six individual prediction models using the ensemble learning method to forecast the future return of assets where the assets with higher potential returns are selected for portfolio optimization. In the second stage, we propose a novel investment strategy by combining the forecasted returns of selected assets with the maximum Sharpe ratio portfolio model. In the empirical analysis, we employ the constituent stocks of the China Securities Index 300 (CSI 300) to test the out-of-sample performance of the proposed strategy with several traditional portfolio strategies, including minimum variance portfolio strategy, traditional maximum Sharpe ratio portfolio strategy, 1/N portfolio strategy, and CSI 300 index. Our analytical results show that (1) compared to individual forecasting models, the ensemble learning method is more accurate in forecasting stock returns, and (2) the proposed portfolio strategy largely outperforms most of its competitors in terms of the Sharpe ratio, Sortino ratio, Omega ratio, and Calmar ratio. This indicates that the proposed two-stage portfolio optimization method is of potential to construct a promising investment strategy due to its trade-off between historical and future information of assets.},
+   author = {Zhongbao Zhou and Zhengyang Song and Tiantian Ren and Lean Yu},
+   doi = {10.1109/ACCESS.2022.3232281},
+   issn = {21693536},
+   journal = {IEEE Access},
+   title = {Two-Stage Portfolio Optimization Integrating Optimal Sharp Ratio Measure and Ensemble Learning},
+   volume = {11},
+   year = {2023},
+}
+
+
+@inproceedings{cao2020delafo,
+   abstract = {Portfolio optimization has been broadly investigated during the last decades and had a lot of applications in finance and economics. In this paper, we study the portfolio optimization problem in the Vietnamese stock market by using deep-learning methodologies and one dataset collected from the Ho Chi Minh City Stock Exchange (VN-HOSE) from the beginning of the year 2013 to the middle of the year 2019. We aim to construct an efficient algorithm that can find the portfolio having the highest Sharpe ratio in the next coming weeks. To overcome this challenge, we propose a novel loss function and transform the original problem into a supervised problem. The input data can be determined as a 3D tensor, while the predicted output is the unnormalized weighted proportion for each ticker in the portfolio to maximize the daily return Y of the stock market after a given number of days. We compare different deep learning models, including Residual Networks (ResNet), Long short-term memory (LSTM), Gated Recurrent Unit (GRU), Self-Attention (SA), Additive Attention (AA), and various combinations: SA + LSTM, SA + GRU, AA + LSTM, and AA + GRU. The experimental results show that the AA + GRU outperforms the rest of the methods on the Sharpe ratio and provides promising results for the portfolio optimization problem not only in Vietnam but also in other countries.},
+   author = {Hieu K. Cao and Han K. Cao and Binh T. Nguyen},
+   city = {Cham},
+   doi = {10.1007/978-3-030-47426-3_48},
+   editor = {Hady W. Lauw and Raymond Chi-Wing Wong and Alexandros Ntoulas and Ee-Peng Lim and See-Kiong Ng and Sinno Jialin Pan},
+   issn = {16113349},
+   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   pages = {623-635},
+   publisher = {Springer International Publishing},
+   title = {DELAFO: An Efficient Portfolio Optimization Using Deep Neural Networks},
+   volume = {12084 LNAI},
+   year = {2020},
+}
+
+
+@article{du2022mean,
+   abstract = {Most mean-variance (MV) models construct a portfolio based on nonstationary stocks. This study presents a new MV model constructed using stationary portfolios composed of cointegrated stocks. The expected return of this new model is predicted by using machine learning models, such as support vector machine, random forest, and attention-based long short-term memory (LSTM) network. The proposed model is evaluated using data on stocks in the CSI 300 and the S&P 500, with 42 features over 8 years from May 4, 2012 to August 4, 2020. The empirical results show that the portfolio constructed based on the stationary portfolios in both the Chinese and the US stock markets delivers significant profits. Further, the attention-based LSTM network can more accurately model the spread return using technical indicators, financial investment information, and lagged returns, and can successfully select pairs of cointegrated stocks for constructing a more profitable MV portfolio, than can conventional machine learning models. Using the attention-based LSTM to predict 20-day return movement results in model accuracy of up to 92.59\% for the CSI 300 and 88.52\% for the S&P 500, and a corresponding Sharpe ratio of 9.31 and 2.77, respectively.},
+   author = {Juan Du},
+   doi = {10.1016/j.eswa.2022.117005},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Mean-variance portfolio optimization with deep learning based-forecasts for cointegrated stocks},
+   volume = {201},
+   year = {2022},
+}
+
+
+@article{tran2023optimizing,
+   abstract = {In this paper, we propose a novel approach to optimize parameters for strategies in automated trading systems. Based on the framework of Reinforcement learning, our work includes the development of a learning environment, state representation, reward function, and learning algorithm for the cryptocurrency market. Considering two simple objective functions, cumulative return and Sharpe ratio, the results showed that Deep Reinforcement Learning approach with Double Deep Q-Network setting and the Bayesian Optimization approach can provide positive average returns. Among the settings being studied, Double Deep Q-Network setting with Sharpe ratio as reward function is the best Q-learning trading system. With a daily trading goal, the system shows outperformed results in terms of cumulative return, volatility and execution time when compared with the Bayesian Optimization approach. This helps traders to make quick and efficient decisions with the latest information from the market. In long-term trading, Bayesian Optimization is a method of parameter optimization that brings higher profits. Deep Reinforcement Learning provides solutions to the high-dimensional problem of Bayesian Optimization in upcoming studies such as optimizing portfolios with multiple assets and diverse trading strategies.},
+   author = {Minh Tran and Duc Pham-Hi and Marc Bui},
+   doi = {10.3390/a16010023},
+   issn = {19994893},
+   issue = {1},
+   journal = {Algorithms},
+   title = {Optimizing Automated Trading Systems with Deep Reinforcement Learning},
+   volume = {16},
+   year = {2023},
+}
+
+
+@article{vukovic2020neural,
+   abstract = {This study analyzes a neural networks model that forecast Sharpe ratio. The developed neural networks model is successful to predict the position of the investor who will be rewarded with extra risk premium on debt securities for the same level of portfolio risk or a greater risk premium than proportionate growth risk. The main purpose of the study is to predict highest Sharpe ratio in the future. Study grouped the data on yields of debt instruments in periods before, during and after world crisis. Results shows that neural networks is successful in forecasting nonlinear time lag series with accuracy of 82\% on test cases for the prediction of Sharpe-ratio dynamics in future and investor‘s portfolio position.},
+   author = {Darko Vukovic and Yaroslav Vyklyuk and Natalia Matsiuk and Moinak Maiti},
+   doi = {10.1016/j.physa.2019.123331},
+   issn = {03784371},
+   journal = {Physica A: Statistical Mechanics and its Applications},
+   pages = {123331},
+   title = {Neural network forecasting in prediction Sharpe ratio: Evidence from EU debt market},
+   volume = {542},
+   year = {2020},
+}
+
+
+@article{wang2020portfolio,
+   abstract = {Portfolio theory is an important foundation for portfolio management which is a well-studied subject yet not fully conquered territory. This paper proposes a mixed method consisting of long short-term memory networks and mean-variance model for optimal portfolio formation in conjunction with the asset preselection, in which long-term dependences of financial time-series data can be captured. The experiment uses a large volume of sample data from the UK Stock Exchange 100 Index between March 1994 and March 2019. In the first stage, long short-term memory networks are used to forecast the return of assets and select assets with higher potential returns. After comparing the outcomes of the long short-term memory networks against support vector machine, random forest, deep neural networks, and autoregressive integrated moving average model, we discover that long short-term memory networks are appropriate for financial time-series forecasting, to beat the other benchmark models by a very clear margin. In the second stage, based on selected assets with higher returns, the mean-variance model is applied for portfolio optimisation. The validation of this methodology is carried out by comparing the proposed model with the other five baseline strategies, to which the proposed model clearly outperforms others in terms of the cumulative return per year, Sharpe ratio per triennium as well as average return to the risk per month of each triennium. i.e. potential returns and risks.},
+   author = {Wuyu Wang and Weizi Li and Ning Zhang and Kecheng Liu},
+   doi = {10.1016/j.eswa.2019.113042},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Portfolio formation with preselection using deep learning from long-term financial data},
+   volume = {143},
+   year = {2020},
+}
+
+@article{hochreiter1997long,
+   abstract = {Learning to store information over extended time intervals via recurrent backpropagation takes a very long time, mostly due to insuucient, decaying error back ow. We brieey review Hochreiter's 1991 analysis of this problem, then address it by introducing a novel, eecient, gradient-based method called \Long Short-Term Memory" (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete time steps by enforcing constant error ow through \constant error carrousels" within special units. Multiplicative gate units learn to open and close access to the constant error ow. LSTM is local in space and time; its computational complexity per time step and weight is O(1). Our experiments with artiicial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with RTRL, BPTT, Recurrent Cascade-Correlation, Elman nets, and Neural Sequence Chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artiicial long time lag tasks that have never been solved by previous recurrent network algorithms.},
+   author = {Sepp Hochreiter and Jurgen Schmidhuber},
+   issn = {21695717},
+   issue = {8},
+   journal = {Neural Computation},
+   title = {Long Short Term Memory},
+   volume = {9},
+   year = {1997},
+}
+
+
+@inproceedings{sun2022deep,
+   abstract = {Optimizing portfolios is an important concern for all investors. Nowadays, deep learning has been applied to the study of portfolio investment. Still, the widely used deep learning methods based on asset return prediction do not guarantee to maximize the performance of a portfolio. In this paper, we design a neural network with the overall return-risk ratio of the portfolio as the optimization objective to determine the optimal allocation weights of the portfolio. We design the network architecture based on the Conv-Transformer with graph attention mechanisms(CTG) to better model the temporal dependence of assets and the correlation relationship between assets. The empirical results on the Chinese stock market show that our approach achieves the best results compared to the current SOTA model.},
+   author = {Jifeng Sun and Wentao Fu and Jianwu Lin and Yong Jiang and Shu Tao Xia},
+   doi = {10.1109/IJCNN55064.2022.9892317},
+   journal = {Proceedings of the International Joint Conference on Neural Networks},
+   title = {Deep Portfolio Optimization Modeling based on Conv-Transformers with Graph Attention Mechanism},
+   volume = {2022-July},
+   year = {2022},
+}
+
+
+@article{mulvey2020optimizing,
+   abstract = {Optimizing a portfolio of mean-reverting assets under transaction costs and a finite horizon is severely constrained by the curse of high dimensionality. To overcome the exponential barrier, we develop an efficient, scalable algorithm by employing a feedforward neural network. A novel concept is to apply HJB equations as an advanced start for the neural network. Empirical tests with several practical examples, including a portfolio of 48 correlated pair trades over 50 time steps, show the advantages of the approach in a high-dimensional setting. We conjecture that other financial optimization problems are amenable to similar approaches.},
+   author = {John M. Mulvey and Yifan Sun and Mengdi Wang and Jing Ye},
+   doi = {10.1080/14697688.2020.1729994},
+   issn = {14697696},
+   issue = {8},
+   journal = {Quantitative Finance},
+   title = {Optimizing a portfolio of mean-reverting assets with transaction costs via a feedforward neural network},
+   volume = {20},
+   year = {2020},
+}
+
+
+@article{milhomem2020analysis,
+   abstract = {Abstract Paper aims To do a comprehensive review of the exact and heuristic methods, software/programming languages, constraints, and types of analysis (technical and fundamental) used to solve the portfolio optimization problem. Originality The paper presents a useful discussion on aspects of portfolio optimization, both for researchers and investors and for finance professionals. Research method A systematic literature review was performed, and the articles were compiled according to pre-established criteria/filters. Main findings A point of attention should be given to the input data of optimization models. Depending on the degree of the estimation error of these input parameters, the optimization results may be lower than the results of the 1/N trading strategy. Implications for theory and practice Robust optimization, Fuzzy logic, and prediction are examples of techniques used to reduce estimation errors. At the end of the article are pointed out trends and some gaps for future work.},
+   author = {Danilo Alcantara Milhomem and Maria Jose Pereira Dantas},
+   doi = {10.1590/0103-6513.20190144},
+   issn = {0103-6513},
+   journal = {Production},
+   keywords = {Constraints,Heuristics,Portfolio selection,Stock market},
+   month = {8},
+   pages = {e20190144},
+   publisher = {Associação Brasileira de Engenharia de Produção},
+   title = {Analysis of new approaches used in portfolio optimization: a systematic literature review},
+   volume = {30},
+   year = {2020},
+}
+
+
+@online{B32023,
+   author = {B3},
+   title = {Ibovespa B3},
+   url = {https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/ibovespa.htm},
+   year = {2023},
+   urldate = {2023-07-01}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Fundamentação %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{yu2018bibliometric,
+   abstract = {In this study, publications in the multiple criteria decision making (MCDM) field during 1977-2016 were analysed using bibliometric analysis. The statistical analysis of influential publications, journals, countries/territories and authors was first conducted. The developing trends of authors' collaborative structure and research topics were then analysed based on four different periods. The results indicated that more number of publications and authors contributed to MCDM research in the last ten years, and that the collaboration among authors has increased. The comprehensive and scientific analysis of MCDM should help researchers conduct studies in related fields.},
+   author = {Dejian Yu and Wanru Wang and Wenyu Zhang and Shuai Zhang},
+   doi = {10.18520/cs/v114/i04/747-758},
+   issn = {00113891},
+   issue = {4},
+   journal = {Current Science},
+   title = {A bibliometric analysis of research on multiple criteria decision making},
+   volume = {114},
+   year = {2018},
+}
+
+
+@article{aria2017bibliometrix,
+   abstract = {The use of bibliometrics is gradually extending to all disciplines. It is particularly suitable for science mapping at a time when the emphasis on empirical contributions is producing voluminous, fragmented, and controversial research streams. Science mapping is complex and unwieldly because it is multi-step and frequently requires numerous and diverse software tools, which are not all necessarily freeware. Although automated workflows that integrate these software tools into an organized data flow are emerging, in this paper we propose a unique open-source tool, designed by the authors, called bibliometrix, for performing comprehensive science mapping analysis. bibliometrix supports a recommended workflow to perform bibliometric analyses. As it is programmed in R, the proposed tool is flexible and can be rapidly upgraded and integrated with other statistical R-packages. It is therefore useful in a constantly changing science such as bibliometrics.},
+   author = {Massimo Aria and Corrado Cuccurullo},
+   doi = {10.1016/j.joi.2017.08.007},
+   issn = {18755879},
+   issue = {4},
+   journal = {Journal of Informetrics},
+   title = {bibliometrix: An R-tool for comprehensive science mapping analysis},
+   volume = {11},
+   year = {2017},
+}
+
+
+@article{kolm2014years,
+  abstract = {The concepts of portfolio optimization and diversification have been instrumental in the development and understanding of financial markets and financial decision making. In light of the 60 year anniversary of Harry Markowitz's paper "Portfolio Selection," we review some of the approaches developed to address the challenges encountered when using portfolio optimization in practice, including the inclusion of transaction costs, portfolio management constraints, and the sensitivity to the estimates of expected returns and covariances. In addition, we selectively highlight some of the new trends and developments in the area such as diversification methods, risk-parity portfolios, the mixing of different sources of alpha, and practical multi-period portfolio optimization. © 2013 Elsevier B.V. All rights reserved.},
+  author   = {Petter N. Kolm and Reha Tütüncü and Frank J. Fabozzi},
+  doi      = {10.1016/j.ejor.2013.10.060},
+  issn     = {03772217},
+  issue    = {2},
+  journal  = {European Journal of Operational Research},
+  title    = {60 Years of portfolio optimization: Practical challenges and current trends},
+  volume   = {234},
+  year     = {2014}
+}
+
+
+@article{demiguel2009optimal,
+   abstract = {We evaluate the out-of-sample performance of the sample-based mean-variance model, and its extensions designed to reduce estimation error, relative to the naive 1/N portfolio. Of the 14 models we evaluate across seven empirical datasets, none is consistently better than the 1/N rule in terms of Sharpe ratio, certainty-equivalent return, or turnover, which indicates that, out of sample, the gain from optimal diversification is more than offset by estimation error. Based on parameters calibrated to the US equity market, our analytical results and simulations show that the estimation window needed for the sample-based mean-variance strategy and its extensions to outperform the 1/N benchmark is around 3000 months for a portfolio with 25 assets and about 6000 months for a portfolio with 50 assets. This suggests that there are still many "miles to go" before the gains promised by optimal portfolio choice can actually be realized out of sample.},
+   author = {Victor DeMiguel and Lorenzo Garlappi and Raman Uppal},
+   doi = {10.1093/rfs/hhm075},
+   issn = {14657368},
+   issue = {5},
+   journal = {Review of Financial Studies},
+   title = {Optimal versus naive diversification: How inefficient is the 1/N portfolio strategy?},
+   volume = {22},
+   year = {2009},
+}
+
+
+@article{almahdi2017adaptive,
+   abstract = {Dynamic control theory has long been used in solving optimal asset allocation problems, and a number of trading decision systems based on reinforcement learning methods have been applied in asset allocation and portfolio rebalancing. In this paper, we extend the existing work in recurrent reinforcement learning (RRL) and build an optimal variable weight portfolio allocation under a coherent downside risk measure, the expected maximum drawdown, E(MDD). In particular, we propose a recurrent reinforcement learning method, with a coherent risk adjusted performance objective function, the Calmar ratio, to obtain both buy and sell signals and asset allocation weights. Using a portfolio consisting of the most frequently traded exchange-traded funds, we show that the expected maximum drawdown risk based objective function yields superior return performance compared to previously proposed RRL objective functions (i.e. the Sharpe ratio and the Sterling ratio), and that variable weight RRL long/short portfolios outperform equal weight RRL long/short portfolios under different transaction cost scenarios. We further propose an adaptive E(MDD) risk based RRL portfolio rebalancing decision system with a transaction cost and market condition stop-loss retraining mechanism, and we show that the proposed portfolio trading system responds to transaction cost effects better and outperforms hedge fund benchmarks consistently.},
+   author = {Saud Almahdi and Steve Y. Yang},
+   doi = {10.1016/j.eswa.2017.06.023},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {An adaptive portfolio trading system: A risk-return portfolio optimization using recurrent reinforcement learning with expected maximum drawdown},
+   volume = {87},
+   year = {2017},
+}
+
+
+@article{fischer2018deep,
+   abstract = {Long short-term memory (LSTM) networks are a state-of-the-art technique for sequence learning. They are less commonly applied to financial time series predictions, yet inherently suitable for this domain. We deploy LSTM networks for predicting out-of-sample directional movements for the constituent stocks of the S&P 500 from 1992 until 2015. With daily returns of 0.46 percent and a Sharpe ratio of 5.8 prior to transaction costs, we find LSTM networks to outperform memory-free classification methods, i.e., a random forest (RAF), a deep neural net (DNN), and a logistic regression classifier (LOG). The outperformance relative to the general market is very clear from 1992 to 2009, but as of 2010, excess returns seem to have been arbitraged away with LSTM profitability fluctuating around zero after transaction costs. We further unveil sources of profitability, thereby shedding light into the black box of artificial neural networks. Specifically, we find one common pattern among the stocks selected for trading – they exhibit high volatility and a short-term reversal return profile. Leveraging these findings, we are able to formalize a rules-based short-term reversal strategy that yields 0.23 percent prior to transaction costs. Further regression analysis unveils low exposure of the LSTM returns to common sources of systematic risk – also compared to the three benchmark models.},
+   author = {Thomas Fischer and Christopher Krauss},
+   doi = {10.1016/j.ejor.2017.11.054},
+   issn = {03772217},
+   issue = {2},
+   journal = {European Journal of Operational Research},
+   title = {Deep learning with long short-term memory networks for financial market predictions},
+   volume = {270},
+   year = {2018},
+}
+
+
+@article{chen2021mean,
+   abstract = {The success of portfolio construction depends primarily on the future performance of stock markets. Recent developments in machine learning have brought significant opportunities to incorporate prediction theory into portfolio selection. However, many studies show that a single prediction model is insufficient to achieve very accurate predictions and affluent returns. In this paper, a novel portfolio construction approach is developed using a hybrid model based on machine learning for stock prediction and mean–variance (MV) model for portfolio selection. Specifically, two stages are involved in this model: stock prediction and portfolio selection. In the first stage, a hybrid model combining eXtreme Gradient Boosting (XGBoost) with an improved firefly algorithm (IFA) is proposed to predict stock prices for the next period. The IFA is developed to optimize the hyperparameters of the XGBoost. In the second stage, stocks with higher potential returns are selected, and the MV model is employed for portfolio selection. Using the Shanghai Stock Exchange as the study sample, the obtained results demonstrate that the proposed method is superior to traditional ways (without stock prediction) and benchmarks in terms of returns and risks.},
+   author = {Wei Chen and Haoyu Zhang and Mukesh Kumar Mehlawat and Lifen Jia},
+   doi = {10.1016/J.ASOC.2020.106943},
+   issn = {1568-4946},
+   journal = {Applied Soft Computing},
+   keywords = {Firefly algorithm,Mean–variance model,Portfolio selection,Stock prediction,eXtreme Gradient Boosting},
+   month = {3},
+   pages = {106943},
+   publisher = {Elsevier},
+   title = {Mean–variance portfolio optimization using machine learning-based stock price prediction},
+   volume = {100},
+   year = {2021},
+}
+
+
+@article{heaton2017deep,
+   abstract = {We explore the use of deep learning hierarchical models for problems in financial prediction and classification. Financial prediction problems – such as those presented in designing and pricing securities, constructing portfolios, and risk management – often involve large data sets with complex data interactions that currently are difficult or impossible to specify in a full economic model. Applying deep learning methods to these problems can produce more useful results than standard methods in finance. In particular, deep learning can detect and exploit interactions in the data that are, at least currently, invisible to any existing financial economic theory. Copyright © 2016 John Wiley & Sons, Ltd.},
+   author = {J. B. Heaton and N. G. Polson and J. H. Witte},
+   doi = {10.1002/asmb.2209},
+   issn = {15264025},
+   issue = {1},
+   journal = {Applied Stochastic Models in Business and Industry},
+   title = {Deep learning for finance: deep portfolios},
+   volume = {33},
+   year = {2017},
+}
+
+
+@article{artzner1999coherent,
+  abstract = {In this paper we study both market risks and nonmarket risks, without complete markets assumption, and discuss methods of measurement of these risks. We present and justify a set of four desirable properties for measures of risk, and call the measures satisfying these properties "coherent." We examine the measures of risk provided and the related actions required by SPAN, by the SEC/NASD rules, and by quantile-based methods. We demonstrate the universality of scenario-based methods for providing coherent measures. We offer suggestions concerning the SEC method. We also suggest a method to repair the failure of subadditivity of quantile-based methods.},
+  author   = {Philippe Artzner and Freddy Delbaen and Jean Marc Eber and David Heath},
+  doi      = {10.1111/1467-9965.00068},
+  issn     = {09601627},
+  issue    = {3},
+  journal  = {Mathematical Finance},
+  title    = {Coherent measures of risk},
+  volume   = {9},
+  year     = {1999}
+}
+
+
+@inproceedings{kingma2015adam,
+   abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
+   author = {Diederik P. Kingma and Jimmy Lei Ba},
+   journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   title = {Adam: A method for stochastic optimization},
+   year = {2015},
+}
+
+
+@article{mnih2015human,
+   abstract = {The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks.},
+   author = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin Riedmiller and Andreas K. Fidjeland and Georg Ostrovski and Stig Petersen and Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
+   doi = {10.1038/nature14236},
+   issn = {14764687},
+   issue = {7540},
+   journal = {Nature},
+   title = {Human-level control through deep reinforcement learning},
+   volume = {518},
+   year = {2015},
+}
+
+
+@article{moody1998performance,
+   abstract = {We propose to train trading systems and portfolios by optimizing objective functions that directly measure trading and investment performance. Rather than basing a trading system on forecasts or training via a supervised learning algorithm using labelled trading data, we train our systems using recurrent reinforcement learning (RRL) algorithms. The performance functions that we consider for reinforcement learning are profit or wealth, economic utility, the Sharpe ratio and our proposed differential Sharpe ratio. The trading and portfolio management systems require prior decisions as input in order to properly take into account the effects of transactions costs, market impact, and taxes. This temporal dependence on system state requires the use of reinforcement versions of standard recurrent learning algorithms. We present empirical results in controlled experiments that demonstrate the efficacy of some of our methods for optimizing trading systems and portfolios. For a long/short trader, we find that maximizing the differential Sharpe ratio yields more consistent results than maximizing profits, and that both methods outperform a trading system based on forecasts that minimize MSE. We find that portfolio traders trained to maximize the differential Sharpe ratio achieve better risk-adjusted returns than those trained to maximize profit. Finally, we provide simulation results for an S&P 500/TBill asset allocation system that demonstrate the presence of out-of-sample predictability in the monthly S&P 500 stock index for the 25 year period 1970 through 1994. © 1998 John Wiley & Sons, Ltd.},
+   author = {John Moody and Lizhong Wu and Yuansong Liao and Matthew Saffell},
+   doi = {10.1002/(SICI)1099-131X(1998090)17:5/6<441::AID-FOR707>3.0.CO;2-\%23},
+   issn = {02776693},
+   issue = {5-6},
+   journal = {Journal of Forecasting},
+   title = {Performance functions and reinforcement learning for trading systems and portfolios},
+   volume = {17},
+   year = {1998},
+}
+
+
+@inproceedings{chen2016xgboost,
+   abstract = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable endto-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
+   author = {Tianqi Chen and Carlos Guestrin},
+   doi = {10.1145/2939672.2939785},
+   journal = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+   title = {XGBoost: A scalable tree boosting system},
+   volume = {13-17-August-2016},
+   year = {2016},
+}
+
+
+@article{chong2017deep,
+   abstract = {We offer a systematic analysis of the use of deep learning networks for stock market analysis and prediction. Its ability to extract features from a large set of raw data without relying on prior knowledge of predictors makes deep learning potentially attractive for stock market prediction at high frequencies. Deep learning algorithms vary considerably in the choice of network structure, activation function, and other model parameters, and their performance is known to depend heavily on the method of data representation. Our study attempts to provides a comprehensive and objective assessment of both the advantages and drawbacks of deep learning algorithms for stock market analysis and prediction. Using high-frequency intraday stock returns as input data, we examine the effects of three unsupervised feature extraction methods—principal component analysis, autoencoder, and the restricted Boltzmann machine—on the network's overall ability to predict future market behavior. Empirical results suggest that deep neural networks can extract additional information from the residuals of the autoregressive model and improve prediction performance; the same cannot be said when the autoregressive model is applied to the residuals of the network. Covariance estimation is also noticeably improved when the predictive network is applied to covariance-based market structure analysis. Our study offers practical insights and potentially useful directions for further investigation into how deep learning networks can be effectively used for stock market analysis and prediction.},
+   author = {Eunsuk Chong and Chulwoo Han and Frank C. Park},
+   doi = {10.1016/j.eswa.2017.04.030},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Deep learning networks for stock market analysis and prediction: Methodology, data representations, and case studies},
+   volume = {83},
+   year = {2017},
+}
+
+
+@article{deng2016deep,
+   abstract = {Can we train the computer to beat experienced traders for financial assert trading? In this paper, we try to address this challenge by introducing a recurrent deep neural network (NN) for real-time financial signal representation and trading. Our model is inspired by two biological-related learning concepts of deep learning (DL) and reinforcement learning (RL). In the framework, the DL part automatically senses the dynamic market condition for informative feature learning. Then, the RL module interacts with deep representations and makes trading decisions to accumulate the ultimate rewards in an unknown environment. The learning system is implemented in a complex NN that exhibits both the deep and recurrent structures. Hence, we propose a task-aware backpropagation through time method to cope with the gradient vanishing issue in deep training. The robustness of the neural system is verified on both the stock and the commodity future markets under broad testing conditions.},
+   author = {Yue Deng and Feng Bao and Youyong Kong and Zhiquan Ren and Qionghai Dai},
+   doi = {10.1109/TNNLS.2016.2522401},
+   issn = {21622388},
+   issue = {3},
+   journal = {IEEE Transactions on Neural Networks and Learning Systems},
+   title = {Deep Direct Reinforcement Learning for Financial Signal Representation and Trading},
+   volume = {28},
+   year = {2017},
+}
+
+
+@article{rockafellar2000optimization,
+   abstract = {A new approach to optimizing or hedging a portfolio of financial instruments to reduce risk is presented and tested on applications. It focuses on minimizing conditional value-at-risk (CVaR) rather than minimizing value-at-risk (VaR), but portfolios with low CVaR necessarily have low VaR as well. CVaR, also called mean excess loss, mean shortfall, or tail VaR, is in any case considered to be a more consistent measure of risk than VaR. Central to the new approach is a technique for portfolio optimization which calculates VaR and optimizes CVaR simultaneously. This technique is suitable for use by investment companies, brokerage firms, mutual funds, and any business that evaluates risk. It can be combined with analytical or scenario-based methods to optimize portfolios with large numbers of instruments, in which case the calculations often come down to linear programming or nonsmooth programming. The methodology can also be applied to the optimization of percentiles in contexts outside of finance.},
+   author = {R. Tyrrell Rockafellar and Stanislav Uryasev},
+   doi = {10.21314/jor.2000.038},
+   issn = {14651211},
+   issue = {3},
+   journal = {The Journal of Risk},
+   pages = {21-41},
+   title = {Optimization of conditional value-at-risk},
+   volume = {2},
+   year = {2000},
+}
+
+
+@book{sutton2018reinforcement,
+   abstract = {Reinforcement learning, one of the most active research areas in artificial intelligence, is a computational approach to learning whereby an agent tries to maximize the total amount of reward it receives when interacting with a complex, uncertain environment. In Reinforcement Learning, Richard Sutton and Andrew Barto provide a clear and simple account of the key ideas and algorithms of reinforcement learning. Their discussion ranges from the history of the field's intellectual foundations to the most recent developments and applications. The only necessary mathematical background is familiarity with elementary concepts of probability.The book is divided into three parts. Part I defines the reinforcement learning problem in terms of Markov decision processes. Part II provides basic solution methods: dynamic programming, Monte Carlo methods, and temporal-difference learning. Part III presents a unified view of the solution methods and incorporates artificial neural networks, eligibility traces, and planning; the two final chapters present case studies and consider the future of reinforcement learning.},
+   author = {Richard S. Sutton and Andrew G. Barto},
+   edition = {Second},
+   journal = {The MIT Press},
+   title = {Reinforcement Learning: An Introduction},
+   year = {2018},
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Bibliometric %%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{yu2020neural,
+   abstract = {Portfolio optimization and quantitative risk management have been studied extensively since the 1990s and began to attract even more attention after the 2008 financial crisis. This disastrous occurrence propelled portfolio managers to reevaluate and mitigate the risk and return trade-off in building their clients' portfolios. The advancement of machine-learning algorithms and computing resources helps portfolio managers explore rich information by incorporating macroeconomic conditions into their investment strategies and optimizing their portfolio performance in a timely manner. In this paper, we present a simulation-based approach by fusing a number of macroeconomic factors using Neural Networks (NN) to build an Economic Factor-based Predictive Model (EFPM). Then, we combine it with the Copula-GARCH simulation model and the Mean-Conditional Value at Risk (Mean-CVaR) framework to derive an optimal portfolio comprised of six index funds. Empirical tests on the resulting portfolio are conducted on an out-of-sample dataset utilizing a rolling-horizon approach. Finally, we compare its performance against three benchmark portfolios over a period of almost twelve years (01/2007-11/2019). The results indicate that the proposed EFPM-based asset allocation strategy outperforms the three alternatives on many common metrics, including annualized return, volatility, Sharpe ratio, maximum drawdown, and 99\% CVaR.},
+   author = {Jiayang Yu and Kuo-Chu Chang},
+   doi = {10.3390/jrfm13110285},
+   issue = {11},
+   journal = {Journal of Risk and Financial Management},
+   title = {Neural Network Predictive Modeling on Dynamic Portfolio Management—A Simulation-Based Portfolio Optimization Approach},
+   volume = {13},
+   year = {2020},
+}
+
+
+@article{ta2020portfolio,
+   abstract = {In quantitative trading, stock prediction plays an important role in developing an effective trading strategy to achieve a substantial return. Prediction outcomes also are the prerequisites for active portfolio construction and optimization. However, the stock prediction is a challenging task because of the diversified factors involved such as uncertainty and instability. Most of the previous research focuses on analyzing financial historical data based on statistical techniques, which is known as a type of time series analysis with limited achievements. Recently, deep learning techniques, specifically recurrent neural network (RNN), has been designed to work with sequence prediction. In this paper, a long short-term memory (LSTM) network, which is a special kind of RNN, is proposed to predict stock movement based on historical data. In order to construct an efficient portfolio, multiple portfolio optimization techniques, including equal-weighted modeling (EQ), simulation modeling Monte Carlo simulation (MCS), and optimization modeling mean variant optimization (MVO), are used to improve the portfolio performance. The results showed that our proposed LSTM prediction model works efficiently by obtaining high accuracy from stock prediction. The constructed portfolios based on the LSTM prediction model outperformed other constructed portfolios-based prediction models such as linear regression and support vector machine. In addition, optimization techniques showed a significant improvement in the return and Sharpe ratio of the constructed portfolios. Furthermore, our constructed portfolios beat the benchmark Standard and Poor 500 (S&P 500) index in both active returns and Sharpe ratios.},
+   author = {Van Dai Ta and Chuan Ming Liu and Direselign Addis Tadesse},
+   doi = {10.3390/app10020437},
+   issn = {20763417},
+   issue = {2},
+   journal = {Applied Sciences (Switzerland)},
+   title = {Portfolio optimization-based stock prediction using long-short term memory network in quantitative trading},
+   volume = {10},
+   year = {2020},
+}
+
+
+@article{yu2019fusing,
+   abstract = {Portfolio optimization and quantitative risk management have been extensively studied since the 1990s, and attracted even more attention after the financial crisis in 2008. Such a disastrous event required portfolio managers to better manage the risk and return trade-off when building their clients' portfolios. With that said, the advancement of machine-learning algorithms and computing resources helps portfolio managers explore rich information by incorporating the macro-economy conditions into their investment strategies and optimizing their portfolio performance in a timely manner. In this paper, we present a simulation-based approach by fusing eleven macroeconomic factors using Neural Networks (NN) to build an Economic Factor-based Predictive Model (EFPM). Then, we combine it with Copula-GARCH simulation model and the Mean-Conditional Value at Risk (Mean-CVaR) framework to derive an optimal portfolio comprised of six index funds. Empirical test on the achieved portfolio is conducted on an out-of-sample dataset utilizing a rolling-horizon approach. Finally, we compare its performance against the three benchmark portfolios over a twelve-year period (01/2007-12/2018). The results indicate that the proposed EFPM-based asset allocation strategy outperforms the three alternatives on many common metrics, including annualized return, 99\% VaR, and Sharpe ratio.},
+   author = {Jiayang Yu and Tuan Le and K. C. Chang and Sabyasachi Guharay},
+   doi = {10.23919/FUSION43075.2019.9011330},
+   isbn = {9780996452786},
+   journal = {FUSION 2019 - 22nd International Conference on Information Fusion},
+   keywords = {CVaR,GARCH,Pair Copula,Portfolio Optimization,Risk Management,Simulation based optimization},
+   month = {7},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Fusing Economic Indicators for Portfolio Optimization-A Simulation-Based Approach},
+   year = {2019},
+}
+
+
+@inproceedings{liang2021portfolio,
+   abstract = {There has been a growing interest in studying risk forecasting using data-driven exponential weighted moving average (DD-EWMA) volatility models as well as nonlinear neuro volatility models based on Neural network (NN). However, the recently proposed volatility forecasting models have not been used to study portfolio optimization. Large kurtosis of the portfolio return sequence shows that it follows a heavy-tailed t distribution. Significant sample autocorrelations of the absolute portfolio returns and squared portfolio returns suggest that time-varying volatility models are more appropriate to model the volatility. In this paper, a DD-EWMA portfolio volatility forecasting model is used to study the generalized portfolio optimization using the intelligent probabilistic risk forecasts based on data-driven t distribution of the portfolio returns. Optimal portfolio weights are obtained by minimizing the corresponding risk forecasts of portfolio volatility, mean absolute deviation (MAD), Value-at-Risk (VaR), and conditional Value-at-Risk (CVaR) for minimum risk forecast portfolios. Moreover the portfolio weights of the generalized tangency portfolios with different risk measures are obtained by maximizing the corresponding portfolio Sharpe ratio (PSR) forecasts. Experiments are conducted to show that the DD-EWMA volatility forecasting model is most computationally efficient (less computing time), whereas neuro volatility model takes longer time to obtain one-step ahead portfolio volatility forecasts. Moreover, the superiority of the portfolio selection based on data-driven volatility forecasts over the portfolio selection based on volatility estimates is demonstrated through numerical experiments using ten frequently traded stocks.},
+   author = {You Liang and Aerambamoorthy Thavaneswaran and Alexander Paseka and Ruppa K. Thulasiram and Ethan Johnson-Skinner},
+   doi = {10.1109/COMPSAC51774.2021.00261},
+   journal = {Proceedings - 2021 IEEE 45th Annual Computers, Software, and Applications Conference, COMPSAC 2021},
+   title = {Portfolio optimization using novel intelligent probabilistic forecasts of risk measures},
+   year = {2021},
+}
+
+
+@article{chaweewanchon2022markowitz,
+   abstract = {With the advances in time-series prediction, several recent developments in machine learning have shown that integrating prediction methods into portfolio selection is a great opportunity. In this paper, we propose a novel approach to portfolio formation strategy based on a hybrid machine learning model that combines convolutional neural network (CNN) and bidirectional long short-term memory (BiLSTM) with robust input features obtained from Huber's location for stock prediction and the Markowitz mean-variance (MV) model for optimal portfolio construction. Specifically, this study first applies a prediction method for stock preselection to ensure high-quality stock inputs for portfolio formation. Then, the predicted results are integrated into the MV model. To comprehensively demonstrate the superiority of the proposed model, we used two portfolio models, the MV model and the equal-weight portfolio (1/N) model, with LSTM, BiLSTM, and CNN-BiLSTM, and employed them as benchmarks. Between January 2015 and December 2020, historical data from the Stock Exchange of Thailand 50 Index (SET50) were collected for the study. The experiment shows that integrating preselection of stocks can improve MV performance, and the results of the proposed method show that they outperform comparison models in terms of Sharpe ratio, mean return, and risk.},
+   author = {Apichat Chaweewanchon and Rujira Chaysiri},
+   doi = {10.3390/ijfs10030064},
+   issn = {22277072},
+   issue = {3},
+   journal = {International Journal of Financial Studies},
+   title = {Markowitz Mean-Variance Portfolio Optimization with Predictive Stock Selection Using Machine Learning},
+   volume = {10},
+   year = {2022},
+}
+
+
+@inproceedings{zhu2020portfolio,
+   abstract = {Recently there has been a growing interest in using machine learning methods with empirical variance covariance matrix of returns to study Markovitz portfolio optimization. The statistical technique of graphical LASSO (GL) for stock selection in the portfolio assumes that the asset returns are normally distributed, independent random variables with constant variance. In this paper sign correlations and the autocorrelations of the absolute values of the returns are used to show that the returns are non-normal with time-varying volatility. We use the recently proposed data-driven exponentially weighted moving average (DDEWMA) volatility model to estimate the covariance matrix of asset returns in Markowitz portfolio optimization. Empirical results with big data (consists of 444 stocks for a period of 7 years downloaded from Yahoo Finance) show that the proposed DDEWMA variance covariance matrix model outperforms (larger Sharpe ratio) the model with empirical variance covariance matrix.},
+   author = {Zimo Zhu and Aerambamoorthy Thavaneswaran and Alexander Paseka and Julieta Frank and Ruppa Thulasiram},
+   doi = {10.1109/COMPSAC48688.2020.00-75},
+   journal = {Proceedings - 2020 IEEE 44th Annual Computers, Software, and Applications Conference, COMPSAC 2020},
+   title = {Portfolio Optimization Using a Novel Data-Driven EWMA Covariance Model with Big Data},
+   year = {2020},
+}
+
+
+@article{leow2021robo,
+   abstract = {Robo-advisors are increasingly popular, with machine learning algorithms taking centre stage for researchers. However, classical financial theories and techniques, such as Constant Rebalancing (CRB) and Modern Portfolio Theory (MPT), can still be relevant by combining them with social media sentiments. In this study, we propose two novel models, namely Sentimental All-Weather (SAW) and Sentimental MPT (SMPT), which capture the up-to-date market conditions through Twitter sentiments via Google's Bidirectional Transformer (BERT) model. Genetic Algorithm was used to optimise the models for different objectives including maximising cumulative returns and minimising volatility. Trained on tweets and the United States stock data from August 2018 to end December 2019, and tested on an out-of-sample period from January 2020 to April 2020, our proposed models achieved superior performance in terms of common measures of portfolio performance including Sharpe ratio, cumulative returns, and value-at-risk, compared to the following benchmarks: buy-and-hold SPY index, MPT model, and CRB model for an All-Weather Portfolio.},
+   author = {Edmund Kwong Wei Leow and Binh P. Nguyen and Matthew Chin Heng Chua},
+   doi = {10.1016/j.eswa.2021.115060},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Robo-advisor using genetic algorithm and BERT sentiments from tweets for hybrid portfolio optimisation},
+   volume = {179},
+   year = {2021},
+}
+
+
+@article{lee2021learning,
+   abstract = {Deep learning-based financial approaches have received attention from both investors and researchers. This study demonstrates how to optimize portfolios, asset allocation, and trading systems based on deep reinforcement learning using three frameworks. In the proposed deep learning structure, the input data are first decomposed through wavelet transformation (WT) to remove noise from stock price time-series data. Then, only the mother wavelet (high-frequency) data are used as input. Second, reinforcement learning is performed using the high-frequency data. The reinforcement learning network employs long short-term memory (LSTM). Actions are determined by the LSTM network or randomly. Third, it learns the optimal investment trading system using the actions of a given transaction and appropriate rewards. The structure of the optimal investment trading system obtained by the proposed deep reinforcement learning structure improves trading performance without requiring the construction of a predictive model. To investigate the performance of the proposed structure, we applied the S&P500, DJI, and KOSPI200 indices to the proposed structure (HW_LSTM_RL) and other reinforcement learning structures for comparison. We evaluated the difference in Sharpe ratio for various test periods (one to three years) and for different rewards. Using the decomposed high-frequency data as input, a portfolio of investment transactions was improved for highly volatile markets. In deep reinforcement learning, we found that network composition and appropriate rewards have significant influence on learning transactions in financial time-series data. Thus, the proposed HW_LSTM_RL structure demonstrates the importance of input data composition, learning network settings, and rewards.},
+   author = {Jimin Lee and Hayeong Koh and Hi Jun Choe},
+   doi = {10.1007/s10489-021-02218-4},
+   issn = {15737497},
+   issue = {8},
+   journal = {Applied Intelligence},
+   title = {Learning to trade in financial time series using high-frequency through wavelet transformation and deep reinforcement learning},
+   volume = {51},
+   year = {2021},
+}
+
+
+@article{gao2022novel,
+   abstract = {The objective of portfolio management is to realize portfolio optimization, i.e., maximizing the cumulative return of the portfolio over continuous trading periods. Using Artificial Intelligence algorithms, e.g., Deep Reinforcement Learning (DRL), to realize portfolio optimization is an emerging research trend. Jiang et al.'s Ensemble of Identical Independent Evaluators (EIIE) framework achieves at least a four-fold improvement in the indicator of final portfolio value. Their framework has high flexibility to allow us to replace components to achieve continuous improvement. In EIIE, the DRL agent uses neural networks to extract data features from historical data of assets and evaluate each asset's potential growth. This paper introduces a novel network architecture called Dense Based EIIE (DBE), which is embedded in an DRL framework based on Convolutional Neural Network (CNN) and Densely Convoluted Neural Network (DenseNet) module. Compared to Jiang et al.'s strategy, our improved framework uses DenseNet to achieve the EIIE framework, further increasing profitability. In all three experiments carried out, our strategy outperforms Jiang et al.'s strategy and nine traditional strategies. Our strategy achieves at least a 17\% improvement in cumulative return compared to other strategies. Furthermore, it achieves at least twice as much in Sharpe Ratio as other strategies.},
+   author = {Ruoyi Gao and Fengchen Gu and Ruoyu Sun and Angelos Stefanidis and Xiaotian Ren and Jionglong Su},
+   doi = {10.1109/CYBERC55534.2022.00033},
+   isbn = {9798350331547},
+   journal = {Proceedings - 2022 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery, CyberC 2022},
+   keywords = {DenseNet,Portfolio optimization},
+   pages = {158-165},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {A Novel DenseNet-based Deep Reinforcement Framework for Portfolio Management},
+   year = {2022},
+}
+
+
+@inproceedings{jia2022policy,
+   abstract = {Due to complexity and uncertainty of financial market, how to reasonably distribute wealth amongst different assets to maximize return or minimize risk has long been a challenging research topic, which is usually called the portfolio optimization problem (POP). To deal with such difficulties, this paper proposes a policy gradient based particle swarm optimizer (PG-PSO). By combining PSO with policy gradient algorithm in reinforcement learning, the proposed method provides a novel PSO parameters adjustment mechanism which improved the optimization accuracy while at the same time reducing the workloads of manually configuring parameters. A policy neural network as an agent is constructed and interacts with the particle swarm to realize the adaptive update of PSO parameters. According to the test results of several typical benchmark functions, it can be seen that PG-PSO has better performance compared with other algorithms mentioned in this paper. The experimental results of POP show that PG-PSO can also improve Sharpe ratio value of the entire portfolio more effectively.},
+   author = {Xuanyu Jia and Xin Cai},
+   doi = {10.23919/CCC55666.2022.9901620},
+   issn = {21612927},
+   journal = {Chinese Control Conference, CCC},
+   title = {A Policy Gradient Based Particle Swarm Optimizer for Portfolio Optimization Problem},
+   volume = {2022-July},
+   year = {2022},
+}
+
+
+@inproceedings{kisiel2023portfolio,
+   abstract = {Traditional approaches to financial asset allocation start with returns forecasting followed by an optimization stage that decides the optimal asset weights. Any errors made during the forecasting step reduce the accuracy of the asset weightings, and hence the profitability of the overall portfolio. The Portfolio Transformer (PT) network, introduced here, circumvents the need to predict asset returns and instead directly optimizes the Sharpe ratio, a risk-adjusted performance metric widely used in practice. The PT is a novel end-to-end portfolio optimization framework, inspired by the numerous successes of attention mechanisms in natural language processing. With its full encoder-decoder architecture, specialized time encoding layers, and gating components, the PT has a high capacity to learn long-term dependencies among portfolio assets and hence can adapt more quickly to changing market conditions such as the COVID-19 pandemic. To demonstrate its robustness, the PT is compared against other algorithms, including the current LSTM-based state of the art, on three different datasets, with results showing that it offers the best risk-adjusted performance.},
+   author = {Damian Kisiel and Denise Gorse},
+   doi = {10.1007/978-3-031-23492-7_6},
+   issn = {16113349},
+   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   title = {Portfolio Transformer for Attention-Based Asset Allocation},
+   volume = {13588 LNAI},
+   year = {2023},
+}
+
+
+@article{ngo2023reinforcement,
+   abstract = {Advancements in machine learning have opened up a wide range of new possibilities for using advanced computer algorithms, such as reinforcement learning in portfolio risk management. However, very little evidence has been provided on the superior performance of reinforcement learning models over traditional optimization models following the mean-variance framework in different financial market settings. This study uses two experiments with data from the Vietnamese and U.S. securities markets to justify whether advanced machine learning models could outperform traditional portfolios' cumulative returns while optimizing the Sharpe ratio. The results suggest that reinforcement learning consistently outperforms the established methods and benchmarks in both experiments, even when using a very similar degree of diversification in portfolio construction and the same input data. This study confirms the ability of reinforcement learning to provide dynamic responses to market conditions and redefine the risk-return standard in the financial system.},
+   author = {Vu Minh Ngo and Huan Huu Nguyen and Phuc Van Nguyen},
+   doi = {10.1016/J.RIBAF.2023.101936},
+   issn = {0275-5319},
+   journal = {Research in International Business and Finance},
+   keywords = {Sharpe ratio,machine learning,mean-variance models,portfolio construction models,reinforcement learning},
+   month = {4},
+   pages = {101936},
+   publisher = {Elsevier},
+   title = {Does reinforcement learning outperform deep learning and traditional portfolio optimization models in frontier and developed financial markets?},
+   volume = {65},
+   year = {2023},
+}
+
+
+@article{solares2022comprehensive,
+   abstract = {The stock market is of paramount importance to modern society. Decision support in this sense must consider multiple criteria and be able to deal with the different stages involved. We propose a comprehensive Decision Support System for investing in the stock market that addresses the three main aspects of stock portfolio management: price forecasting, stock selection and portfolio optimization. An artificial neural network and fundamental analysis are used during the first stage of the system to forecast future stock prices. Differential evolution and fundamental analysis are used to select the most plausible stocks in the second stage. Finally, genetic algorithms and statistical analysis are used to build the most preferred portfolio in the third stage. Back-testing is used in experiments considering historical returns of the stocks in the S&P's 500 index. The proposed approach is compared to several benchmarks (average of the market, market index, contemporary approaches) in several contexts (actual returns, Sharpe ratio, Sortino ratio). The results show that the proposed system outperformed the benchmarks with statistical significance in most scenarios, including different market trends. The results suggest that the proposed system has the potential to be a good alternative to existing methods.},
+   author = {Efrain Solares and Víctor De-León-Gómez and Francisco G. Salas and Raymundo Díaz},
+   doi = {10.1016/j.eswa.2022.118485},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {A comprehensive decision support system for stock investment decisions},
+   volume = {210},
+   year = {2022},
+}
+
+
+@inproceedings{kruger2021ama,
+   abstract = {Online portfolio selection is an integral component of wealth management. The fundamental undertaking is to maximise returns while minimising risk given investor constraints. We aim to examine and improve modern strategies to generate higher returns in a variety of market conditions. By integrating simple data mining, optimisation techniques, and machine learning procedures, we are able to generate aggressive and consistent high yield portfolios. This leads to a new methodology of Pattern-Matching that may yield further advances in dynamic and competitive portfolio construction. The resulting strategies outperform a variety of benchmarks that make use of similar approaches when compared using Maximum Drawdown, Annualised Percentage Yield and Annualised Sharpe Ratio. The proposed strategy returns showcase acceptable risk with high reward that performs well in a variety of market conditions. We conclude that our algorithm provides an improvement in searching for optimal portfolios compared to existing methods.},
+   author = {Matthew Kruger and Terence L. Van Zyl and Andrew Paskaramoorthy},
+   doi = {10.1109/ISCMI53840.2021.9654826},
+   journal = {2021 8th International Conference on Soft Computing and Machine Intelligence, ISCMI 2021},
+   title = {AMA-K: Aggressive Multi-temporal Allocation with K Experts for Online Portfolio Selection},
+   year = {2021},
+}
+
+
+@article{aboussalah2020continous,
+   abstract = {Recurrent reinforcement learning (RRL) techniques have been used to optimize asset trading systems and have achieved outstanding results. However, the majority of the previous work has been dedicated to systems with discrete action spaces. To address the challenge of continuous action and multi-dimensional state spaces, we propose the so called Stacked Deep Dynamic Recurrent Reinforcement Learning (SDDRRL) architecture to construct a real-time optimal portfolio. The algorithm captures the up-to-date market conditions and rebalances the portfolio accordingly. Under this general vision, Sharpe ratio, which is one of the most widely accepted measures of risk-adjusted returns, has been used as a performance metric. Additionally, the performance of most machine learning algorithms highly depends on their hyperparameter settings. Therefore, we equipped SDDRRL with the ability to find the best possible architecture topology using an automated Gaussian Process (GP) with Expected Improvement (EI) as an acquisition function. This allows us to select the best architectures that maximizes the total return while respecting the cardinality constraints. Finally, our system was trained and tested in an online manner for 20 successive rounds with data for ten selected stocks from different sectors of the S&P 500 from January 1st, 2013 to July 31st, 2017. The experiments reveal that the proposed SDDRRL achieves superior performance compared to three benchmarks: the rolling horizon Mean-Variance Optimization (MVO) model, the rolling horizon risk parity model, and the uniform buy-and-hold (UBAH) index.},
+   author = {Amine Mohamed Aboussalah and Chi Guhn Lee},
+   doi = {10.1016/j.eswa.2019.112891},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Continuous control with Stacked Deep Dynamic Recurrent Reinforcement Learning for portfolio optimization},
+   volume = {140},
+   year = {2020},
+}
+
+
+@article{yue2022applications,
+   abstract = {Whether for institutional investors or individual investors, there is an urgent need to explore autonomous models that can adapt to the non-stationary, low-signal-to-noise markets. This research aims to explore the two unique challenges in quantitative portfolio management: (1) the difficulty of representation and (2) the complexity of environments. In this research, we suggest a Markov decision process model-based deep reinforcement learning model including deep learning methods to perform strategy optimization, called SwanTrader. To achieve better decisions of the portfolio-management process from two different perspectives, i.e., the temporal patterns analysis and robustness information capture based on market observations, we suggest an optimal deep learning network in our model that incorporates a stacked sparse denoising autoencoder (SSDAE) and a long-short-term-memory-based autoencoder (LSTM-AE). The findings in times of COVID-19 show that the suggested model using two deep learning models gives better results with an alluring performance profile in comparison with four standard machine learning models and two state-of-the-art reinforcement learning models in terms of Sharpe ratio, Calmar ratio, and beta and alpha values. Furthermore, we analyzed which deep learning models and reward functions were most effective in optimizing the agent's management decisions. The results of our suggested model for investors can assist in reducing the risk of investment loss as well as help them to make sound decisions.},
+   author = {Han Yue and Jiapeng Liu and Qin Zhang},
+   doi = {10.3390/systems10050146},
+   issn = {20798954},
+   issue = {5},
+   journal = {Systems},
+   title = {Applications of Markov Decision Process Model and Deep Learning in Quantitative Portfolio Management during the COVID-19 Pandemic},
+   volume = {10},
+   year = {2022},
+}
+
+
+@article{jang2023deep,
+   abstract = {With artificial intelligence and data quality development, portfolio optimization has improved rapidly. Traditionally, researchers in the financial market have utilized the modern portfolio theory for portfolio optimization; however, with the recent development of artificial intelligence, attempts to optimize portfolios with reinforcement learning are increasing. Many studies have developed reinforcement learning and deep learning algorithms and conducted portfolio optimization research. However, in reality, thus far, the securities industry thus has used the modern portfolio theory, which is sufficiently valuable. Nevertheless, to the best of our knowledge, there has yet to be an attempt to combine modern portfolio theory and reinforcement learning. To bridge this gap in the literature, we propose a novel deep reinforcement learning approach that combines the modern portfolio theory and a deep learning approach. As far as we know, we are the first to combine recent deep learning technology and traditional financial theory. Specifically, we solved the multimodal problem through the Tucker decomposition of a model with the input of technical analysis and stock return covariates. The results show that the proposed method outperforms state-of-the-art algorithms regarding the Sharpe ratio, annualized return, and maximum drawdown. In addition, the proposed method dynamically changes the weight according to the market trend, unlike other state-of-the-art algorithms.},
+   author = {Junkyu Jang and NohYoon Seong},
+   doi = {10.1016/j.eswa.2023.119556},
+   issn = {09574174},
+   journal = {Expert Systems with Applications},
+   title = {Deep reinforcement learning for stock portfolio optimization by connecting with modern portfolio theory},
+   volume = {218},
+   year = {2023},
+}
+
+
+@article{weng2020portfolio,
+   abstract = {As a hot topic in the financial engineering, the portfolio optimization aims to increase investors' wealth. In this paper, a portfolio management system based on deep-reinforcement learning is proposed. In contrast to inflexible traditional methods, the proposed system achieves a better trading strategy through Reinforcement learning. The reward signal of Reinforcement learning is updated by action weights from Deep learning networks. Low price, high price and close price constitute the inputs, but the importance of these three features is quite different. Traditional methods and the classical CNN can't deal with these three features separately, but in our method, a designed depth convolution is proposed to deal with these three features separately. In a virtual currency market, the price rise only occurs in a flash. Traditional methods and CNN networks can't accurately judge the critical time. In order to solve this problem, a three-dimensional attention gating network is proposed and it gives higher weights on rising moments and assets. Under different market conditions, the proposed system achieves more substantial returns and greatly improves the Sharpe ratios. The short-term risk index of the proposed system is lower than those of the traditional algorithms. Simulation results show that the traditional algorithms (including Best, CRP, PAMR, CWMR and CNN) are unable to perform as well as our approach.},
+   author = {Liguo Weng and Xudong Sun and Min Xia and Jia Liu and Yiqing Xu},
+   doi = {10.1016/j.neucom.2020.04.004},
+   issn = {18728286},
+   journal = {Neurocomputing},
+   title = {Portfolio trading system of digital currencies: A deep reinforcement learning with multidimensional attention gating mechanism},
+   volume = {402},
+   year = {2020},
+}
+
+
+@article{yang2022selective,
+   abstract = {Existing methods in portfolio management deterministically produce an optimal portfolio. However, according to modern portfolio theory, there exists a trade-off between a portfolio’s expected returns and risks. Therefore, the optimal portfolio does not exist definitively, but several exist, and using only one deterministic portfolio is disadvantageous for risk management. We proposed Dirichlet Distribution Trader (DDT), an algorithm that calculates multiple optimal portfolios by taking Dirichlet Distribution as a policy. The DDT algorithm makes several optimal portfolios according to risk levels. In addition, by obtaining the pi value from the distribution and applying importance sampling to off-policy learning, the sample is used efficiently. Furthermore, the architecture of our model is scalable because the feed-forward of information between portfolio stocks occurs independently. This means that even if untrained stocks are added to the portfolio, the optimal weight can be adjusted. We also conducted three experiments. In the scalability experiment, it was shown that the DDT extended model, which is trained with only three stocks, had little difference in performance from the DDT model that learned all the stocks in the portfolio. In an experiment comparing the off-policy algorithm and the on-policy algorithm, it was shown that the off-policy algorithm had good performance regardless of the stock price trend. In an experiment comparing investment results according to risk level, it was shown that a higher return or a better Sharpe ratio could be obtained through risk control.},
+   author = {Hyunjun Yang and Hyeonjun Park and Kyungjae Lee},
+   doi = {10.3390/axioms11120664},
+   issn = {20751680},
+   issue = {12},
+   journal = {Axioms},
+   title = {A Selective Portfolio Management Algorithm with Off-Policy Reinforcement Learning Using Dirichlet Distribution},
+   volume = {11},
+   year = {2022},
+}
+
+
+@inproceedings{daiya2021stock,
+   abstract = {This paper introduces a novel high performing multimodal deep learning architecture(Trans-DiCE) for stock movement prediction utilizing financial indicators and news data. Our multimodal architecture uses dilated causal convolutions and Transformer blocks for feature extraction from both data sources. The masked multi-head self-attention layers inside Transformers preserve causality and improve features based on contextual information. To integrate the derived multimodal model representations, we use stacked Transformer blocks. We show empirically that our model performs best compared to state-of-the-art baseline methods for S&P 500 index and individual stock prediction and provides a significant 3.45\% improvement from 74.29\% to 77.74\%. We also demonstrate our model's utility for the Portfolio Management task. We propose a Deep Reinforcement Learning Framework utilizing Trans-DiCE for Portfolio Optimization, providing noticeable gain on Sharpe Ratio and 7.9\% increase in Portfolio Value over the existing state of the art Models.},
+   author = {Divyanshu Daiya and Che Lin},
+   doi = {10.1109/ICASSP39728.2021.9414893},
+   issn = {15206149},
+   journal = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+   title = {Stock movement prediction and portfolio management via multimodal learning with transformer},
+   volume = {2021-June},
+   year = {2021},
+}
+
+
+@article{min2021robust,
+   abstract = {Conservatism is the notorious problem of the worst-case robust portfolio optimization, and this issue has raised broad discussion in academia. To this end, we propose the hybrid robust portfolio models under ellipsoidal uncertainty sets in this paper, where both the best-case and the worst-case counterparts are involved. In the suggested models, we introduce a trade-off parameter to adjust the portfolio optimism level. Machine learning algorithms including Long Short-Term Memory (LSTM) and eXtreme Gradient Boosting (XGBoost) are used to evaluate the potential market movements and provide forecasting information to generate the hyperparameter for modeling. Additionally, we develop a clustering-based algorithm for properly constructing joint ellipsoidal uncertainty sets to reduce conservatism further. In the modeling phase, we design the hybrid portfolios based on variance (HRMV) and value at risk (VaR) and prove the equivalent relationship between the hybrid robust mean-VaR model (HRMVaR) and the hybrid robust mean-CVaR (conditional value at risk) according to the existing research. The US 12 industry portfolio data set retrieved from Kenneth R. French is employed for the in-sample and out-of-sample numerical experiments. The experimental results demonstrate the effectiveness and robustness of the proposed portfolios, where HRMV models have better Sharpe ratios and Calmar ratios than the corresponding nominal mean-variance model, and HRMVaR models outperform the baseline VaR-based portfolios in terms of returns. Sensitivity analysis supports the superiority of the joint ellipsoidal uncertainty set Uδ2, where the proposed portfolios constrained with Uδ2 show stable risk characteristics.},
+   author = {Liangyu Min and Jiawei Dong and Jiangwei Liu and Xiaomin Gong},
+   doi = {10.1016/j.asoc.2021.107948},
+   issn = {15684946},
+   journal = {Applied Soft Computing},
+   title = {Robust mean-risk portfolio optimization using machine learning-based trade-off parameter},
+   volume = {113},
+   year = {2021},
+}
+
+
+@inproceedings{chaweewanchon2022portfolio,
+   abstract = {Portfolio optimization is one of the most intriguing topics in the field of finance. The purpose is to maximize return while minimizing risk. In this paper, we investigate the experimental performance of the classical Markowitz portfolio optimization with and without rebalancing based on the minimum risk in terms of portfolio return, portfolio risk, and Sharpe ratio, and compare the results to the experiments with transaction cost. The importance of this work stems from the fact that, while the MV model is extensively utilized, its use in the Thai stock market is limited. This analysis uses the historical close prices of 50 stocks from the Stock Exchange of Thailand 50 Index (SET50) between January 2018 and December 2021. The experiment showed that a portfolio with a rebalancing approach outperforms a portfolio without a rebalancing strategy.},
+   author = {Apichat Chaweewanchon and Rujira Chaysiri},
+   doi = {10.1109/iSAI-NLP56921.2022.9960260},
+   journal = {International Joint Conference 2022 - 17th International Joint Symposium on Artificial Intelligence and Natural Language Processing, iSAI-NLP 2022 and 3rd International Conference on Artificial Intelligence and Internet of Things, AIoT 2022},
+   title = {Portfolio Optimization and Rebalancing with Transaction Cost: A Case Study in the Stock Exchange of Thailand},
+   year = {2022},
+}
+
+
+@article{winters1960ewm,
+   abstract = {The growing use of computers for mechanized inventory control and production planning has brought with it the need for explicit forecasts of sales and usage for individual products and materials. These forecasts must be made on a routine basis for thousands of products, so that they must be made quickly, and, both in terms of computing time and information storage, cheaply; they should be responsive to changing conditions. The paper presents a method of forecasting sales which has these desirable characteristics, and which in terms of ability to forecast compares favorably with other, more traditional methods. Several models of the exponential forecasting system are presented, along with several examples of application.},
+   author = {Peter R. Winters},
+   doi = {10.1287/mnsc.6.3.324},
+   issn = {0025-1909},
+   issue = {3},
+   journal = {Management Science},
+   title = {Forecasting Sales by Exponentially Weighted Moving Averages},
+   volume = {6},
+   year = {1960},
+}
+
+
+@article{bollerslev1986generalized,
+   abstract = {A natural generalization of the ARCH (Autoregressive Conditional Heteroskedastic) process introduced in Engle (1982) to allow for past conditional variances in the current conditional variance equation is proposed. Stationarity conditions and autocorrelation structure for this new class of parametric models are derived. Maximum likelihood estimation and testing are also considered. Finally an empirical example relating to the uncertainty of the inflation rate is presented. © 1986.},
+   author = {Tim Bollerslev},
+   doi = {10.1016/0304-4076(86)90063-1},
+   issn = {03044076},
+   issue = {3},
+   journal = {Journal of Econometrics},
+   title = {Generalized autoregressive conditional heteroskedasticity},
+   volume = {31},
+   year = {1986},
+}
+
+
+
+@inproceedings{uryasev2000conditional,
+   abstract = {A new approach for the simultaneous calculation of Value-at-Risk (VaR) and optimization of Conditional Value-at-Risk (CVaR) for a broad class of problems is presented. It is shown that CVaR can be efficiently minimized using linear programming (LP) techniques. Although, formally, the method minimizes only CVaR, it also lowers VaR.},
+   author = {Stanislav Uryasev},
+   doi = {10.1109/cifer.2000.844598},
+   journal = {IEEE/IAFE Conference on Computational Intelligence for Financial Engineering, Proceedings (CIFEr)},
+   title = {Conditional Value-at-Risk: optimization algorithms and applications},
+   year = {2000},
+}
+
+
+@article{rosenblatt1958perceptron,
+   abstract = {To answer the questions of how information about the physical world is sensed, in what form is information remembered, and how does information retained in memory influence recognition and behavior, a theory is developed for a hypothetical nervous system called a perceptron. The theory serves as a bridge between biophysics and psychology. It is possible to predict learning curves from neurological variables and vice versa. The quantitative statistical approach is fruitful in the understanding of the organization of cognitive systems. 18 references. (PsycINFO Database Record (c) 2006 APA, all rights reserved). © 1958 American Psychological Association.},
+   author = {F. Rosenblatt},
+   doi = {10.1037/h0042519},
+   issn = {0033295X},
+   issue = {6},
+   journal = {Psychological Review},
+   title = {The perceptron: A probabilistic model for information storage and organization in the brain},
+   volume = {65},
+   year = {1958},
+}
+
+
+@inproceedings{cho2014learning,
+   abstract = {In this paper, we propose a novel neural network model called RNN Encoder- Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+   author = {Kyunghyun Cho and Bart Van Merriënboer and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
+   doi = {10.3115/v1/d14-1179},
+   journal = {EMNLP 2014 - 2014 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference},
+   title = {Learning phrase representations using RNN encoder-decoder for statistical machine translation},
+   year = {2014},
+}
+
+
+@inproceedings{bahdanau2015neural,
+   abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encode a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+   author = {Dzmitry Bahdanau and Kyung Hyun Cho and Yoshua Bengio},
+   journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   title = {Neural machine translation by jointly learning to align and translate},
+   year = {2015},
+}
+
+
+@inproceedings{luong2015effective,
+   abstract = {An attentional mechanism has lately been used to improve neural machine translation (NMT) by selectively focusing on parts of the source sentence during translation. However, there has been little work exploring useful architectures for attention-based NMT. This paper examines two simple and effective classes of attentional mechanism: a global approach which always attends to all source words and a local one that only looks at a subset of source words at a time. We demonstrate the effectiveness of both approaches on the WMT translation tasks between English and German in both directions. With local attention, we achieve a significant gain of 5.0 BLEU points over non-attentional systems that already incorporate known techniques such as dropout. Our ensemble model using different attention architectures yields a new state-of-the-art result in the WMT'15 English to German translation task with 25.9 BLEU points, an improvement of 1.0 BLEU points over the existing best system backed by NMT and an n-gram reranker.},
+   author = {Minh Thang Luong and Hieu Pham and Christopher D. Manning},
+   doi = {10.18653/v1/d15-1166},
+   journal = {Conference Proceedings - EMNLP 2015: Conference on Empirical Methods in Natural Language Processing},
+   title = {Effective approaches to attention-based neural machine translation},
+   year = {2015},
+}
+
+
+@inproceedings{vaswani2017attention,
+   abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.},
+   author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Łukasz Kaiser and Illia Polosukhin},
+   issn = {10495258},
+   journal = {Advances in Neural Information Processing Systems},
+   title = {Attention is all you need},
+   volume = {2017-December},
+   year = {2017},
+}
+
+@article{mansini2014twenty,
    abstract = {Markowitz formulated the portfolio optimization problem through two criteria: the expected return and the risk, as a measure of the variability of the return. The classical Markowitz model uses the variance as the risk measure and is a quadratic programming problem. Many attempts have been made to linearize the portfolio optimization problem. Several different risk measures have been proposed which are computationally attractive as (for discrete random variables) they give rise to linear programming (LP) problems. About twenty years ago, the mean absolute deviation (MAD) model drew a lot of attention resulting in much research and speeding up development of other LP models. Further, the LP models based on the conditional value at risk (CVaR) have a great impact on new developments in portfolio optimization during the first decade of the 21st century. The LP solvability may become relevant for real-life decisions when portfolios have to meet side constraints and take into account transaction costs or when large size instances have to be solved. In this paper we review the variety of LP solvable portfolio optimization models presented in the literature, the real features that have been modeled and the solution approaches to the resulting models, in most of the cases mixed integer linear programming (MILP) models. We also discuss the impact of the inclusion of the real features. © 2013 Elsevier B.V. All rights reserved.},
    author = {Renata Mansini and Wlodzimierz Ogryczak and M. Grazia Speranza},
    doi = {10.1016/j.ejor.2013.08.035},
    issn = {03772217},
    issue = {2},
    journal = {European Journal of Operational Research},
+   pages = {518-535},
    title = {Twenty years of linear programming based portfolio optimization},
    volume = {234},
    year = {2014},
 }
 
-@article{Markowitz1952,
-   abstract = {JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about JSTOR, please contact support@jstor.org. . The Econometric Society is collaborating with JSTOR to digitize, preserve and extend access to Econometrica. The purpose of this paper is to present the likelihood methods for the analysis of cointegration in VAR models with Gaussian errors, seasonal dummies, and constant terms. We discuss likelihood ratio tests of cointegration rank and find the asymptotic distribution of the test statistics. We characterize the maximum likelihood estimator of the cointegrating relations and formulate tests of structural hypotheses about these relations. We show that the asymptotic distribution of the maximum likelihood estimator is mixed Gaussian. Once a certain eigenvalue problem is solved and the eigenvectors and eigenvalues calculated, one can conduct inference on the cointegrating rank using some nonstandard distributions, and test hypotheses about cointegrating relations using the x2 distribution.},
-   author = {H. Markowitz},
+
+@article{engle1982autoregressive,
+   abstract = {Traditional econometric models assume a constant one-period forecast variance. To generalize this implausible assumption, a new class of stochastic processes called autore-gressive conditional heteroscedastic (ARCH) processes are introduced in this paper. These are mean zero, serially uncorrelated processes with nonconstant variances conditional on the past, but constant unconditional variances. For such processes, the recent past gives information about the one-period forecast variance. A regression model is then introduced with disturbances following an ARCH process. Maximum likelihood estimators are described and a simple scoring iteration formulated. Ordinary least squares maintains its optimality properties in this set-up, but maximum likelihood is more efficient. The relative efficiency is calculated and can be infinite. To test whether the disturbances follow an ARCH process, the Lagrange multiplier procedure is employed. The test is based simply on the autocorrelation of the squared OLS residuals. This model is used to estimate the means and variances of inflation in the U.K. The ARCH effect is found to be significant and the estimated variances increase substantially during the chaotic seventies.},
+   author = {Robert F. Engle},
+   doi = {10.2307/1912773},
+   issn = {00129682},
+   issue = {4},
+   journal = {Econometrica},
+   title = {Autoregressive Conditional Heteroscedasticity with Estimates of the Variance of United Kingdom Inflation},
+   volume = {50},
+   year = {1982},
+}
+
+
+@book{mansini2015linear,
+   abstract = {This book presents solutions to the general problem of single period portfolio optimization. It introduces different linear models, arising from different performance measures, and the mixed integer linear models resulting from the introduction of real features. Other linear models, such as models for portfolio rebalancing and index tracking, are also covered. The book discusses computational issues and provides a theoretical framework, including the concepts of risk-averse preferences, stochastic dominance and coherent risk measures. The material is presented in a style that requires no background in finance or in portfolio optimization; some experience in linear and mixed integer models, however, is required. The book is thoroughly didactic, supplementing the concepts with comments and illustrative examples.},
+   author = {Renata Mansini and Włodzimierz Ogryczak and M. Grazia Speranza},
+   doi = {10.1007/978-3-319-18482-1},
+   journal = {Linear and Mixed Integer Programming for Portfolio Optimization},
+   note = {gerenral notes<br/>},
+   title = {Linear and mixed integer programming for portfolio optimization},
+   year = {2015},
+}
+
+
+@article{angelelli2008comparison,
+   abstract = {In this paper we consider two different mixed integer linear programming models for solving the single period portfolio selection problem when integer stock units, transaction costs and a cardinality constraint are taken into account. The first model has been formulated by using the maximization of the worst conditional expectation as objective function. The second model is based on the maximization of the safety measure corresponding to the mean absolute deviation. Extensive computational results are provided to compare the financial characteristics of the optimal portfolios selected by the two models on real data from European stock exchange markets. Some simple heuristics are also introduced that provide efficient and effective solutions when an optimal integer solution cannot be found in a reasonable amount of time. © 2007 Elsevier B.V. All rights reserved.},
+   author = {Enrico Angelelli and Renata Mansini and M. Grazia Speranza},
+   doi = {10.1016/j.jbankfin.2006.07.015},
+   issn = {03784266},
+   issue = {7},
+   journal = {Journal of Banking and Finance},
+   title = {A comparison of MAD and CVaR models with real features},
+   volume = {32},
+   year = {2008},
+}
+
+
+@article{mansini1999heuristic,
+   abstract = {The problem of selecting a portfolio has been largely faced in terms of minimizing the risk, given the return. While the complexity of the quadratic programming model due to Markowitz has been overcome by the recent progress in algorithmic research, the introduction of linear risk functions has given rise to the interest in solving portfolio selection problems with real constraints. In this paper we deal with the portfolio problem with minimum transaction lots. We show that in this case the problem of finding a feasible solution is, independently of the risk function, NP-complete. Moreover, given the mixed integer linear model, new heuristics are proposed which starting from the solution of the relaxed problem allow to find a solution close to the optimal one. The algorithms are based on the construction of mixed integer subproblems (using only a part of the securities available) formulated using the information obtained from the solution of the relaxed problem. The heuristics have been tested with respect to two disjoint time periods, using real data from the Milan Stock Exchange.},
+   author = {Renata Mansini and Maria Grazia Speranza},
+   doi = {10.1016/S0377-2217(98)00252-5},
+   issn = {03772217},
+   issue = {2},
+   journal = {European Journal of Operational Research},
+   title = {Heuristic algorithms for the portfolio selection problem with minimum transaction lots},
+   volume = {114},
+   year = {1999},
+}
+
+
+@article{angelelli2012kernel,
+   abstract = {In this paper we propose a new heuristic framework, called Kernel Search, to solve the complex problem of portfolio selection with real features. The method is based on the identification of a restricted set of promising securities (kernel) and on the exact solution of the MILP problem on this set. The continuous relaxation of the problem solved on the complete set of available securities is used to identify the initial kernel and a sequence of integer problems are then solved to identify further securities to insert into the kernel. We analyze the behavior of several heuristic algorithms as implementations of the Kernel Search framework for the solution of the analyzed problem. The proposed heuristics are very effective and quite efficient. The Kernel Search has the advantage of being general and thus easily applicable to a variety of combinatorial problems. © Springer Science+Business Media, LLC 2010.},
+   author = {Enrico Angelelli and Renata Mansini and M. Grazia Speranza},
+   doi = {10.1007/s10589-010-9326-6},
+   issn = {15732894},
    issue = {1},
-   journal = {The Journal of Finance},
-   title = {Portfolio Selection Harry Markowitz},
-   volume = {7},
-   year = {1952},
+   journal = {Computational Optimization and Applications},
+   title = {Kernel Search: A new heuristic framework for portfolio selection},
+   volume = {51},
+   year = {2012},
 }
 
 
-@article{Sharpe1964,
-   author = {William F. Sharpe},
-   doi = {10.1111/j.1540-6261.1964.tb02865.x},
-   issn = {15406261},
-   issue = {3},
-   journal = {The Journal of Finance},
-   title = {CAPITAL ASSET PRICES: A THEORY OF MARKET EQUILIBRIUM UNDER CONDITIONS OF RISK},
-   volume = {19},
-   year = {1964},
+@article{kraft1988sqlsp,
+   abstract = {The algorithmic principles of sequential quadratic programming (SQP) are summarized. The basic algorithms of QP (primal, primal /dual and dual approach) are given. The parameters of the software package are described. (ESA)},
+   author = {Dieter Kraft},
+   issue = {28},
+   journal = {Technical Report DFVLR-FB},
+   title = {A Software Package for Sequential Quadratic Programming},
+   volume = {88},
+   year = {1988},
 }
 
-@article{Vukovic2020,
-   abstract = {This study analyzes a neural networks model that forecast Sharpe ratio. The developed neural networks model is successful to predict the position of the investor who will be rewarded with extra risk premium on debt securities for the same level of portfolio risk or a greater risk premium than proportionate growth risk. The main purpose of the study is to predict highest Sharpe ratio in the future. Study grouped the data on yields of debt instruments in periods before, during and after world crisis. Results shows that neural networks is successful in forecasting nonlinear time lag series with accuracy of 82% on test cases for the prediction of Sharpe-ratio dynamics in future and investor‘s portfolio position.},
-   author = {Darko Vukovic and Yaroslav Vyklyuk and Natalia Matsiuk and Moinak Maiti},
-   doi = {10.1016/j.physa.2019.123331},
-   issn = {03784371},
-   journal = {Physica A: Statistical Mechanics and its Applications},
-   title = {Neural network forecasting in prediction Sharpe ratio: Evidence from EU debt market},
-   volume = {542},
-   year = {2020},
+
+@article{li2018hyperband,
+   abstract = {Performance of machine learning algorithms depends critically on identifying a good set of hyperparameters. While recent approaches use Bayesian optimization to adaptively select configurations, we focus on speeding up random search through adaptive resource allocation and early-stopping. We formulate hyperparameter optimization as a pure-exploration non-stochastic infinite-armed bandit problem where a predefined resource like iterations, data samples, or features is allocated to randomly sampled configurations. We introduce a novel algorithm, Hyperband, for this framework and analyze its theoretical properties, providing several desirable guarantees. Furthermore, we compare Hyperband with popular Bayesian optimization methods on a suite of hyperparameter optimization problems. We observe that Hyperband can provide over an order-of-magnitude speedup over our competitor set on a variety of deep-learning and kernel-based learning problems.},
+   author = {Lisha Li and Kevin Jamieson and Giulia DeSalvo and Afshin Rostamizadeh and Ameet Talwalkar},
+   issn = {15337928},
+   journal = {Journal of Machine Learning Research},
+   title = {Hyperband: A novel bandit-based approach to hyperparameter optimization},
+   volume = {18},
+   year = {2018},
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Metodologia %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+@article{bertrand2002operations,
+   abstract = {Gives an overview of quantitative model-based research in operations management, focusing on research methodology. Distinguishes between empirical and axiomatic research, and furthermore between descriptive and normative research. Presents guidelines for doing quantitative model-based research in operations management. In constructing arguments, builds on learnings from operations research and operations management research from the past decades and on research from a selected number of other academic disciplines. Concludes that the methodology of quantitative model-driven empirical research offers a great opportunity for operations management researchers to further advance theory.},
+   author = {J. Will M. Bertrand and Jan C. Fransoo},
+   doi = {10.1108/01443570210414338},
+   issn = {01443577},
+   issue = {2},
+   journal = {International Journal of Operations and Production Management},
+   pages = {241-264},
+   title = {Operations management research methodologies using quantitative modeling},
+   volume = {22},
+   year = {2002},
+}
+
+
+@online{bcb2023selic,
+   author = {Banco Central do Brasil},
+   title = {Taxa Selic},
+   url = {https://www.bcb.gov.br/controleinflacao/taxaselic},
+   year = {2023},
+}
+
+
+@article{hedengren2014nonlinear,
+   abstract = {This paper describes nonlinear methods in model building, dynamic data reconciliation, and dynamic optimization that are inspired by researchers and motivated by industrial applications. A new formulation of the ℓ1-norm objective with a dead-band for estimation and control is presented. The dead-band in the objective is desirable for noise rejection, minimizing unnecessary parameter adjustments and movement of manipulated variables. As a motivating example, a small and well-known nonlinear multivariable level control problem is detailed that has a number of common characteristics to larger controllers seen in practice. The methods are also demonstrated on larger problems to reveal algorithmic scaling with sparse methods. The implementation details reveal capabilities of employing nonlinear methods in dynamic applications with example code in both Matlab and Python programming languages.},
+   author = {John D. Hedengren and Reza Asgharzadeh Shishavan and Kody M. Powell and Thomas F. Edgar},
+   doi = {10.1016/j.compchemeng.2014.04.013},
+   issn = {00981354},
+   journal = {Computers and Chemical Engineering},
+   title = {Nonlinear modeling, estimation and predictive control in APMonitor},
+   volume = {70},
+   year = {2014},
+}
+
+
+@article{ferguson1973dirichlet,
+   author = {Thomas S. Ferguson},
+   issue = {2},
+   journal = {The Annals of Statistics},
+   title = {A Bayesian Analysis of Some Nonparametric Problems},
+   volume = {1},
+   year = {1973},
+}
+
+
+@online{Cerqueira2023,
+   author = {Vitor Cerqueira},
+   title = {9 Techniques for Cross-validating Time Series Data | by Vitor Cerqueira | Medium},
+   url = {https://vcerq.medium.com/9-techniques-for-cross-validating-time-series-data-7828fc3f781d},
+   year = {2023},
 }
 

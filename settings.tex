@@ -2,23 +2,26 @@
 \usepackage{setspace} % line spacing
 \usepackage{times} % font times new roman
 \usepackage[bottom=2cm,top=3cm,left=3cm,right=2cm]{geometry} % margins ABNT
-\usepackage{ragged2e} % justified text
+\usepackage[document]{ragged2e} % justified text
+\usepackage{amsmath,amssymb} % math symbols
 \usepackage{graphicx} % figures
 \usepackage{float} % position of contents right after text
 \usepackage{subcaption}  % subcaptions for figures, tables etc
 \usepackage{caption} % captions for figures, tables etc
 \usepackage[hidelinks]{hyperref} % hyperlinks for references, figures and tables without highlight box
 \usepackage{multirow} % multirow tables
+\usepackage{algorithm,algcompatible} % algorithms
 \usepackage[automake,nonumberlist,acronym]{glossaries} % glossary and acronyms list
-\usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-full-initials=no]{abntex2cite}
+\usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-full-initials=no,abnt-doi=doi]{abntex2cite}
 \citebrackets() % parenthesis brackets for citations
 
 \makeglossaries % create glossary and acronyms list
 
 \setlength\parindent{0pt} % no indentation
+\newcommand\ipar{\par\noindent\hspace{1.5cm}} % paragraphs indentation
 
 \setcounter{secnumdepth}{5} % section numbering depth
-\setcounter{tocdepth}{5} % table of contents depth
+\setcounter{tocdepth}{3} % table of contents depth
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]} % paragraph margin adjustment
 \let\endchangemargin=\endlist % paragraph margin adjustment
@@ -69,3 +72,80 @@
 \dottedcontents{paragraph}[2cm]{\itshape}{2cm}{0.5pc}
 \dottedcontents{subparagraph}[2cm]{}{2cm}{0.5pc}
 \renewcommand{\contentsname}{\centering Contents}
+
+
+
+\usepackage{listingsutf8}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{empheq} 
+
+\newcommand{\boxedeq}[2]{\begin{empheq}[box={\fboxsep=6pt\fbox}]{align}\notag#2\end{empheq}}
+
+\lstdefinestyle{code_style}{
+    inputencoding=utf8/latin1,
+    extendedchars=true,
+    breaklines=true,
+    backgroundcolor=\color{white},   
+    commentstyle=\color{gray},
+    keywordstyle=\color{Green},
+    numberstyle=\tiny\color{Gray},
+    stringstyle=\color{Black},
+    basicstyle=\ttfamily\footnotesize\color{Blue},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame = shadowbox,
+    rulecolor=\color{Black},
+    literate=%
+    {á}{{\'a}}1
+    {í}{{\'i}}1
+    {é}{{\'e}}1
+    {ý}{{\'y}}1
+    {ú}{{\'u}}1
+    {ó}{{\'o}}1
+    {ě}{{\v{e}}}1
+    {š}{{\v{s}}}1
+    {č}{{\v{c}}}1
+    {ř}{{\v{r}}}1
+    {ž}{{\v{z}}}1
+    {ď}{{\v{d}}}1
+    {ť}{{\v{t}}}1
+    {ň}{{\v{n}}}1                
+    {ů}{{\r{u}}}1
+    {Á}{{\'A}}1
+    {Í}{{\'I}}1
+    {É}{{\'E}}1
+    {Ý}{{\'Y}}1
+    {Ú}{{\'U}}1
+    {Ó}{{\'O}}1
+    {Ě}{{\v{E}}}1
+    {Š}{{\v{S}}}1
+    {Č}{{\v{C}}}1
+    {Ř}{{\v{R}}}1
+    {Ž}{{\v{Z}}}1
+    {Ď}{{\v{D}}}1
+    {Ť}{{\v{T}}}1
+    {Ň}{{\v{N}}}1                
+    {Ů}{{\r{U}}}1  
+    {á}{{\'a}}1
+    {à}{{\`a}}1
+    {ã}{{\~a}}1
+    {é}{{\'e}}1
+    {ê}{{\^e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {õ}{{\~o}}1
+    {ú}{{\'u}}1
+    {ü}{{\"u}}1
+    {ç}{{\c{c}}}1  
+}
+\renewcommand{\lstlistingname}{Código} % Listing->Code
+\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
+\lstset{style=code_style}

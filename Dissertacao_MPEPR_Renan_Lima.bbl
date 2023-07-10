@@ -1,0 +1,520 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Aboussalah e Lee 2020]{aboussalah2020continous}
+\abntrefinfo{Aboussalah e Lee}{ABOUSSALAH; LEE}{2020}
+{ABOUSSALAH, A.~M.; LEE, C.~G. Continuous control with stacked deep dynamic
+  recurrent reinforcement learning for portfolio optimization.
+\textbf{Expert Systems with Applications}, v.~140, 2020.
+ISSN 09574174.}
+
+\bibitem[Aithal et al. 2023]{aithal2023real}
+\abntrefinfo{Aithal et al.}{AITHAL et al.}{2023}
+{AITHAL, P.~K. et al. Real-time portfolio management system utilizing machine
+  learning techniques.
+\textbf{IEEE Access}, Institute of Electrical and Electronics Engineers Inc.,
+  2023.
+ISSN 21693536.}
+
+\bibitem[Almahdi e Yang 2017]{almahdi2017adaptive}
+\abntrefinfo{Almahdi e Yang}{ALMAHDI; YANG}{2017}
+{ALMAHDI, S.; YANG, S.~Y. An adaptive portfolio trading system: A risk-return
+  portfolio optimization using recurrent reinforcement learning with expected
+  maximum drawdown.
+\textbf{Expert Systems with Applications}, v.~87, 2017.
+ISSN 09574174.}
+
+\bibitem[Angelelli, Mansini e Speranza 2008]{angelelli2008comparison}
+\abntrefinfo{Angelelli, Mansini e Speranza}{ANGELELLI; MANSINI; SPERANZA}{2008}
+{ANGELELLI, E.; MANSINI, R.; SPERANZA, M.~G. A comparison of mad and cvar
+  models with real features.
+\textbf{Journal of Banking and Finance}, v.~32, 2008.
+ISSN 03784266.}
+
+\bibitem[Angelelli, Mansini e Speranza 2012]{angelelli2012kernel}
+\abntrefinfo{Angelelli, Mansini e Speranza}{ANGELELLI; MANSINI; SPERANZA}{2012}
+{\underline{\ \ \ \ \ \ \ \ }. Kernel search: A new heuristic framework for
+  portfolio selection.
+\textbf{Computational Optimization and Applications}, v.~51, 2012.
+ISSN 15732894.}
+
+\bibitem[Aria e Cuccurullo 2017]{aria2017bibliometrix}
+\abntrefinfo{Aria e Cuccurullo}{ARIA; CUCCURULLO}{2017}
+{ARIA, M.; CUCCURULLO, C. bibliometrix: An r-tool for comprehensive science
+  mapping analysis.
+\textbf{Journal of Informetrics}, v.~11, 2017.
+ISSN 18755879.}
+
+\bibitem[Artzner et al. 1999]{artzner1999coherent}
+\abntrefinfo{Artzner et al.}{ARTZNER et al.}{1999}
+{ARTZNER, P. et al. Coherent measures of risk.
+\textbf{Mathematical Finance}, v.~9, 1999.
+ISSN 09601627.}
+
+\bibitem[B3 2023]{B32023}
+\abntrefinfo{B3}{B3}{2023}
+{B3. \textbf{Ibovespa B3}. 2023.
+Dispon{\'\i}vel em:
+  \url{https://www.b3.com.br/pt\_br/market-data-e-indices/indices/indices-amplos/ibovespa.htm}.}
+
+\bibitem[Bahdanau, Cho e Bengio 2015]{bahdanau2015neural}
+\abntrefinfo{Bahdanau, Cho e Bengio}{BAHDANAU; CHO; BENGIO}{2015}
+{BAHDANAU, D.; CHO, K.~H.; BENGIO, Y. Neural machine translation by jointly
+  learning to align and translate. In:  . [S.l.: s.n.], 2015.}
+
+\bibitem[Bertrand e Fransoo 2002]{bertrand2002operations}
+\abntrefinfo{Bertrand e Fransoo}{BERTRAND; FRANSOO}{2002}
+{BERTRAND, J. W.~M.; FRANSOO, J.~C. Operations management research
+  methodologies using quantitative modeling.
+\textbf{International Journal of Operations and Production Management}, v.~22,
+  p. 241--264, 2002.
+ISSN 01443577.}
+
+\bibitem[Bollerslev 1986]{bollerslev1986generalized}
+\abntrefinfo{Bollerslev}{BOLLERSLEV}{1986}
+{BOLLERSLEV, T. Generalized autoregressive conditional heteroskedasticity.
+\textbf{Journal of Econometrics}, v.~31, 1986.
+ISSN 03044076.}
+
+\bibitem[Brasil 2023]{bcb2023selic}
+\abntrefinfo{Brasil}{BRASIL}{2023}
+{BRASIL, B.~C. do. \textbf{Taxa Selic}. 2023.
+Dispon{\'\i}vel em: \url{https://www.bcb.gov.br/controleinflacao/taxaselic}.}
+
+\bibitem[Cao, Cao e Nguyen 2020]{cao2020delafo}
+\abntrefinfo{Cao, Cao e Nguyen}{CAO; CAO; NGUYEN}{2020}
+{CAO, H.~K.; CAO, H.~K.; NGUYEN, B.~T. Delafo: An efficient portfolio
+  optimization using deep neural networks. In:  LAUW, H.~W. et al. (Ed.).
+  [S.l.]: Springer International Publishing, 2020. v. 12084 LNAI, p. 623--635.
+ISSN 16113349.}
+
+\bibitem[Cerqueira 2023]{Cerqueira2023}
+\abntrefinfo{Cerqueira}{CERQUEIRA}{2023}
+{CERQUEIRA, V. \textbf{9 Techniques for Cross-validating Time Series Data | by
+  Vitor Cerqueira | Medium}. 2023.
+Dispon{\'\i}vel em:
+  \url{https://vcerq.medium.com/9-techniques-for-cross-validating-time-series-data-7828fc3f781d}.}
+
+\bibitem[Chaweewanchon e Chaysiri 2022]{chaweewanchon2022markowitz}
+\abntrefinfo{Chaweewanchon e Chaysiri}{CHAWEEWANCHON; CHAYSIRI}{2022a}
+{CHAWEEWANCHON, A.; CHAYSIRI, R. Markowitz mean-variance portfolio optimization
+  with predictive stock selection using machine learning.
+\textbf{International Journal of Financial Studies}, v.~10, 2022.
+ISSN 22277072.}
+
+\bibitem[Chaweewanchon e Chaysiri 2022]{chaweewanchon2022portfolio}
+\abntrefinfo{Chaweewanchon e Chaysiri}{CHAWEEWANCHON; CHAYSIRI}{2022b}
+{\underline{\ \ \ \ \ \ \ \ }. Portfolio optimization and rebalancing with
+  transaction cost: A case study in the stock exchange of thailand. In:  .
+  [S.l.: s.n.], 2022.}
+
+\bibitem[Chen e Guestrin 2016]{chen2016xgboost}
+\abntrefinfo{Chen e Guestrin}{CHEN; GUESTRIN}{2016}
+{CHEN, T.; GUESTRIN, C. Xgboost: A scalable tree boosting system. In:  . [S.l.:
+  s.n.], 2016. v. 13-17-August-2016.}
+
+\bibitem[Chen et al. 2021]{chen2021mean}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2021}
+{CHEN, W. et al. Mean–variance portfolio optimization using machine
+  learning-based stock price prediction.
+\textbf{Applied Soft Computing}, Elsevier, v.~100, p. 106943, 3 2021.
+ISSN 1568-4946.}
+
+\bibitem[Cho et al. 2014]{cho2014learning}
+\abntrefinfo{Cho et al.}{CHO et al.}{2014}
+{CHO, K. et al. Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation. In:  . [S.l.: s.n.], 2014.}
+
+\bibitem[Chong, Han e Park 2017]{chong2017deep}
+\abntrefinfo{Chong, Han e Park}{CHONG; HAN; PARK}{2017}
+{CHONG, E.; HAN, C.; PARK, F.~C. Deep learning networks for stock market
+  analysis and prediction: Methodology, data representations, and case studies.
+\textbf{Expert Systems with Applications}, v.~83, 2017.
+ISSN 09574174.}
+
+\bibitem[Daiya e Lin 2021]{daiya2021stock}
+\abntrefinfo{Daiya e Lin}{DAIYA; LIN}{2021}
+{DAIYA, D.; LIN, C. Stock movement prediction and portfolio management via
+  multimodal learning with transformer. In:  . [S.l.: s.n.], 2021. v.
+  2021-June.
+ISSN 15206149.}
+
+\bibitem[DeMiguel, Garlappi e Uppal 2009]{demiguel2009optimal}
+\abntrefinfo{DeMiguel, Garlappi e Uppal}{DEMIGUEL; GARLAPPI; UPPAL}{2009}
+{DEMIGUEL, V.; GARLAPPI, L.; UPPAL, R. Optimal versus naive diversification:
+  How inefficient is the 1/n portfolio strategy?
+\textbf{Review of Financial Studies}, v.~22, 2009.
+ISSN 14657368.}
+
+\bibitem[Deng et al. 2017]{deng2016deep}
+\abntrefinfo{Deng et al.}{DENG et al.}{2017}
+{DENG, Y. et al. Deep direct reinforcement learning for financial signal
+  representation and trading.
+\textbf{IEEE Transactions on Neural Networks and Learning Systems}, v.~28,
+  2017.
+ISSN 21622388.}
+
+\bibitem[Du 2022]{du2022mean}
+\abntrefinfo{Du}{DU}{2022}
+{DU, J. Mean-variance portfolio optimization with deep learning based-forecasts
+  for cointegrated stocks.
+\textbf{Expert Systems with Applications}, v.~201, 2022.
+ISSN 09574174.}
+
+\bibitem[Engle 1982]{engle1982autoregressive}
+\abntrefinfo{Engle}{ENGLE}{1982}
+{ENGLE, R.~F. Autoregressive conditional heteroscedasticity with estimates of
+  the variance of united kingdom inflation.
+\textbf{Econometrica}, v.~50, 1982.
+ISSN 00129682.}
+
+\bibitem[Fischer e Krauss 2018]{fischer2018deep}
+\abntrefinfo{Fischer e Krauss}{FISCHER; KRAUSS}{2018}
+{FISCHER, T.; KRAUSS, C. Deep learning with long short-term memory networks for
+  financial market predictions.
+\textbf{European Journal of Operational Research}, v.~270, 2018.
+ISSN 03772217.}
+
+\bibitem[Gao et al. 2022]{gao2022novel}
+\abntrefinfo{Gao et al.}{GAO et al.}{2022}
+{GAO, R. et al. A novel densenet-based deep reinforcement framework for
+  portfolio management.
+\textbf{Proceedings - 2022 International Conference on Cyber-Enabled
+  Distributed Computing and Knowledge Discovery, CyberC 2022}, Institute of
+  Electrical and Electronics Engineers Inc., p. 158--165, 2022.}
+
+\bibitem[Heaton, Polson e Witte 2017]{heaton2017deep}
+\abntrefinfo{Heaton, Polson e Witte}{HEATON; POLSON; WITTE}{2017}
+{HEATON, J.~B.; POLSON, N.~G.; WITTE, J.~H. Deep learning for finance: deep
+  portfolios.
+\textbf{Applied Stochastic Models in Business and Industry}, v.~33, 2017.
+ISSN 15264025.}
+
+\bibitem[Hedengren et al. 2014]{hedengren2014nonlinear}
+\abntrefinfo{Hedengren et al.}{HEDENGREN et al.}{2014}
+{HEDENGREN, J.~D. et al. Nonlinear modeling, estimation and predictive control
+  in apmonitor.
+\textbf{Computers and Chemical Engineering}, v.~70, 2014.
+ISSN 00981354.}
+
+\bibitem[Hochreiter e Schmidhuber 1997]{hochreiter1997long}
+\abntrefinfo{Hochreiter e Schmidhuber}{HOCHREITER; SCHMIDHUBER}{1997}
+{HOCHREITER, S.; SCHMIDHUBER, J. Long short term memory.
+\textbf{Neural Computation}, v.~9, 1997.
+ISSN 21695717.}
+
+\bibitem[Jang e Seong 2023]{jang2023deep}
+\abntrefinfo{Jang e Seong}{JANG; SEONG}{2023}
+{JANG, J.; SEONG, N. Deep reinforcement learning for stock portfolio
+  optimization by connecting with modern portfolio theory.
+\textbf{Expert Systems with Applications}, v.~218, 2023.
+ISSN 09574174.}
+
+\bibitem[Jia e Cai 2022]{jia2022policy}
+\abntrefinfo{Jia e Cai}{JIA; CAI}{2022}
+{JIA, X.; CAI, X. A policy gradient based particle swarm optimizer for
+  portfolio optimization problem. In:  . [S.l.: s.n.], 2022. v. 2022-July.
+ISSN 21612927.}
+
+\bibitem[Kingma e Ba 2015]{kingma2015adam}
+\abntrefinfo{Kingma e Ba}{KINGMA; BA}{2015}
+{KINGMA, D.~P.; BA, J.~L. Adam: A method for stochastic optimization. In:  .
+  [S.l.: s.n.], 2015.}
+
+\bibitem[Kisiel e Gorse 2023]{kisiel2023portfolio}
+\abntrefinfo{Kisiel e Gorse}{KISIEL; GORSE}{2023}
+{KISIEL, D.; GORSE, D. Portfolio transformer for attention-based asset
+  allocation. In:  . [S.l.: s.n.], 2023. v. 13588 LNAI.
+ISSN 16113349.}
+
+\bibitem[Kolm, Tütüncü e Fabozzi 2014]{kolm2014years}
+\abntrefinfo{Kolm, Tütüncü e Fabozzi}{KOLM; TüTüNCü; FABOZZI}{2014}
+{KOLM, P.~N.; TüTüNCü, R.; FABOZZI, F.~J. 60 years of portfolio
+  optimization: Practical challenges and current trends.
+\textbf{European Journal of Operational Research}, v.~234, 2014.
+ISSN 03772217.}
+
+\bibitem[Kraft 1988]{kraft1988sqlsp}
+\abntrefinfo{Kraft}{KRAFT}{1988}
+{KRAFT, D. A software package for sequential quadratic programming.
+\textbf{Technical Report DFVLR-FB}, v.~88, 1988.}
+
+\bibitem[Kruger, Zyl e Paskaramoorthy 2021]{kruger2021ama}
+\abntrefinfo{Kruger, Zyl e Paskaramoorthy}{KRUGER; ZYL; PASKARAMOORTHY}{2021}
+{KRUGER, M.; ZYL, T. L.~V.; PASKARAMOORTHY, A. Ama-k: Aggressive multi-temporal
+  allocation with k experts for online portfolio selection. In:  . [S.l.:
+  s.n.], 2021.}
+
+\bibitem[Lee, Koh e Choe 2021]{lee2021learning}
+\abntrefinfo{Lee, Koh e Choe}{LEE; KOH; CHOE}{2021}
+{LEE, J.; KOH, H.; CHOE, H.~J. Learning to trade in financial time series using
+  high-frequency through wavelet transformation and deep reinforcement
+  learning.
+\textbf{Applied Intelligence}, v.~51, 2021.
+ISSN 15737497.}
+
+\bibitem[Leow, Nguyen e Chua 2021]{leow2021robo}
+\abntrefinfo{Leow, Nguyen e Chua}{LEOW; NGUYEN; CHUA}{2021}
+{LEOW, E. K.~W.; NGUYEN, B.~P.; CHUA, M. C.~H. Robo-advisor using genetic
+  algorithm and bert sentiments from tweets for hybrid portfolio optimisation.
+\textbf{Expert Systems with Applications}, v.~179, 2021.
+ISSN 09574174.}
+
+\bibitem[Li et al. 2018]{li2018hyperband}
+\abntrefinfo{Li et al.}{LI et al.}{2018}
+{LI, L. et al. Hyperband: A novel bandit-based approach to hyperparameter
+  optimization.
+\textbf{Journal of Machine Learning Research}, v.~18, 2018.
+ISSN 15337928.}
+
+\bibitem[Liang et al. 2021]{liang2021portfolio}
+\abntrefinfo{Liang et al.}{LIANG et al.}{2021}
+{LIANG, Y. et al. Portfolio optimization using novel intelligent probabilistic
+  forecasts of risk measures. In:  . [S.l.: s.n.], 2021.}
+
+\bibitem[Lintner 1965]{lintner1965valuation}
+\abntrefinfo{Lintner}{LINTNER}{1965}
+{LINTNER, J. The valuation of risk assets and the selection of risky
+  investments in stock portfolios and capital budgets.
+\textbf{The Review of Economics and Statistics}, v.~47, 1965.
+ISSN 00346535.}
+
+\bibitem[Luong, Pham e Manning 2015]{luong2015effective}
+\abntrefinfo{Luong, Pham e Manning}{LUONG; PHAM; MANNING}{2015}
+{LUONG, M.~T.; PHAM, H.; MANNING, C.~D. Effective approaches to attention-based
+  neural machine translation. In:  . [S.l.: s.n.], 2015.}
+
+\bibitem[Mansini, Ogryczak e Speranza 2014]{mansini2014twenty}
+\abntrefinfo{Mansini, Ogryczak e Speranza}{MANSINI; OGRYCZAK; SPERANZA}{2014}
+{MANSINI, R.; OGRYCZAK, W.; SPERANZA, M.~G. Twenty years of linear programming
+  based portfolio optimization.
+\textbf{European Journal of Operational Research}, v.~234, p. 518--535, 2014.
+ISSN 03772217.}
+
+\bibitem[Mansini, Ogryczak e Speranza 2015]{mansini2015linear}
+\abntrefinfo{Mansini, Ogryczak e Speranza}{MANSINI; OGRYCZAK; SPERANZA}{2015}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Linear and mixed integer programming for
+  portfolio optimization}. [S.l.: s.n.], 2015. Gerenral notes<br/>.}
+
+\bibitem[Maree e Omlin 2022]{maree2022balancing}
+\abntrefinfo{Maree e Omlin}{MAREE; OMLIN}{2022}
+{MAREE, C.; OMLIN, C.~W. Balancing profit, risk, and sustainability for
+  portfolio management. In:  . [S.l.: s.n.], 2022.}
+
+\bibitem[Markowitz 1952]{markowitz1952portfolio}
+\abntrefinfo{Markowitz}{MARKOWITZ}{1952}
+{MARKOWITZ, H. Portfolio selection.
+\textbf{The Journal of Finance}, v.~7, p. 77--91, 1952.
+ISSN 00221082, 15406261.}
+
+\bibitem[Milhomem e Dantas 2020]{milhomem2020analysis}
+\abntrefinfo{Milhomem e Dantas}{MILHOMEM; DANTAS}{2020}
+{MILHOMEM, D.~A.; DANTAS, M. J.~P. Analysis of new approaches used in portfolio
+  optimization: a systematic literature review.
+\textbf{Production}, Associação Brasileira de Engenharia de Produção,
+  v.~30, p. e20190144, 8 2020.
+ISSN 0103-6513.}
+
+\bibitem[Min et al. 2021]{min2021robust}
+\abntrefinfo{Min et al.}{MIN et al.}{2021}
+{MIN, L. et al. Robust mean-risk portfolio optimization using machine
+  learning-based trade-off parameter.
+\textbf{Applied Soft Computing}, v.~113, 2021.
+ISSN 15684946.}
+
+\bibitem[Mnih et al. 2015]{mnih2015human}
+\abntrefinfo{Mnih et al.}{MNIH et al.}{2015}
+{MNIH, V. et al. Human-level control through deep reinforcement learning.
+\textbf{Nature}, v.~518, 2015.
+ISSN 14764687.}
+
+\bibitem[Moody et al. 1998]{moody1998performance}
+\abntrefinfo{Moody et al.}{MOODY et al.}{1998}
+{MOODY, J. et al. Performance functions and reinforcement learning for trading
+  systems and portfolios.
+\textbf{Journal of Forecasting}, v.~17, 1998.
+ISSN 02776693.}
+
+\bibitem[Mulvey et al. 2020]{mulvey2020optimizing}
+\abntrefinfo{Mulvey et al.}{MULVEY et al.}{2020}
+{MULVEY, J.~M. et al. Optimizing a portfolio of mean-reverting assets with
+  transaction costs via a feedforward neural network.
+\textbf{Quantitative Finance}, v.~20, 2020.
+ISSN 14697696.}
+
+\bibitem[Ngo, Nguyen e Nguyen 2023]{ngo2023reinforcement}
+\abntrefinfo{Ngo, Nguyen e Nguyen}{NGO; NGUYEN; NGUYEN}{2023}
+{NGO, V.~M.; NGUYEN, H.~H.; NGUYEN, P.~V. Does reinforcement learning
+  outperform deep learning and traditional portfolio optimization models in
+  frontier and developed financial markets?
+\textbf{Research in International Business and Finance}, Elsevier, v.~65, p.
+  101936, 4 2023.
+ISSN 0275-5319.}
+
+\bibitem[Rockafellar e Uryasev 2000]{rockafellar2000optimization}
+\abntrefinfo{Rockafellar e Uryasev}{ROCKAFELLAR; URYASEV}{2000}
+{ROCKAFELLAR, R.~T.; URYASEV, S. Optimization of conditional value-at-risk.
+\textbf{The Journal of Risk}, v.~2, p. 21--41, 2000.
+ISSN 14651211.}
+
+\bibitem[Rosenblatt 1958]{rosenblatt1958perceptron}
+\abntrefinfo{Rosenblatt}{ROSENBLATT}{1958}
+{ROSENBLATT, F. The perceptron: A probabilistic model for information storage
+  and organization in the brain.
+\textbf{Psychological Review}, v.~65, 1958.
+ISSN 0033295X.}
+
+\bibitem[Sethi 2021]{sethi2021nobel}
+\abntrefinfo{Sethi}{SETHI}{2021}
+{SETHI, S. Nobel laureate harry markowitz: Creator of the modern portfolio
+  theory.
+\textbf{Management and Business Review}, v.~1, n.~2, 2021.}
+
+\bibitem[Sharpe 1964]{sharpe1964capital}
+\abntrefinfo{Sharpe}{SHARPE}{1964}
+{SHARPE, W.~F. Capital asset prices: A theory of market equilibrium under
+  conditions of risk.
+\textbf{The Journal of Finance}, v.~19, p. 425--442, 1964.
+ISSN 15406261.}
+
+\bibitem[Sharpe 1966]{sharpe1966mutual}
+\abntrefinfo{Sharpe}{SHARPE}{1966}
+{\underline{\ \ \ \ \ \ \ \ }. Mutual fund performance.
+\textbf{The Journal of Business}, v.~39, 1966.
+ISSN 0021-9398.}
+
+\bibitem[Sharpe 1994]{sharpe1994sharpe}
+\abntrefinfo{Sharpe}{SHARPE}{1994}
+{\underline{\ \ \ \ \ \ \ \ }. The sharpe ratio.
+\textbf{The Journal of Portfolio Management}, v.~21, 1994.
+ISSN 0095-4918.}
+
+\bibitem[Solares et al. 2022]{solares2022comprehensive}
+\abntrefinfo{Solares et al.}{SOLARES et al.}{2022}
+{SOLARES, E. et al. A comprehensive decision support system for stock
+  investment decisions.
+\textbf{Expert Systems with Applications}, v.~210, 2022.
+ISSN 09574174.}
+
+\bibitem[Sun et al. 2022]{sun2022deep}
+\abntrefinfo{Sun et al.}{SUN et al.}{2022}
+{SUN, J. et al. Deep portfolio optimization modeling based on conv-transformers
+  with graph attention mechanism. In:  . [S.l.: s.n.], 2022. v. 2022-July.}
+
+\bibitem[Sutton e Barto 2018]{sutton2018reinforcement}
+\abntrefinfo{Sutton e Barto}{SUTTON; BARTO}{2018}
+{SUTTON, R.~S.; BARTO, A.~G. \textbf{Reinforcement Learning: An Introduction}.
+  Second. [S.l.: s.n.], 2018.}
+
+\bibitem[Ta, Liu e Tadesse 2020]{ta2020portfolio}
+\abntrefinfo{Ta, Liu e Tadesse}{TA; LIU; TADESSE}{2020}
+{TA, V.~D.; LIU, C.~M.; TADESSE, D.~A. Portfolio optimization-based stock
+  prediction using long-short term memory network in quantitative trading.
+\textbf{Applied Sciences (Switzerland)}, v.~10, 2020.
+ISSN 20763417.}
+
+\bibitem[Tran, Pham-Hi e Bui 2023]{tran2023optimizing}
+\abntrefinfo{Tran, Pham-Hi e Bui}{TRAN; PHAM-HI; BUI}{2023}
+{TRAN, M.; PHAM-HI, D.; BUI, M. Optimizing automated trading systems with deep
+  reinforcement learning.
+\textbf{Algorithms}, v.~16, 2023.
+ISSN 19994893.}
+
+\bibitem[Treynor e Black 1973]{treynor1973use}
+\abntrefinfo{Treynor e Black}{TREYNOR; BLACK}{1973}
+{TREYNOR, J.~L.; BLACK, F. How to use security analysis to improve portfolio
+  selection.
+\textbf{The Journal of Business}, v.~46, 1973.
+ISSN 0021-9398.}
+
+\bibitem[Uryasev 2000]{uryasev2000conditional}
+\abntrefinfo{Uryasev}{URYASEV}{2000}
+{URYASEV, S. Conditional value-at-risk: optimization algorithms and
+  applications. In:  . [S.l.: s.n.], 2000.}
+
+\bibitem[Vaswani et al. 2017]{vaswani2017attention}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A. et al. Attention is all you need. In:  . [S.l.: s.n.], 2017. v.
+  2017-December.
+ISSN 10495258.}
+
+\bibitem[Vukovic et al. 2020]{vukovic2020neural}
+\abntrefinfo{Vukovic et al.}{VUKOVIC et al.}{2020}
+{VUKOVIC, D. et al. Neural network forecasting in prediction sharpe ratio:
+  Evidence from eu debt market.
+\textbf{Physica A: Statistical Mechanics and its Applications}, v.~542, p.
+  123331, 2020.
+ISSN 03784371.}
+
+\bibitem[Wang et al. 2020]{wang2020portfolio}
+\abntrefinfo{Wang et al.}{WANG et al.}{2020}
+{WANG, W. et al. Portfolio formation with preselection using deep learning from
+  long-term financial data.
+\textbf{Expert Systems with Applications}, v.~143, 2020.
+ISSN 09574174.}
+
+\bibitem[Weng et al. 2020]{weng2020portfolio}
+\abntrefinfo{Weng et al.}{WENG et al.}{2020}
+{WENG, L. et al. Portfolio trading system of digital currencies: A deep
+  reinforcement learning with multidimensional attention gating mechanism.
+\textbf{Neurocomputing}, v.~402, 2020.
+ISSN 18728286.}
+
+\bibitem[Winters 1960]{winters1960ewm}
+\abntrefinfo{Winters}{WINTERS}{1960}
+{WINTERS, P.~R. Forecasting sales by exponentially weighted moving averages.
+\textbf{Management Science}, v.~6, 1960.
+ISSN 0025-1909.}
+
+\bibitem[Yang, Park e Lee 2022]{yang2022selective}
+\abntrefinfo{Yang, Park e Lee}{YANG; PARK; LEE}{2022}
+{YANG, H.; PARK, H.; LEE, K. A selective portfolio management algorithm with
+  off-policy reinforcement learning using dirichlet distribution.
+\textbf{Axioms}, v.~11, 2022.
+ISSN 20751680.}
+
+\bibitem[Yu et al. 2018]{yu2018bibliometric}
+\abntrefinfo{Yu et al.}{YU et al.}{2018}
+{YU, D. et al. A bibliometric analysis of research on multiple criteria
+  decision making.
+\textbf{Current Science}, v.~114, 2018.
+ISSN 00113891.}
+
+\bibitem[Yu e Chang 2020]{yu2020neural}
+\abntrefinfo{Yu e Chang}{YU; CHANG}{2020}
+{YU, J.; CHANG, K.-C. Neural network predictive modeling on dynamic portfolio
+  management—a simulation-based portfolio optimization approach.
+\textbf{Journal of Risk and Financial Management}, v.~13, 2020.}
+
+\bibitem[Yu et al. 2019]{yu2019fusing}
+\abntrefinfo{Yu et al.}{YU et al.}{2019}
+{YU, J. et al. Fusing economic indicators for portfolio optimization-a
+  simulation-based approach.
+\textbf{FUSION 2019 - 22nd International Conference on Information Fusion},
+  Institute of Electrical and Electronics Engineers Inc., 7 2019.}
+
+\bibitem[Yue, Liu e Zhang 2022]{yue2022applications}
+\abntrefinfo{Yue, Liu e Zhang}{YUE; LIU; ZHANG}{2022}
+{YUE, H.; LIU, J.; ZHANG, Q. Applications of markov decision process model and
+  deep learning in quantitative portfolio management during the covid-19
+  pandemic.
+\textbf{Systems}, v.~10, 2022.
+ISSN 20798954.}
+
+\bibitem[Zhou et al. 2023]{zhou2023twostage}
+\abntrefinfo{Zhou et al.}{ZHOU et al.}{2023}
+{ZHOU, Z. et al. Two-stage portfolio optimization integrating optimal sharp
+  ratio measure and ensemble learning.
+\textbf{IEEE Access}, v.~11, 2023.
+ISSN 21693536.}
+
+\bibitem[Zhu et al. 2020]{zhu2020portfolio}
+\abntrefinfo{Zhu et al.}{ZHU et al.}{2020}
+{ZHU, Z. et al. Portfolio optimization using a novel data-driven ewma
+  covariance model with big data. In:  . [S.l.: s.n.], 2020.}
+
+\end{thebibliography}
