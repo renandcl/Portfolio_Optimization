@@ -16,13 +16,13 @@
 
         \ipar Modelos de otimização também combinam previsão das séries temporais para estimar o retorno esperado da carteira. Modelos tradicionais de previsão de séries temporais, aplicam métodos estatísticos que consideram as séries como modelos lineares \cite{zhou2023twostage}. Dentre estes há os modelos de médias móveis auto-regressivas integradas (\acrshort{ARIMA}, do inglês \textit{Autoregressive Integrated Moving Average}), e heterocedasticidade condicional autoregressiva generalizada (\acrshort{GARCH}, do inglês \textit{Generalized Autoregressive Conditional Heterocedasticity}). 
         
-        \ipar Entretanto, séries temporais de ativos financeiros como ações, apresentam uma dinâmi-ca de processo não linear. Há diversas abordagens para capturar dados não lineares, dentre estes há as redes neurais artificiais, modelos de redes neurais profundas, ou a rede neural recorrente que se provaram como ferramentas válidas para aplicações para dados de séries temporais multivariada \cite{cao2020delafo}. Além disso, os modelos podem ser combinados com métodos de otimização para a seleção de carteiras de investimentos \cite{du2022mean}.
+        \ipar Entretanto, séries temporais de ativos financeiros como ações, apresentam uma dinâmica de processo não linear. Há diversas abordagens para capturar dados não lineares, dentre estes há as redes neurais artificiais, modelos de redes neurais profundas, ou a rede neural recorrente que se provaram como ferramentas válidas para aplicações para dados de séries temporais multivariada \cite{cao2020delafo}. Além disso, os modelos podem ser combinados com métodos de otimização para a seleção de carteiras de investimentos \cite{du2022mean}.
 
         \ipar A aplicação de modelos de redes neurais com intuito de selecionar ativos para carteiras de investimentos é uma área que tem atraído a atenção de pesquisadores. O índice Sharpe tem sido utilizado em estudos como a função objetivo para a otimização de carteiras de investimentos com modelos de redes neurais \cite{tran2023optimizing}. Além disso, estuda-se a aplicação de redes neurais para predição do maior índice Sharpe no futuro \cite{vukovic2020neural}.
 
-        \ipar Em geral, as redes neurais recorrentes (\acrshort{RNN}, do inglês \textit{Recurrent Neural Network}) têm se mostrado eficientes para previsão de séries temporais de ações \cite{wang2020portfolio}, em especial memória de longo prazo com curto prazo (\acrshort{LSTM}, do inglês \textit{Long Short-Term Memory}). Estes modelos de redes neurais utilizam uma camada de memória que permite a rede aprender dependências de longo prazo, e são capazes de capturar padrões de séries temporais não lineares para realizar previsões \cite{hochreiter1997long}.
+        \ipar Em geral, as redes neurais recorrentes (\acrshort{RNN}, do inglês \textit{Recurrent Neural Network}) têm se mostrado eficientes para previsão de séries temporais de ações \cite{wang2020portfolio}, em especial uma variante, a \acrshort{RNN} memória de longo prazo com curto prazo (\acrshort{LSTM}, do inglês \textit{Long Short-Term Memory}). Estes modelos de redes neurais utilizam uma camada de memória que permite a rede aprender dependências de longo prazo, e são capazes de capturar padrões de séries temporais não lineares para realizar previsões \cite{hochreiter1997long}.
 
-        \ipar Há a possibilidade de combinar estruturas de redes neurais entre si para obter melhores resultados. O mecanismo de atenção tem sido efetivamente aplicado na área de processamento de linguagem natural, tem sido utilizado para melhorar o desempenho de modelos de redes neurais para previsão de séries temporais. Como exemplo, \citeonline{sun2022deep} desenvolveu um modelo para as séries temporais que combina uma rede neural convolucional com um transformador (rede neural baseada no mecanismo de atenção) para otimização de uma carteira de investimentos com objetivo de maximização do índice Sharpe.
+        \ipar Há a possibilidade de combinar estruturas de redes neurais entre si para obter melhores resultados. O mecanismo de atenção tem sido efetivamente aplicado na área de processamento de linguagem natural, utilizado para melhorar o desempenho de modelos de redes neurais para previsão de séries temporais. Como exemplo, \citeonline{sun2022deep} desenvolveu um modelo para as séries temporais que combina uma rede neural convolucional com \textit{transformer} (rede neural baseada no mecanismo de atenção) para otimização de uma carteira de investimentos com objetivo de maximização do índice Sharpe.
 
         \ipar Em modelos de otimização há restrições e parâmetros que podem ser adicionados para tornar o problema próximo ao real. \citeonline{mulvey2020optimizing} propõe um modelo de otimização de carteira de investimentos com redes neurais que considera a taxa de transação. 
         
@@ -32,7 +32,7 @@
 
         \ipar O índice Bovespa (\acrshort{IBOVESPA}) é o principal indicador de desempenho das ações do mercado de capitais brasileiro e referência para investidores, reunindo as empresas mais importantes do mercado nacional. A composição do ativo é construída com base nos seguintes critérios: quanto ao volume financeiro no mercado a vista, quanto índice de negociabilidade e presença no pregão, e quanto ao valor do ativo \cite{B32023}. 
 
-        \ipar Portanto, este trabalho propõe a combinação dos métodos de seleção de carteira de investimentos com a aplicação de redes neurais para previsão de índice Sharpe, avaliado em componentes do \acrshort{IBOVESPA}. Desta forma, busca-se construir carteiras de investimentos com base em modelos de risco e retorno por otimização do índice Sharpe, aplicados parâmetros reais ao modelo de otimização. Avalia-se em seguida estruturas de redes neurais para previsão de índice Sharpe para seleção da melhor carteira de investimento.
+        \ipar Portanto, este trabalho propõe a combinação dos métodos de otimização de carteira de investimentos com a aplicação de redes neurais para predição da carteira com melhor índice Sharpe, restrito a componentes do \acrshort{IBOVESPA}. Desta forma, busca-se construir carteiras de investimentos com base em modelos de risco e retorno por otimização do índice Sharpe com parâmetros reais. Avalia-se em seguida estruturas de redes neurais para seleção da melhor carteira de investimentos  para o próximo período.
 
     \end{subsection}
 
@@ -50,27 +50,14 @@
 
         \begin{subsubsection}{Objetivo Geral}
 
-            \ipar O objetivo principal deste trabalho é desenvolver e analisar uma estrutura que aplica redes neurais para previsão de índice Sharpe para seleção de carteiras de investimento.
+            \ipar O objetivo principal deste trabalho é desenvolver e analisar uma estrutura que aplica redes neurais para seleção da melhor carteira de investimentos no período seguinte com base em carteiras otimizadas com índice Sharpe.
 
-            \ipar Para o desenvolvimento e análise de modelos seleção de carteiras de investimento, é necessário avaliar as referências historicamente mais relevantes e identificar estudos recentes sobre o tema. A partir da revisão bibliográfica, é possível identificar os métodos utilizados para construção de carteiras. Assim, busca-se identificar as tecnologias referentes a avaliação de risco e retorno para construção de carteiras de investimentos, identificar as técnicas de otimização para previsão de índice Sharpe e as estruturas de redes neurais para seleção de carteiras.
-
-            \ipar A construção dos modelos são dependentes de dados históricos de ativos financeiros e dados de mercado. Portanto, é necessário a coleta de dados históricos de ativos financeiros e dados econômicos de forma estruturada e com qualidade de dados. Além disso, há a preocupação de tratamento e preparação dos dados, devido a não padronização das diferentes fontes.
-
-            \ipar A partir da construção dos modelos, é necessário avaliar o desempenho da seleção de carteiras de investimentos. Para isso, o processo tem duas etapas principais: a otimização de carteiras de investimentos pela maximização do índice Sharpe, e a seleção da carteira de investimentos com base em redes neurais pela previsão de índice Sharpe. 
-
-            \ipar A primeira etapa incorpora a construção de carteiras de investimentos com base em modelos de risco e retorno. Busca-se avaliar a  aplicação de parâmetros reais, como capital investido, custo de transação, rebalanceamento, lotes padrão, aversão a risco e cardinialidade. Para resolução, avalia-se métodos de otimização de programação não linear. Contudo, dado a complexidade do problema, faz-se necessário a avaliação de método heurístico para resolução.
-
-            \ipar A segunda etapa incorpora a construção de redes neurais para previsão de índice Sharpe. Para isso, busca-se avaliar diferentes estruturas de redes neurais afim de identificar a que melhor se adequa ao problema. Estas redes passam por etapas de treinamento e validação com objetivo de avaliar o desempenho da rede neural.
-
-            \ipar Por fim, avalia-se o desempenho da seleção de carteiras de investimentos aplicados a este fluxo de processamento de duas etapas. Portanto, seguindo as etapas descritas, de revisão, coleta, modelagem e análise tem-se a avaliação da aplicação de redes neurais para previsão de índice Sharpe para seleção de carteiras de investimentos.
-
-    
         \end{subsubsection}
 
         \begin{subsubsection}{Objetivos Específicos}
             \begin{enumerate}
                 \item Realizar uma revisão sistemática da literatura sobre seleção de carteiras de investimentos, com base em modelos de risco e retorno, e com base em redes neurais.
-                \item Construir ferramenta para coleta de dados históricos de ativos financeiros e dados econô-micos de forma estruturada e com qualidade de dados.
+                \item Construir ferramenta para coleta de dados históricos de ativos financeiros e dados econômicos de forma estruturada e com qualidade de dados.
                 \item Desenvolver um modelo de alocação de ativos baseado no cálculo do índice Sharpe e com base em modelos de risco e retorno incluindo parâmetros reais.
                 \item Elaborar estruturas de redes neurais para previsão de índice Sharpe e seleção da melhor carteira de investimentos.
                 \item Analisar o desempenho da seleção de carteiras de investimentos aplicados a este fluxo de processamento de duas etapas. 
@@ -83,13 +70,13 @@
     
     \begin{subsection}{LIMITAÇÕES DA PESQUISA}
     
-        \ipar O índice Sharpe é uma ferramenta amplamente utilizada para avaliar desempenho de carteiras de investimentos. Este estudo não busca avaliar a previsão de valor do índice Sharpe para uma carteira específica. O objetivo é utilizar a previsão de índice Sharpe para selecionar a melhor carteiras de investimentos dentre um conjunto de carteiras de investimentos que aplicam o índice Sharpe como critério de seleção de ativos.
+        \ipar O índice Sharpe é uma ferramenta amplamente utilizada para avaliar desempenho de carteiras de investimentos. Este estudo não busca avaliar a previsão de valor do índice Sharpe para uma carteira específica. O objetivo é utilizar a previsão de índice Sharpe para selecionar a melhor carteira de investimentos dentre um conjunto de carteiras de investimentos que aplicam o índice Sharpe como critério de seleção de ativos.
 
         \ipar O desenvolvimento deste estudo não contempla financiamento para aquisição de dados de mercado. Portanto, a coleta de dados de mercado é limitada a fontes gratuitas disponíveis na internet. O que tornou necessário o desenvolvimento de uma ferramenta de coleta de dados de mercado de forma estruturada e com qualidade de dados.
 
         \ipar O mercado financeiro é um ambiente dinâmico e complexo. Além disso, há diversos produtos financeiros com diferentes características. Portanto, este estudo não contempla a avaliação de todos os produtos financeiros disponíveis no mercado, se restringindo a avaliação de ativos financeiros de renda variável que compõem o índice Bovespa.
 
-        \ipar Corretoras intermediam as transações de compra e venda de ativos financeiros. Portanto, há custos de transação para compra e venda de ativos financeiros, além de custos de custódia. Este estudo se limita a dados obtidos de somente uma corretora para referência.
+        \ipar Corretoras intermedeiam as transações de compra e venda de ativos financeiros. Portanto, há custos de transação para compra e venda de ativos financeiros, além de custos de custódia. Este estudo se limita a dados obtidos de somente uma corretora para referência.
 
     \end{subsection}
 
@@ -99,7 +86,9 @@
         
         \ipar Na seção 3 é apresentada a metodologia de pesquisa, com a descrição dos dados utilizados, a descrição do modelo de otimização de carteiras de investimentos, e descrição das estruturas de redes neurais para previsão de índice Sharpe, e a metodologia aplicada para validação dos modelos.
         
-        \ipar Na seção 4 são apresentados os resultados obtidos com a aplicação dos modelos de otimização de carteiras de investimentos e de redes neurais para previsão de índice Sharpe. Na seção 5 são apresentadas as conclusões e sugestões para trabalhos futuros. E por fim, na seção 6 são apresentadas as referências bibliográficas utilizadas neste estudo. Anexos e apêndices são apresentados ao final deste trabalho.
+        \ipar Na seção 4 são apresentados os resultados obtidos com a aplicação dos modelos de otimização de carteiras de investimentos e de redes neurais para previsão de índice Sharpe. Na seção 5 são apresentadas as conclusões e sugestões para trabalhos futuros. Na seção seguinte é apresentada as referências bibliográficas utilizadas neste estudo. 
+        
+        \ipar Apêndices são apresentados ao final deste trabalho, contendo as peças de códigos desenvolvidos neste trabalho, e a produção científica gerada durante o desenvolvimento deste estudo.
 
     \end{subsection}
 

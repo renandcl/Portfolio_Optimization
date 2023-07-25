@@ -1,0 +1,180 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem{markowitz1952portfolio}
+\abntrefinfo{Markowitz}{MARKOWITZ}{1952}
+{MARKOWITZ, H. Portfolio selection.
+\emph{The Journal of Finance}, v.~7, p. 77--91, 1952.
+ISSN 00221082, 15406261.}
+
+\bibitem{sethi2021nobel}
+\abntrefinfo{Sethi}{SETHI}{2021}
+{SETHI, S. Nobel laureate harry markowitz: Creator of the modern portfolio
+  theory.
+\emph{Management and Business Review}, v.~1, n.~2, 2021.}
+
+\bibitem{sharpe1964capital}
+\abntrefinfo{Sharpe}{SHARPE}{1964}
+{SHARPE, W.~F. Capital asset prices: A theory of market equilibrium under
+  conditions of risk.
+\emph{The Journal of Finance}, v.~19, p. 425--442, 1964.
+ISSN 15406261.}
+
+\bibitem{lintner1965valuation}
+\abntrefinfo{Lintner}{LINTNER}{1965}
+{LINTNER, J. The valuation of risk assets and the selection of risky
+  investments in stock portfolios and capital budgets.
+\emph{The Review of Economics and Statistics}, v.~47, 1965.
+ISSN 00346535.}
+
+\bibitem{sharpe1994sharpe}
+\abntrefinfo{Sharpe}{SHARPE}{1994}
+{SHARPE, W.~F. The sharpe ratio.
+\emph{The Journal of Portfolio Management}, v.~21, 1994.
+ISSN 0095-4918.}
+
+\bibitem{mansini2015linear}
+\abntrefinfo{Mansini, Ogryczak e Speranza}{MANSINI; OGRYCZAK; SPERANZA}{2015}
+{MANSINI, R.; OGRYCZAK, W.; SPERANZA, M.~G. \emph{Linear and mixed integer
+  programming for portfolio optimization}. [S.l.: s.n.], 2015. Gerenral
+  notes<br/>.}
+
+\bibitem{zhou2023twostage}
+\abntrefinfo{Zhou et al.}{ZHOU et al.}{2023}
+{ZHOU, Z. et al. Two-stage portfolio optimization integrating optimal sharp
+  ratio measure and ensemble learning.
+\emph{IEEE Access}, v.~11, 2023.
+ISSN 21693536.}
+
+\bibitem{vukovic2020neural}
+\abntrefinfo{Vukovic et al.}{VUKOVIC et al.}{2020}
+{VUKOVIC, D. et al. Neural network forecasting in prediction sharpe ratio:
+  Evidence from eu debt market.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~542, p.
+  123331, 2020.
+ISSN 03784371.}
+
+\bibitem{sun2022deep}
+\abntrefinfo{Sun et al.}{SUN et al.}{2022}
+{SUN, J. et al. Deep portfolio optimization modeling based on conv-transformers
+  with graph attention mechanism. In:  . [S.l.: s.n.], 2022. v. 2022-July.}
+
+\bibitem{cao2020delafo}
+\abntrefinfo{Cao, Cao e Nguyen}{CAO; CAO; NGUYEN}{2020}
+{CAO, H.~K.; CAO, H.~K.; NGUYEN, B.~T. Delafo: An efficient portfolio
+  optimization using deep neural networks. In:  LAUW, H.~W. et al. (Ed.).
+  [S.l.]: Springer International Publishing, 2020. v. 12084 LNAI, p. 623--635.
+ISSN 16113349.}
+
+\bibitem{almahdi2017adaptive}
+\abntrefinfo{Almahdi e Yang}{ALMAHDI; YANG}{2017}
+{ALMAHDI, S.; YANG, S.~Y. An adaptive portfolio trading system: A risk-return
+  portfolio optimization using recurrent reinforcement learning with expected
+  maximum drawdown.
+\emph{Expert Systems with Applications}, v.~87, 2017.
+ISSN 09574174.}
+
+\bibitem{hochreiter1997long}
+\abntrefinfo{Hochreiter e Schmidhuber}{HOCHREITER; SCHMIDHUBER}{1997}
+{HOCHREITER, S.; SCHMIDHUBER, J. Long short term memory.
+\emph{Neural Computation}, v.~9, 1997.
+ISSN 21695717.}
+
+\bibitem{kolm2014years}
+\abntrefinfo{Kolm, Tütüncü e Fabozzi}{KOLM; TüTüNCü; FABOZZI}{2014}
+{KOLM, P.~N.; TüTüNCü, R.; FABOZZI, F.~J. 60 years of portfolio
+  optimization: Practical challenges and current trends.
+\emph{European Journal of Operational Research}, v.~234, 2014.
+ISSN 03772217.}
+
+\bibitem{demiguel2009optimal}
+\abntrefinfo{DeMiguel, Garlappi e Uppal}{DEMIGUEL; GARLAPPI; UPPAL}{2009}
+{DEMIGUEL, V.; GARLAPPI, L.; UPPAL, R. Optimal versus naive diversification:
+  How inefficient is the 1/n portfolio strategy?
+\emph{Review of Financial Studies}, v.~22, 2009.
+ISSN 14657368.}
+
+\bibitem{fischer2018deep}
+\abntrefinfo{Fischer e Krauss}{FISCHER; KRAUSS}{2018}
+{FISCHER, T.; KRAUSS, C. Deep learning with long short-term memory networks for
+  financial market predictions.
+\emph{European Journal of Operational Research}, v.~270, 2018.
+ISSN 03772217.}
+
+\bibitem{chen2021mean}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2021}
+{CHEN, W. et al. Mean–variance portfolio optimization using machine
+  learning-based stock price prediction.
+\emph{Applied Soft Computing}, Elsevier, v.~100, p. 106943, 3 2021.
+ISSN 1568-4946.}
+
+\bibitem{heaton2017deep}
+\abntrefinfo{Heaton, Polson e Witte}{HEATON; POLSON; WITTE}{2017}
+{HEATON, J.~B.; POLSON, N.~G.; WITTE, J.~H. Deep learning for finance: deep
+  portfolios.
+\emph{Applied Stochastic Models in Business and Industry}, v.~33, 2017.
+ISSN 15264025.}
+
+\bibitem{moody1998performance}
+\abntrefinfo{Moody et al.}{MOODY et al.}{1998}
+{MOODY, J. et al. Performance functions and reinforcement learning for trading
+  systems and portfolios.
+\emph{Journal of Forecasting}, v.~17, 1998.
+ISSN 02776693.}
+
+\bibitem{ta2020portfolio}
+\abntrefinfo{Ta, Liu e Tadesse}{TA; LIU; TADESSE}{2020}
+{TA, V.~D.; LIU, C.~M.; TADESSE, D.~A. Portfolio optimization-based stock
+  prediction using long-short term memory network in quantitative trading.
+\emph{Applied Sciences (Switzerland)}, v.~10, 2020.
+ISSN 20763417.}
+
+\bibitem{bahdanau2015neural}
+\abntrefinfo{Bahdanau, Cho e Bengio}{BAHDANAU; CHO; BENGIO}{2015}
+{BAHDANAU, D.; CHO, K.~H.; BENGIO, Y. Neural machine translation by jointly
+  learning to align and translate. In:  . [S.l.: s.n.], 2015.}
+
+\bibitem{vaswani2017attention}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A. et al. Attention is all you need. In:  . [S.l.: s.n.], 2017. v.
+  2017-December.
+ISSN 10495258.}
+
+\bibitem{kraft1988sqlsp}
+\abntrefinfo{Kraft}{KRAFT}{1988}
+{KRAFT, D. A software package for sequential quadratic programming.
+\emph{Technical Report DFVLR-FB}, v.~88, 1988.}
+
+\bibitem{hedengren2014nonlinear}
+\abntrefinfo{Hedengren et al.}{HEDENGREN et al.}{2014}
+{HEDENGREN, J.~D. et al. Nonlinear modeling, estimation and predictive control
+  in apmonitor.
+\emph{Computers and Chemical Engineering}, v.~70, 2014.
+ISSN 00981354.}
+
+\bibitem{yang2022selective}
+\abntrefinfo{Yang, Park e Lee}{YANG; PARK; LEE}{2022}
+{YANG, H.; PARK, H.; LEE, K. A selective portfolio management algorithm with
+  off-policy reinforcement learning using dirichlet distribution.
+\emph{Axioms}, v.~11, 2022.
+ISSN 20751680.}
+
+\bibitem{angelelli2012kernel}
+\abntrefinfo{Angelelli, Mansini e Speranza}{ANGELELLI; MANSINI; SPERANZA}{2012}
+{ANGELELLI, E.; MANSINI, R.; SPERANZA, M.~G. Kernel search: A new heuristic
+  framework for portfolio selection.
+\emph{Computational Optimization and Applications}, v.~51, 2012.
+ISSN 15732894.}
+
+\bibitem{Cerqueira2023}
+\abntrefinfo{Cerqueira}{CERQUEIRA}{2023}
+{CERQUEIRA, V. \emph{9 Techniques for Cross-validating Time Series Data | by
+  Vitor Cerqueira | Medium}. 2023.
+Dispon{\'\i}vel em:
+  \url{https://vcerq.medium.com/9-techniques-for-cross-validating-time-series-data-7828fc3f781d}.}
+
+\end{thebibliography}

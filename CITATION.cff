@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+type: master_thesis
+message: "If you use any peace of code from this repository, please cite it as below."
+authors:
+- family-names: "D.C. Lima"
+  given-names: "Renan"
+  orcid: "https://orcid.org/0000-0003-4690-5238"
+title: "Redes neurais aplicadas na previsão do índice de Sharpe: evidências em componentes do Ibovespa"
+version: 0.1.0
+date-released: 2023-07-25

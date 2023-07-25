@@ -1,0 +1,111 @@
+\documentclass[9pt,aspectratio = 169]{beamer}
+
+\input{settings.tex}
+
+%-------------------------------------------------------
+% INFORMATION IN THE TITLE PAGE
+%-------------------------------------------------------
+ \institute{\textcolor{verde}{Programa de Pós-Graduação de Mestrado Profissional em Engenharia de Produção}}
+\titlegraphic{
+    \begin{picture}(0,0)
+        \put(422,14){\makebox(0,0)[rt]{\includegraphics[width=2cm]{images/logo-unifei-oficial.png}}}
+    \end{picture}
+}
+
+\title[Redes neurais aplicado na previsão de índice Sharpe] % [] is optional - is placed on the bottom of the sidebar on every slide
+{ % is placed on the title page
+      \textbf{Redes neurais aplicado na previsão de índice Sharpe:
+}
+}
+
+\subtitle[Evidência em componentes do Ibovespa]
+{
+    Evidência em componentes do Ibovespa\\
+}
+
+\author[Autores]
+{ \normalsize \centering
+        Renan Delgado Camurça Lima 
+}
+
+\institute[Unifei]
+{\small 
+   
+    UNIVERSIDADE FEDERAL DE ITAJUBÁ \\
+    CAMPUS ITABIRA \\
+    MESTRADO PROFISSIONAL EM ENGENHARIA DE PRODUÇÃO \\
+  
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+\date{\centering 14 de julho de 2023}
+
+%-------------------------------------------------------
+% THE BODY OF THE PRESENTATION
+%-------------------------------------------------------
+
+\begin{document}
+
+    %-------------------------------------------------------
+    % THE TITLEPAGE
+    %-------------------------------------------------------
+
+    % % this is the name of the PDF file for the background
+    \begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page, noframenumbering removes the numbering of this frame only
+    \titlepage % call the title page information from above
+    \end{frame}
+
+
+    \input{0_resumo.tex}
+
+    \begin{frame}{Agenda}{}
+        \tableofcontents
+    \end{frame}
+
+    \input{1_introdução.tex}
+
+    \input{2_fundamentacao_teorica.tex}
+
+    \input{3_metodologia.tex}
+
+    \input{4_resultados.tex}
+
+    \input{5_conclusao.tex}
+    
+    \miniframesoff
+
+    %================================================
+    %----------------BIBLIOGRAFIA
+    %================================================
+    % \begin{section*}{Referências}
+
+        \begin{frame}[allowframebreaks]{Referências bibliográficas}
+        %\nocite{*}
+
+        \setbeamertemplate{bibliography item}[text] 
+
+
+        \bibliography{referencias/referencias}
+        % \printbibliography
+
+        \end{frame}
+    % \end{section*}
+
+    %================================================
+    %---------------Elementos Pós-textuais
+    %================================================
+
+    {\setbeamercolor{palette primary}{fg=DarkBlue, bg=white}
+    \begin{frame}[plain,noframenumbering,standout]
+        Obrigado! \\
+        % Perguntas e Comentários \\
+        renandcl@unifei.edu.br
+    \end{frame}
+    } 
+
+    %================================================
+    %----------------FIM DO TEMPLATE
+    %================================================
+
+
+\end{document}

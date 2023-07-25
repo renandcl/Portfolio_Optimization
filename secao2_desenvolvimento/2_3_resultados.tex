@@ -11,7 +11,7 @@
             \centering
             \caption{Evolução da convergência de otimização da carteira}
             \label{fig:otimizacao_ibov}
-            \includegraphics[width=0.5\textwidth]{./imagens/otimizacao_ibov.png}
+            \includegraphics[width=0.8\textwidth]{./imagens/otimizacao_ibov.png}
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
@@ -19,12 +19,12 @@
 
         \ipar Para avaliar a carteira ótima com parâmetros reais em comparação ao modelo de Sharpe sem restrições adicionais, foi realizada a otimização em três cenários. Os cenários são dados pela média e desvio padrão dos últimos 15, 30 e 60 dias nos componentes do \acrshort{IBOVESPA}. 
 
-        \ipar O modelo com restrições reais foi implementado com o otimizador APOPT. O mo-delo matemático segue a equação \refeq{eq:otimizacao}. Este modelo considera capital de investimento, custos de operação, cotação e lotes de negociação, rebalanceamento, aversão ao risco e somente posições de compra. As restrições da equação contém parâmetros de mercado, como a cotação e lotes de negociação, e parâmetros de investimento, como o capital de investimento e custos de operação. Os dados destes parâmetros foram obtidos conforme descrito no quadro \ref{quadro:coleta_dados}. Os demais parâmetros foram definidos conforme o quadro \ref{quadro:parametros}.
+        \ipar O modelo com restrições reais foi implementado com o otimizador APOPT. O modelo matemático segue a equação \refeq{eq:otimizacao}. Este modelo considera capital de investimento, custos de operação, cotação e lotes de negociação, rebalanceamento, aversão ao risco e somente posições de compra. As restrições da equação contém parâmetros de mercado, como a cotação e lotes de negociação, e parâmetros de investimento, como o capital de investimento e custos de operação. Os dados destes parâmetros foram obtidos conforme descrito no quadro \ref{quadro:coleta_dados}. Os demais parâmetros foram definidos conforme a tabela \ref{tab:parametros}.
 
         \begin{table}[H]
             \centering
             \caption{Parâmetros de mercado e investimento}
-            \label{quadro:parametros}
+            \label{tab:parametros}
             \begin{tabular}{ll}
                 \hline
                 \textbf{Parâmetro} & \textbf{Valor} \\
@@ -40,9 +40,9 @@
 
         \ipar Com todos os parâmetros e dados definidos, foi realizada a otimização com otimizador APOPT. Como resultado, este otimizador não conseguiu realizar a tarefa devido à complexidade do problema, quando considerados os 87 componentes listados da \acrshort{IBOVESPA}. Após a avaliação da literatura, optou-se por utilizar a heurística de busca básica no núcleo de \citeonline{angelelli2012kernel}. Contudo, para este estudo, optou-se pela aplicação das duas primeiras etapas do algoritmo. A primeira etapa consiste em uma busca aleatória, e a segunda etapa consiste em uma busca local. 
 
-        \ipar Por se tratar de um problema não linear com variáveis discretas, o algoritmo está suscetível a mínimos locais, com dependência da posição inicial. Para contornar este problema, foi implementada à uma distribuição aleatória, a distribuição de Dirichlet. Portanto, neste estudo serão comparado os resultados e tempo computacional da otimização com e sem a heurística de busca básica, e com e sem restrições reais para os três cenários. A tabela \ref{tab:resultados_opt} apresenta os resultados obtidos.
+        \ipar Por se tratar de um problema não linear com variáveis discretas, o algoritmo está suscetível a mínimos locais, com dependência da posição inicial. Para contornar este problema, foi implementada uma distribuição aleatória, a distribuição de Dirichlet. Portanto, neste estudo serão comparado os resultados e tempo computacional da otimização com e sem a heurística de busca básica, e com e sem restrições reais para os três cenários. A tabela \ref{tab:resultados_opt} apresenta os resultados obtidos.
 
-        \begin{table}[htbp]
+        \begin{table}[H]
             \centering
             \caption{Resultados da otimização para os três cenários}
             \label{tab:resultados_opt}
@@ -50,15 +50,15 @@
             \begin{tabular}{clrrrr}
                 \hline
                 \textbf{Carteira} & \textbf{Método} & \textbf{Retorno} & \textbf{Risco} & \textbf{Sharpe do Otimizador} & \textbf{Tempo (s)} \\ \hline \hline
-                15 & Sem Restrições & 15.80 & 16.14 & 0.9791 & 0.42 \\
-                15 & Restrições e Aleatório & 3.96 & 39.83 & -0.0849 & 3.81 \\
-                15 & Restrições com Heurística & 10.90 & 14.99 & 0.0751 & 3.70 \\
-                30 & Sem Restrições & 43.98 & 61.49 & 0.7152 & 0.20 \\
-                30 & Restrições e Aleatório & 23.37 & 121.18 & 0.1191 & 3.92 \\
-                30 & Restrições com Heurística & 22.80 & 48.41 & 0.2321 & 3.88 \\
-                60 & Sem Restrições & 64.01 & 106.91 & 0.5987 & 0.18 \\
-                60 & Restrições e Aleatório & 1.15 & 48.36 & -0.1146 & 3.21 \\
-                60 & Restrições com Heurística & 15.99 & 66.19 & -0.1700 & 10.13 \\
+                15 & Sem Restrições & 15,80 & 16,14 & 0,9791 & 0,42 \\
+                15 & Restrições e Aleatório & 3,96 & 39,83 & -0,0849 & 3,81 \\
+                15 & Restrições com Heurística & 10,90 & 14,99 & 0,0751 & 3,70 \\
+                30 & Sem Restrições & 43,98 & 61,49 & 0,7152 & 0,20 \\
+                30 & Restrições e Aleatório & 23,37 & 121,18 & 0,1191 & 3,92 \\
+                30 & Restrições com Heurística & 22,80 & 48,41 & 0,2321 & 3,88 \\
+                60 & Sem Restrições & 64,01 & 106,91 & 0,5987 & 0,18 \\
+                60 & Restrições e Aleatório & 1,15 & 48,36 & -0,1146 & 3,21 \\
+                60 & Restrições com Heurística & 15,99 & 66,19 & -0,1700 & 10,13 \\
                 \hline
             \end{tabular}%
             }
@@ -81,7 +81,7 @@
 
         \ipar A tabela \ref{tab:distribuicao_carteira_30} apresenta alocação da carteira de 30 dias para os modelos sem restrição e com restrição e heurística. 
 
-        \begin{table}[htbp]
+        \begin{table}[H]
             \centering
             \caption{Alocação da carteira de 30 dias}
             \label{tab:distribuicao_carteira_30}
@@ -104,7 +104,7 @@
             \par \footnotesize Fonte: próprio autor. 
         \end{table}
 
-        \ipar A carteira sem restrições apresenta uma alocação mais diversificada, enquanto a carteira com restrições e heurística apresenta uma alocação mais concentrada. A carteira com restrições e heurística apresenta uma alocação de 1088 reais em ativos de baixo risco, enquanto a carteira sem restrições não apresenta alocação em ativos de baixo risco. A alocação em ativos de baixo risco é devido à restrição de perda máxima. A carteira sem restrições apresenta uma alocação de 15620 reais em ENBR3, enquanto a carteira com restrições e heurística concentra o investimento neste ativo. Isto ocorre devido ao método heurístico utilizar o resultado do modelo sem restrições como o conjunto de ativos candidatos para a seleção da carteira. E como muitos dos ativos tem valor inferiores ao tamanho mínimo de compra por lote, o modelo com restrições e heurística não consegue selecionar estes ativos.
+        \ipar A carteira sem restrições apresenta uma alocação mais diversificada, enquanto a carteira com restrições e heurística apresenta uma alocação mais concentrada. A carteira com restrições e heurística apresenta uma alocação de 1088 reais em ativos de baixo risco, enquanto a carteira sem restrições não apresenta alocação em ativos de baixo risco. A alocação em ativos de baixo risco é devido à restrição de perda máxima. A carteira sem restrições apresenta uma alocação de 15620 reais em ENBR3, enquanto a carteira com restrições e heurística concentra o investimento neste ativo. Isto ocorre devido ao método heurístico utilizar o resultado do modelo sem restrições como o conjunto de ativos candidatos para a seleção da carteira. Como muitos dos ativos têm valores inferiores ao tamanho mínimo de compra por lote, o modelo com restrições e heurística não consegue selecionar estes ativos.
 
         \ipar Portanto, é possível concluir que o modelo sem restrições apresenta um melhor desempenho, em relação ao tempo de otimização e ao índice Sharpe. O modelo com restrições e heurística apresenta um desempenho inferior, porém atende a restrição de perda máxima, com exceção do modelo com início aleatório.
         
@@ -132,19 +132,19 @@
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
-        \ipar Pela figura \ref{fig:retorno_acumulado} é possível observar que a carteira de 60 dias apresenta o maior retorno acumulado. Nota-se que as carterias em geral apresentaram retornos superiores ao \acrshort{IBOVESPA}. Além disso, é possível observar que a carteira de 15 dias apresenta intervalos faltantes, isso ocorre devido à falta de sucesso no processo de otimização. A figura \ref{fig:success_results} apresenta a porcentagem de sucesso na otimização das carteiras.
+        \ipar Pela figura \ref{fig:retorno_acumulado} é possível observar que a carteira de 60 dias apresenta o maior retorno acumulado. Nota-se que as carteiras em geral apresentaram retornos superiores ao \acrshort{IBOVESPA}. Além disso, é possível observar que a carteira de 15 dias apresenta intervalos faltantes, isso ocorre devido à falta de sucesso no processo de otimização. A figura \ref{fig:success_results} apresenta a porcentagem de sucesso na otimização das carteiras.
 
         \begin{figure}[H]
             \centering
             \caption{Porcentagem de sucesso na otimização das carteiras.}
             \label{fig:success_results}
-            \includegraphics[width=0.15\textwidth]{./imagens/success_results.png}
+            \includegraphics[width=0.25\textwidth]{./imagens/success_results.png}
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
         \ipar A carteira de 15 dias, obteve mais de 10\% de falha na otimização, e a carteira de 30 dias menos de 5\% de falha. A de 60 dias não apresentou falha na otimização. Após avaliação, foi identificado a falha durante o processo de busca direcional durante a otimização por meio do método \acrshort{SLSQP}. Apesar disso, optou-se por manter os resultados, pois quando avaliado o alvo para rede neural, esta carteira não é definida como a melhor opção para o próximo período. 
 
-        \ipar Para a aplicação da rede neural, foram propostas 4 estruturas de redes: \acrshort{LSTM}+Atenção de Bahdanau, \acrshort{LSTM}+Auto Atenção, \acrshort{GRU}+Atenção de Bahdanau, e \acrshort{GRU}+Auto Atenção. As estruturas das redes \acrshort{LSTM} são apresentadas nas figuras \ref{fig:model_lstm_BauhAtt} e \ref{fig:model_lstm_SelfAtt}, no qual são equivalentes para as redes \acrshort{GRU}. A rede neural foi treinada com 90\% dos dados e testada com 10\% dos dados, gerando 1198 dados para treino e 120 para teste. No treino foi realizado a validação cruzada com lacunas, considerando 10 partições, sendo 1 para teste, 6 para treino e duas parcelas anterior e uma após o teste não são consideradas. Para o treino dos hiperparâmetros, foi utilizada uma das parcelas da validação cruzada. A figura \ref{fig:loss} apresenta a função de perda para o treinamento de hiperparâmetros para a rede \acrshort{LSTM}+Atenção de Bahdanau.
+        \ipar Para a aplicação da rede neural, foram propostas 4 estruturas de redes: \acrshort{LSTM}+Atenção Aditiva, \acrshort{LSTM}+Auto Atenção, \acrshort{GRU}+Atenção Aditiva, e \acrshort{GRU}+Auto Atenção. As estruturas das redes \acrshort{LSTM} são apresentadas nas figuras \ref{fig:model_lstm_BauhAtt} e \ref{fig:model_lstm_SelfAtt}, no qual são equivalentes para as redes \acrshort{GRU}. A rede neural foi treinada com 90\% dos dados e testada com 10\% dos dados, gerando 1198 dados para treino e 120 para teste. No treino foi realizado a validação cruzada com lacunas, considerando 10 partições, sendo 1 para teste, 6 para treino e duas parcelas anterior e uma após o teste não são consideradas. Para o treino dos hiperparâmetros, foi utilizada uma das parcelas da validação cruzada. A figura \ref{fig:loss} apresenta a função de perda para o treinamento de hiperparâmetros para a rede \acrshort{LSTM}+Atenção Aditiva.
 
         \begin{figure}[H]
             \centering
@@ -160,7 +160,7 @@
 
         \begin{figure}[H]
             \centering
-            \caption{Acurácia para as redes avaliadas.}
+            \caption{Boxplot de acurácia para as redes avaliadas.}
             \label{fig:accuracy}
             \includegraphics[width=0.7\textwidth]{./imagens/boxplot_val_01.png}
             \par \footnotesize Fonte: próprio autor.
@@ -170,13 +170,13 @@
 
         \begin{figure}[H]
             \centering
-            \caption{Acurácia para as redes avaliadas ampliado.}
+            \caption{Boxplot de acurácia para as redes avaliadas ampliado.}
             \label{fig:boxplotval_zoom}
             \includegraphics[width=0.7\textwidth]{./imagens/boxplotval_zoom.png}
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
-        \ipar A rede \acrshort{GRU}+Atenção de Bahdanau apresentou a menor acurácia, representada por 'GRU\_n\_AddAtt'. As demais redes apresentaram acurácia semelhante. Todas as redes apresentam uma acurácia próximo a 33\%,. A figura \ref{fig:freq} apresenta a frequência dos atributos alvos do teste para avaliar esta distribuição das carteiras a serem escolhidas.
+        \ipar A rede \acrshort{GRU}+Atenção Aditiva apresentou a menor acurácia, representada pelo modelo 'GRU\_n\_AddAtt'. As demais redes apresentaram acurácia semelhante. Todas as redes apresentam uma acurácia próximo a 33\%. A figura \ref{fig:freq} apresenta a frequência dos atributos alvos do teste para avaliar esta distribuição das carteiras a serem escolhidas.
 
         \begin{figure}[H]
             \centering
@@ -186,7 +186,7 @@
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
-        \ipar Portanto, as carteiras a serem escolhidas apresentam uma distribuição semelhante, o que indica que a acurácia obtida das redes são semelhantes a uma escolha de somente uma carteira, sendo esta feita de forma aleatória.
+        \ipar Portanto, as carteiras a serem escolhidas apresentam uma distribuição semelhante, o que indica que a acurácia obtida das redes são semelhantes a escolha de somente uma carteira, sendo esta feita de forma aleatória.
 
         \ipar Contudo, seguindo para a validação da capacidade de predição da rede neural, foram avaliadas as escolhas feitas pelas redes ao longo do tempo. Avaliando o período de teste, a figura \ref{fig:backtest_ts} apresenta a comparação das séries temporais geradas pelas predições das redes neurais, em comparação com as carteiras e o \acrshort{IBOVESPA}.
 
@@ -198,29 +198,31 @@
             \par \footnotesize Fonte: próprio autor.
         \end{figure}
 
-        \ipar As redes neurais com \acrshort{GRU}, demonstraram resultados inferiores às próprias carteiras. A rede neural \acrshort{GRU}+Atenção de Bahdanau apresentou o pior resultado e, em alguns períodos, se manteve inferior ao \acrshort{IBOVESPA}. As redes neurais com \acrshort{LSTM} obtiveram os melhores resultados no retorno acumulado, contudo ainda inferior à carteira de melhor desempenho, a carteira de 60 dias. Os resultados diferem da literatura, em que \citeonline{cao2020delafo} encontra resultados superiores para a rede \acrshort{GRU}+Atenção de Bahdanau. Este estudo difere de \citeonline{cao2020delafo} na aplicação de atributos de entrada, em seu estudo é inserida a combinação de volume e preços de ativos, enquanto este estudo utiliza somente os preços de ativos. \citeonline{daiya2021stock}, que aplica a combinação de atenção com redes neurais convolucionais, também apresenta resultados superiores em seu estudo, contudo, os atributos de entrada são dados de análises técnicas de ativos. Portanto, a diferença de resultados pode ser atribuída aos atributos de entrada utilizados, sendo necessário um estudo mais aprofundado para avaliar a influência destes atributos.
+        \ipar As redes neurais com \acrshort{GRU}, demonstraram resultados inferiores às próprias carteiras. A rede neural \acrshort{GRU}+Atenção Aditiva apresentou o pior resultado e, em alguns períodos, se manteve inferior ao \acrshort{IBOVESPA}. As redes neurais com \acrshort{LSTM} obtiveram os melhores resultados no retorno acumulado, contudo ainda inferior à carteira de melhor desempenho, a carteira de 60 dias. Os resultados diferem da literatura, em que \citeonline{cao2020delafo} encontra resultados superiores para a rede \acrshort{GRU}+Atenção Aditiva. Este estudo difere de \citeonline{cao2020delafo} na aplicação de atributos de entrada, em seu estudo é inserida a combinação de volume e preços de ativos, enquanto este estudo utiliza somente os preços de ativos. \citeonline{daiya2021stock}, que aplica a combinação de atenção com redes neurais convolucionais, também apresenta resultados superiores em seu estudo, contudo, os atributos de entrada são dados de análises técnicas de ativos. Portanto, a diferença de resultados pode ser atribuída aos atributos de entrada utilizados, sendo necessário um estudo mais aprofundado para avaliar a influência destes atributos.
 
         \ipar Com objetivo de avaliar o desempenho das redes quanto ao índice Sharpe, a tabela \ref{tab:sharpe} apresenta um comparativo entre as redes avaliadas e as carteiras. A tabela \ref{tab:sharpe} apresenta a média, desvio padrão e índice Sharpe em valores absolutos diários para as redes avaliadas e as carteiras.
 
-        \begin{table}[htbp]
+        \begin{table}[H]
             \centering
             \caption{Índice Sharpe para as redes avaliadas e as carteiras.}
             \label{tab:sharpe}
             \begin{tabular}{rrrr}
                 \hline
                 & \textbf{Média} & \textbf{Desvio Padrão} & \textbf{Índice Sharpe} \\ \hline \hline
-                GRU\_n\_SelfAtt & 0.0016 & 0.0119 & 0.13 \\
-                LSTM\_n\_SelfAtt & 0.0024 & 0.0095 & 0.25 \\
-                GRU\_n\_AddAtt & 0.0005 & 0.0105 & 0.04 \\
-                LSTM\_n\_AddAtt & 0.0022 & 0.0114 & 0.19 \\
-                15 & 0.0017 & 0.0101 & 0.17 \\
-                30 & 0.0016 & 0.0108 & 0.15 \\
-                60 & 0.0041 & 0.0131 & 0.31 \\
+                GRU\_n\_SelfAtt & 0,0016 & 0,0119 & 0,13 \\
+                LSTM\_n\_SelfAtt & 0,0024 & 0,0095 & 0,25 \\
+                GRU\_n\_AddAtt & 0,0005 & 0,0105 & 0,04 \\
+                LSTM\_n\_AddAtt & 0,0022 & 0,0114 & 0,19 \\
+                15 & 0,0017 & 0,0101 & 0,17 \\
+                30 & 0,0016 & 0,0108 & 0,15 \\
+                60 & 0,0041 & 0,0131 & 0,31 \\
                 \hline
                 \par \footnotesize Fonte: próprio autor.
             \end{tabular}
         \end{table}
 
-        \ipar A rede neural \acrshort{LSTM}+Atenção de Bahdanau apresentou o melhor índice Sharpe, seguido pela carteira de 60 dias. O que confirma o desempenho apresentado pela figura \ref{fig:backtest_ts}. 
+        \ipar A rede neural \acrshort{LSTM}+Atenção Aditiva apresentou o melhor índice Sharpe, seguido pela carteira de 60 dias. O que confirma o desempenho apresentado pela figura \ref{fig:backtest_ts}. 
+
+        \ipar Portanto, é possível concluir que as redes neurais não apresentaram resultados superiores às carteiras, contudo, a rede neural \acrshort{LSTM}+Atenção Aditiva apresentou. Além disso, a rede neural \acrshort{LSTM}+Atenção Aditiva apresentou o melhor índice Sharpe, apesar das redes não demonstrarem capacidade de predição. Portanto, as redes neurais propostas não foram capazes de prever a carteira de melhor desempenho para o próximo período.
  
 \pagebreak

@@ -1,0 +1,88 @@
+
+\usetheme[sectionpage=none, subsectionpage=none]{metropolis}
+% \usepgfplotslibrary{dateplot}
+\useoutertheme[subsection=false,footline=authortitle]{miniframes}
+\setbeamertemplate{footline}[frame number] %Numerando as Páginas
+\hypersetup{pdfpagemode=FullScreen}%Visualizar em Tela cheia
+\hypersetup{pdfpagelayout=SinglePage}%Layout da pagina
+%\usetheme[
+%%% Modelo de apresentação modificado para a paleta de cores da FGR
+%%% option passed to the outer theme
+%    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
+%  ]{Feather}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+
+% Change the bar colors:
+% \setbeamercolor{Feather}{fg=white!20,bg=blue}
+
+% Change the color of the structural elements:
+% \setbeamercolor{structure}{fg=red}
+
+% Change the frame title text color:
+% \setbeamercolor{frametitle}{fg=blue}
+\definecolor{DarkBlue}{rgb}{0,0,0.3}
+% Change the normal text color background:
+\setbeamercolor{normal text}{fg=DarkBlue,bg=white}
+
+%-------------------------------------------------------
+% INCLUDE PACKAGES
+%-------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage[num]{abntex2cite}%Citações padrão ABNT}
+\citebrackets[]
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{capt-of}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{siunitx} % for 'S' column type
+\newcolumntype{T}[1]{S[table-format=#1]}
+\newcommand\mc[1]{\multicolumn{1}{c}{#1}}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{appendixnumberbeamer}
+
+\makeatletter
+\let\beamer@writeslidentry@miniframeson=\beamer@writeslidentry%
+\def\beamer@writeslidentry@miniframesoff{%
+  \expandafter\beamer@ifempty\expandafter{\beamer@framestartpage}{}% does not happen normally
+  {%else
+    % removed \addtocontents commands
+    \clearpage\beamer@notesactions%
+  }
+}
+\newcommand*{\miniframeson}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframeson}
+\newcommand*{\miniframesoff}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframesoff}
+\makeatother
+
+\usepackage{algorithm,algcompatible}
+
+% \usepackage{showframe} % just for the example
+
+%-------------------------------------------------------
+% DEFINING AND REDEFINING COMMANDS
+%-------------------------------------------------------
+
+% colored hyperlinks
+\newcommand{\chref}[2]{
+  \href{#1}{{\usebeamercolor[bg]{Feather}#2}}
+}
+
+
+\DeclareCaptionType[fileext=loc]{quadro}[Quadro][Lista de Quadros] % create float type for frames, similar to tables

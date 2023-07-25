@@ -93,9 +93,11 @@
    abstract = {Stock portfolio optimization is the process of continuous reallocation of funds to a selection of stocks. This is a particularly well-suited problem for reinforcement learning, as daily rewards are compounding and objective functions may include more than just profit, e.g., risk and sustainability. We developed a novel utility function with the Sharpe ratio representing risk and the environmental, social, and governance score (ESG) representing sustainability. We show that a state- of-the-art policy gradient method - multi-agent deep deterministic policy gradients (MADDPG) - fails to find the optimum policy due to flat policy gradients and we therefore replaced gradient descent with a genetic algorithm for parameter optimization. We show that our system outperforms MADDPG while improving on deep Q-learning approaches by allowing for continuous action spaces. Crucially, by incorporating risk and sustainability criteria in the utility function, we improve on the state-of-the-art in reinforcement learning for portfolio optimization; risk and sustainability are essential in any modern trading strategy, and we propose a system that does not merely report these metrics, but that actively optimizes the portfolio to improve on them.},
    author = {Chari Maree and Christian W. Omlin},
    doi = {10.1109/CIFEr52523.2022.9776048},
-   journal = {2022 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics, CIFEr 2022 - Proceedings},
+   booktitle = {2022 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics, CIFEr 2022 - Proceedings},
    title = {Balancing Profit, Risk, and Sustainability for Portfolio Management},
    year = {2022},
+   publisher = {IEEE},
+   address = {Helsinki, Finland},
 }
 
 
@@ -127,7 +129,7 @@
 @inproceedings{cao2020delafo,
    abstract = {Portfolio optimization has been broadly investigated during the last decades and had a lot of applications in finance and economics. In this paper, we study the portfolio optimization problem in the Vietnamese stock market by using deep-learning methodologies and one dataset collected from the Ho Chi Minh City Stock Exchange (VN-HOSE) from the beginning of the year 2013 to the middle of the year 2019. We aim to construct an efficient algorithm that can find the portfolio having the highest Sharpe ratio in the next coming weeks. To overcome this challenge, we propose a novel loss function and transform the original problem into a supervised problem. The input data can be determined as a 3D tensor, while the predicted output is the unnormalized weighted proportion for each ticker in the portfolio to maximize the daily return Y of the stock market after a given number of days. We compare different deep learning models, including Residual Networks (ResNet), Long short-term memory (LSTM), Gated Recurrent Unit (GRU), Self-Attention (SA), Additive Attention (AA), and various combinations: SA + LSTM, SA + GRU, AA + LSTM, and AA + GRU. The experimental results show that the AA + GRU outperforms the rest of the methods on the Sharpe ratio and provides promising results for the portfolio optimization problem not only in Vietnam but also in other countries.},
    author = {Hieu K. Cao and Han K. Cao and Binh T. Nguyen},
-   city = {Cham},
+   address = {Cham},
    doi = {10.1007/978-3-030-47426-3_48},
    editor = {Hady W. Lauw and Raymond Chi-Wing Wong and Alexandros Ntoulas and Ee-Peng Lim and See-Kiong Ng and Sinno Jialin Pan},
    issn = {16113349},
@@ -136,6 +138,7 @@
    publisher = {Springer International Publishing},
    title = {DELAFO: An Efficient Portfolio Optimization Using Deep Neural Networks},
    volume = {12084 LNAI},
+   booktitle={Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11--14, 2020, Proceedings, Part I 24},
    year = {2020},
 }
 
@@ -205,10 +208,13 @@
    abstract = {Optimizing portfolios is an important concern for all investors. Nowadays, deep learning has been applied to the study of portfolio investment. Still, the widely used deep learning methods based on asset return prediction do not guarantee to maximize the performance of a portfolio. In this paper, we design a neural network with the overall return-risk ratio of the portfolio as the optimization objective to determine the optimal allocation weights of the portfolio. We design the network architecture based on the Conv-Transformer with graph attention mechanisms(CTG) to better model the temporal dependence of assets and the correlation relationship between assets. The empirical results on the Chinese stock market show that our approach achieves the best results compared to the current SOTA model.},
    author = {Jifeng Sun and Wentao Fu and Jianwu Lin and Yong Jiang and Shu Tao Xia},
    doi = {10.1109/IJCNN55064.2022.9892317},
-   journal = {Proceedings of the International Joint Conference on Neural Networks},
+   booktitle = {Proceedings of the International Joint Conference on Neural Networks},
    title = {Deep Portfolio Optimization Modeling based on Conv-Transformers with Graph Attention Mechanism},
    volume = {2022-July},
    year = {2022},
+   address = {Padova, Italy},
+   pages = {1--8},
+   publisher = {IEEE},
 }
 
 
@@ -282,7 +288,7 @@
 
 @article{kolm2014years,
   abstract = {The concepts of portfolio optimization and diversification have been instrumental in the development and understanding of financial markets and financial decision making. In light of the 60 year anniversary of Harry Markowitz's paper "Portfolio Selection," we review some of the approaches developed to address the challenges encountered when using portfolio optimization in practice, including the inclusion of transaction costs, portfolio management constraints, and the sensitivity to the estimates of expected returns and covariances. In addition, we selectively highlight some of the new trends and developments in the area such as diversification methods, risk-parity portfolios, the mixing of different sources of alpha, and practical multi-period portfolio optimization. © 2013 Elsevier B.V. All rights reserved.},
-  author   = {Petter N. Kolm and Reha Tütüncü and Frank J. Fabozzi},
+  author   = {Petter N. Kolm and Reha T\"ut\"unc\"u and Frank J. Fabozzi},
   doi      = {10.1016/j.ejor.2013.10.060},
   issn     = {03772217},
   issue    = {2},
@@ -376,9 +382,11 @@
 @inproceedings{kingma2015adam,
    abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
    author = {Diederik P. Kingma and Jimmy Lei Ba},
-   journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   booktitle = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   publisher = {ICLR},
    title = {Adam: A method for stochastic optimization},
    year = {2015},
+   address = {San Diego, CA, USA},
 }
 
 
@@ -409,14 +417,22 @@
 
 
 @inproceedings{chen2016xgboost,
-   abstract = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable endto-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
-   author = {Tianqi Chen and Carlos Guestrin},
-   doi = {10.1145/2939672.2939785},
-   journal = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-   title = {XGBoost: A scalable tree boosting system},
-   volume = {13-17-August-2016},
+   author = {Chen, Tianqi and Guestrin, Carlos},
+   title = {XGBoost: A Scalable Tree Boosting System},
    year = {2016},
+   isbn = {9781450342322},
+   publisher = {Association for Computing Machinery},
+   address = {New York, NY, USA},
+   doi = {10.1145/2939672.2939785},
+   abstract = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable end-to-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
+   booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+   pages = {785-794},
+   numpages = {10},
+   keywords = {large-scale machine learning},
+   location = {San Francisco, California, USA},
+   series = {KDD '16}
 }
+
 
 
 @article{chong2017deep,
@@ -462,9 +478,11 @@
    abstract = {Reinforcement learning, one of the most active research areas in artificial intelligence, is a computational approach to learning whereby an agent tries to maximize the total amount of reward it receives when interacting with a complex, uncertain environment. In Reinforcement Learning, Richard Sutton and Andrew Barto provide a clear and simple account of the key ideas and algorithms of reinforcement learning. Their discussion ranges from the history of the field's intellectual foundations to the most recent developments and applications. The only necessary mathematical background is familiarity with elementary concepts of probability.The book is divided into three parts. Part I defines the reinforcement learning problem in terms of Markov decision processes. Part II provides basic solution methods: dynamic programming, Monte Carlo methods, and temporal-difference learning. Part III presents a unified view of the solution methods and incorporates artificial neural networks, eligibility traces, and planning; the two final chapters present case studies and consider the future of reinforcement learning.},
    author = {Richard S. Sutton and Andrew G. Barto},
    edition = {Second},
-   journal = {The MIT Press},
+   publisher = {The MIT Press},
    title = {Reinforcement Learning: An Introduction},
    year = {2018},
+   series = {Adaptive computation and machine learning series},
+   address = {Cambridge, MA, USA},
 }
 
 
@@ -513,9 +531,12 @@
    abstract = {There has been a growing interest in studying risk forecasting using data-driven exponential weighted moving average (DD-EWMA) volatility models as well as nonlinear neuro volatility models based on Neural network (NN). However, the recently proposed volatility forecasting models have not been used to study portfolio optimization. Large kurtosis of the portfolio return sequence shows that it follows a heavy-tailed t distribution. Significant sample autocorrelations of the absolute portfolio returns and squared portfolio returns suggest that time-varying volatility models are more appropriate to model the volatility. In this paper, a DD-EWMA portfolio volatility forecasting model is used to study the generalized portfolio optimization using the intelligent probabilistic risk forecasts based on data-driven t distribution of the portfolio returns. Optimal portfolio weights are obtained by minimizing the corresponding risk forecasts of portfolio volatility, mean absolute deviation (MAD), Value-at-Risk (VaR), and conditional Value-at-Risk (CVaR) for minimum risk forecast portfolios. Moreover the portfolio weights of the generalized tangency portfolios with different risk measures are obtained by maximizing the corresponding portfolio Sharpe ratio (PSR) forecasts. Experiments are conducted to show that the DD-EWMA volatility forecasting model is most computationally efficient (less computing time), whereas neuro volatility model takes longer time to obtain one-step ahead portfolio volatility forecasts. Moreover, the superiority of the portfolio selection based on data-driven volatility forecasts over the portfolio selection based on volatility estimates is demonstrated through numerical experiments using ten frequently traded stocks.},
    author = {You Liang and Aerambamoorthy Thavaneswaran and Alexander Paseka and Ruppa K. Thulasiram and Ethan Johnson-Skinner},
    doi = {10.1109/COMPSAC51774.2021.00261},
-   journal = {Proceedings - 2021 IEEE 45th Annual Computers, Software, and Applications Conference, COMPSAC 2021},
+   booktitle = {Proceedings - 2021 IEEE 45th Annual Computers, Software, and Applications Conference, COMPSAC 2021},
+   publisher = {IEEE Computer Society},
    title = {Portfolio optimization using novel intelligent probabilistic forecasts of risk measures},
    year = {2021},
+   address = {Madrid, Spain},
+   pages = {1748-1753},
 }
 
 
@@ -536,9 +557,12 @@
    abstract = {Recently there has been a growing interest in using machine learning methods with empirical variance covariance matrix of returns to study Markovitz portfolio optimization. The statistical technique of graphical LASSO (GL) for stock selection in the portfolio assumes that the asset returns are normally distributed, independent random variables with constant variance. In this paper sign correlations and the autocorrelations of the absolute values of the returns are used to show that the returns are non-normal with time-varying volatility. We use the recently proposed data-driven exponentially weighted moving average (DDEWMA) volatility model to estimate the covariance matrix of asset returns in Markowitz portfolio optimization. Empirical results with big data (consists of 444 stocks for a period of 7 years downloaded from Yahoo Finance) show that the proposed DDEWMA variance covariance matrix model outperforms (larger Sharpe ratio) the model with empirical variance covariance matrix.},
    author = {Zimo Zhu and Aerambamoorthy Thavaneswaran and Alexander Paseka and Julieta Frank and Ruppa Thulasiram},
    doi = {10.1109/COMPSAC48688.2020.00-75},
-   journal = {Proceedings - 2020 IEEE 44th Annual Computers, Software, and Applications Conference, COMPSAC 2020},
+   booktitle = {Proceedings - 2020 IEEE 44th Annual Computers, Software, and Applications Conference, COMPSAC 2020},
+   publisher = {IEEE},
    title = {Portfolio Optimization Using a Novel Data-Driven EWMA Covariance Model with Big Data},
    year = {2020},
+   address = {Madrid, Spain},
+   pages = {1308-1313},
 }
 
 
@@ -586,10 +610,13 @@
    author = {Xuanyu Jia and Xin Cai},
    doi = {10.23919/CCC55666.2022.9901620},
    issn = {21612927},
-   journal = {Chinese Control Conference, CCC},
+   booktitle = {Chinese Control Conference, CCC},
    title = {A Policy Gradient Based Particle Swarm Optimizer for Portfolio Optimization Problem},
    volume = {2022-July},
-   year = {2022},
+   pages={1991--1996},
+   address={Hefei, China},
+   year={2022},
+   organization={IEEE}
 }
 
 
@@ -598,10 +625,14 @@
    author = {Damian Kisiel and Denise Gorse},
    doi = {10.1007/978-3-031-23492-7_6},
    issn = {16113349},
-   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
    title = {Portfolio Transformer for Attention-Based Asset Allocation},
    volume = {13588 LNAI},
    year = {2023},
+   address = {Zakopane, Poland},
+   month = {6},
+   pages = {19-23},
+   publisher = {Springer},
 }
 
 
@@ -637,9 +668,12 @@
    abstract = {Online portfolio selection is an integral component of wealth management. The fundamental undertaking is to maximise returns while minimising risk given investor constraints. We aim to examine and improve modern strategies to generate higher returns in a variety of market conditions. By integrating simple data mining, optimisation techniques, and machine learning procedures, we are able to generate aggressive and consistent high yield portfolios. This leads to a new methodology of Pattern-Matching that may yield further advances in dynamic and competitive portfolio construction. The resulting strategies outperform a variety of benchmarks that make use of similar approaches when compared using Maximum Drawdown, Annualised Percentage Yield and Annualised Sharpe Ratio. The proposed strategy returns showcase acceptable risk with high reward that performs well in a variety of market conditions. We conclude that our algorithm provides an improvement in searching for optimal portfolios compared to existing methods.},
    author = {Matthew Kruger and Terence L. Van Zyl and Andrew Paskaramoorthy},
    doi = {10.1109/ISCMI53840.2021.9654826},
-   journal = {2021 8th International Conference on Soft Computing and Machine Intelligence, ISCMI 2021},
+   booktitle = {2021 8th International Conference on Soft Computing and Machine Intelligence, ISCMI 2021},
    title = {AMA-K: Aggressive Multi-temporal Allocation with K Experts for Online Portfolio Selection},
    year = {2021},
+   address = {Cario, Egypt},
+   pages = {114-119},
+   publisher = {IEEE},
 }
 
 
@@ -710,9 +744,12 @@
    author = {Divyanshu Daiya and Che Lin},
    doi = {10.1109/ICASSP39728.2021.9414893},
    issn = {15206149},
-   journal = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+   address = {Toronto, ON, Canada},
+   booktitle = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+   publisher = {IEEE},
    title = {Stock movement prediction and portfolio management via multimodal learning with transformer},
    volume = {2021-June},
+   pages={3305--3309},
    year = {2021},
 }
 
@@ -733,9 +770,12 @@
    abstract = {Portfolio optimization is one of the most intriguing topics in the field of finance. The purpose is to maximize return while minimizing risk. In this paper, we investigate the experimental performance of the classical Markowitz portfolio optimization with and without rebalancing based on the minimum risk in terms of portfolio return, portfolio risk, and Sharpe ratio, and compare the results to the experiments with transaction cost. The importance of this work stems from the fact that, while the MV model is extensively utilized, its use in the Thai stock market is limited. This analysis uses the historical close prices of 50 stocks from the Stock Exchange of Thailand 50 Index (SET50) between January 2018 and December 2021. The experiment showed that a portfolio with a rebalancing approach outperforms a portfolio without a rebalancing strategy.},
    author = {Apichat Chaweewanchon and Rujira Chaysiri},
    doi = {10.1109/iSAI-NLP56921.2022.9960260},
-   journal = {International Joint Conference 2022 - 17th International Joint Symposium on Artificial Intelligence and Natural Language Processing, iSAI-NLP 2022 and 3rd International Conference on Artificial Intelligence and Internet of Things, AIoT 2022},
+   booktitle = {International Joint Conference 2022 - 17th International Joint Symposium on Artificial Intelligence and Natural Language Processing, iSAI-NLP 2022 and 3rd International Conference on Artificial Intelligence and Internet of Things, AIoT 2022},
+   address = {Chiang Mai, Thailand},
    title = {Portfolio Optimization and Rebalancing with Transaction Cost: A Case Study in the Stock Exchange of Thailand},
-   year = {2022},
+   pages={1--6},
+   year={2022},
+   organization={IEEE}
 }
 
 
@@ -770,9 +810,12 @@
    abstract = {A new approach for the simultaneous calculation of Value-at-Risk (VaR) and optimization of Conditional Value-at-Risk (CVaR) for a broad class of problems is presented. It is shown that CVaR can be efficiently minimized using linear programming (LP) techniques. Although, formally, the method minimizes only CVaR, it also lowers VaR.},
    author = {Stanislav Uryasev},
    doi = {10.1109/cifer.2000.844598},
-   journal = {IEEE/IAFE Conference on Computational Intelligence for Financial Engineering, Proceedings (CIFEr)},
+   booktitle = {IEEE/IAFE Conference on Computational Intelligence for Financial Engineering, Proceedings (CIFEr)},
+   publisher = {IEEE},
    title = {Conditional Value-at-Risk: optimization algorithms and applications},
    year = {2000},
+   address = {New York, NY, USA},
+   pages = {49-57},
 }
 
 
@@ -790,16 +833,25 @@
 
 
 @inproceedings{cho2014learning,
-   abstract = {In this paper, we propose a novel neural network model called RNN Encoder- Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
-   author = {Kyunghyun Cho and Bart Van Merriënboer and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
-   doi = {10.3115/v1/d14-1179},
-   journal = {EMNLP 2014 - 2014 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference},
-   title = {Learning phrase representations using RNN encoder-decoder for statistical machine translation},
-   year = {2014},
+    title = "Learning Phrase Representations using {RNN} Encoder{--}Decoder for Statistical Machine Translation",
+    author = {Cho, Kyunghyun  and
+      van Merri{\"e}nboer, Bart  and
+      Gulcehre, Caglar  and
+      Bahdanau, Dzmitry  and
+      Bougares, Fethi  and
+      Schwenk, Holger  and
+      Bengio, Yoshua},
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    doi = "10.3115/v1/D14-1179",
+    pages = "1724--1734",
 }
 
 
-@inproceedings{bahdanau2015neural,
+@article{bahdanau2015neural,
    abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encode a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
    author = {Dzmitry Bahdanau and Kyung Hyun Cho and Yoshua Bengio},
    journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
@@ -810,11 +862,17 @@
 
 @inproceedings{luong2015effective,
    abstract = {An attentional mechanism has lately been used to improve neural machine translation (NMT) by selectively focusing on parts of the source sentence during translation. However, there has been little work exploring useful architectures for attention-based NMT. This paper examines two simple and effective classes of attentional mechanism: a global approach which always attends to all source words and a local one that only looks at a subset of source words at a time. We demonstrate the effectiveness of both approaches on the WMT translation tasks between English and German in both directions. With local attention, we achieve a significant gain of 5.0 BLEU points over non-attentional systems that already incorporate known techniques such as dropout. Our ensemble model using different attention architectures yields a new state-of-the-art result in the WMT'15 English to German translation task with 25.9 BLEU points, an improvement of 1.0 BLEU points over the existing best system backed by NMT and an n-gram reranker.},
-   author = {Minh Thang Luong and Hieu Pham and Christopher D. Manning},
-   doi = {10.18653/v1/d15-1166},
-   journal = {Conference Proceedings - EMNLP 2015: Conference on Empirical Methods in Natural Language Processing},
-   title = {Effective approaches to attention-based neural machine translation},
-   year = {2015},
+    title = {Effective Approaches to Attention-based Neural Machine Translation},
+    author = {Luong, Thang  and
+      Pham, Hieu  and
+      Manning, Christopher D.},
+    booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+    month = sep,
+    year = {2015},
+    address = {Lisbon, Portugal},
+    publisher = {Association for Computational Linguistics},
+    doi = {10.18653/v1/D15-1166},
+    pages = {1412--1421},
 }
 
 
@@ -822,10 +880,12 @@
    abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.},
    author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Łukasz Kaiser and Illia Polosukhin},
    issn = {10495258},
-   journal = {Advances in Neural Information Processing Systems},
+   booktitle = {Advances in Neural Information Processing Systems},
    title = {Attention is all you need},
    volume = {2017-December},
    year = {2017},
+   publisher = {Curran Associates, Inc.},
+   address = {Long Beach, CA, USA},
 }
 
 @article{mansini2014twenty,
@@ -859,10 +919,12 @@
    abstract = {This book presents solutions to the general problem of single period portfolio optimization. It introduces different linear models, arising from different performance measures, and the mixed integer linear models resulting from the introduction of real features. Other linear models, such as models for portfolio rebalancing and index tracking, are also covered. The book discusses computational issues and provides a theoretical framework, including the concepts of risk-averse preferences, stochastic dominance and coherent risk measures. The material is presented in a style that requires no background in finance or in portfolio optimization; some experience in linear and mixed integer models, however, is required. The book is thoroughly didactic, supplementing the concepts with comments and illustrative examples.},
    author = {Renata Mansini and Włodzimierz Ogryczak and M. Grazia Speranza},
    doi = {10.1007/978-3-319-18482-1},
-   journal = {Linear and Mixed Integer Programming for Portfolio Optimization},
-   note = {gerenral notes<br/>},
+   booktitle = {Linear and Mixed Integer Programming for Portfolio Optimization},
    title = {Linear and mixed integer programming for portfolio optimization},
    year = {2015},
+   publisher = {Springer Cham},
+   address = {Switzerland},
+   series = {EURO Advanced Tutorials on Operational Research},
 }
 
 
@@ -983,3 +1045,15 @@
    year = {2023},
 }
 
+
+@article{Bailey2014,
+   abstract = {We prove that high simulated performance is easily achievable after backtesting a relatively small number of alternative strategy configurations, a practice we denote “backtest overfitting”. The higher the number of configurations tried, the greater is the probability that the backtest is overfit. Because most financial analysts and academics rarely report the number of configurations tried for a given backtest, investors cannot evaluate the degree of overfitting in most investment proposals.    The implication is that investors can be easily misled into allocating capital to strategies that appear to be mathematically sound and empirically supported by an outstanding backtest. Under memory effects, backtest overfitting leads to negative expected returns out-of-sample, rather than zero performance. This may be one of several reasons why so many quantitative funds appear to fail. },
+   author = {David H. Bailey and Jonathan M. Borwein and Marcos López de Prado and Qiji Jim Zhu},
+   doi = {10.1090/noti1105},
+   issn = {0002-9920},
+   issue = {5},
+   journal = {Notices of the American Mathematical Society},
+   title = {Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance},
+   volume = {61},
+   year = {2014},
+}

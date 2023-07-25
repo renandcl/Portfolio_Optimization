@@ -1,20 +1,24 @@
 \usepackage[brazil]{babel} % section and appendix headings in Portuguese
 \usepackage{setspace} % line spacing
+\usepackage[T1]{fontenc} % font encoding
 \usepackage{times} % font times new roman
 \usepackage[bottom=2cm,top=3cm,left=3cm,right=2cm]{geometry} % margins ABNT
 \usepackage[document]{ragged2e} % justified text
 \usepackage{amsmath,amssymb} % math symbols
+\numberwithin{equation}{section} % equation numbering by section
+
 \usepackage{graphicx} % figures
 \usepackage{float} % position of contents right after text
 \usepackage{subcaption}  % subcaptions for figures, tables etc
-\usepackage{caption} % captions for figures, tables etc
+\usepackage[labelsep=endash]{caption} % captions for figures, tables etc, caption label separator '-'
 \usepackage[hidelinks]{hyperref} % hyperlinks for references, figures and tables without highlight box
 \usepackage{multirow} % multirow tables
 \usepackage{algorithm,algcompatible} % algorithms
-\usepackage[automake,nonumberlist,acronym]{glossaries} % glossary and acronyms list
-\usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-full-initials=no,abnt-doi=doi]{abntex2cite}
+\usepackage[automake,nonumberlist,acronym,nogroupskip]{glossaries} % glossary and acronyms list
+\usepackage[alf,abnt-repeated-title-omit=no,abnt-emphasize=bf,abnt-full-initials=no,abnt-doi=doi,abnt-etal-list=0,abnt-etal-cite=3]{abntex2cite}
 \citebrackets() % parenthesis brackets for citations
 
+\renewcommand{\glsnamefont}[1]{#1} % glossary and acronyms list
 \makeglossaries % create glossary and acronyms list
 
 \setlength\parindent{0pt} % no indentation
@@ -37,22 +41,6 @@
 
 \DeclareCaptionType[fileext=loc]{quadro}[Quadro][Lista de Quadros] % create float type for frames, similar to tables
 
-\usepackage{tocbasic} % table of contents format
-
-\DeclareTOCStyleEntry[
-  entrynumberformat=\entrynumberwithprefix{\figurename},
-  dynnumwidth
-%   numsep=1em
-]{tocline}{figure}
-
-\DeclareTOCStyleEntry[
-    entrynumberformat=\entrynumberwithprefix{\tablename},
-    dynnumwidth
-    %   numsep=1em
-]{tocline}{table}
-        
-\newcommand\entrynumberwithprefix[2]{#1\enspace#2-\enspace}
-\captionsetup{labelsep=endash} % caption label separator '-'
 
 % \usepackage{showframe} % just for the example
 \usepackage{tocloft} % table of contents format
@@ -75,11 +63,11 @@
 
 
 
-\usepackage{listingsutf8}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{empheq} 
+\usepackage{listingsutf8} % code snippets
+\usepackage[dvipsnames]{xcolor} % colors
+\usepackage{empheq}  % boxed equations
 
-\newcommand{\boxedeq}[2]{\begin{empheq}[box={\fboxsep=6pt\fbox}]{align}\notag#2\end{empheq}}
+\newcommand{\boxedeq}[2]{\begin{empheq}[box={\fboxsep=6pt\fbox}]{align}\notag#2\end{empheq}} % boxed equations
 
 \lstdefinestyle{code_style}{
     inputencoding=utf8/latin1,
@@ -148,4 +136,4 @@
 }
 \renewcommand{\lstlistingname}{Código} % Listing->Code
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
-\lstset{style=code_style}
+\lstset{style=code_style} % code style

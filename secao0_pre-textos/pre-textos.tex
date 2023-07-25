@@ -1,8 +1,10 @@
 % capa
     \onehalfspacing \begin{center}
+        
         UNIVERSIDADE FEDERAL DE ITAJUBÁ\\
         CAMPUS DE ITABIRA \\
         MESTRADO PROFISSIONAL EM ENGENHARIA DE PRODUÇÃO 
+
     \end{center}
     \vspace{5cm}
     \center \AuthorName
@@ -177,7 +179,7 @@
 % Lista de figuras
     {%
     \let\oldnumberline\numberline%
-    \renewcommand{\numberline}{\figurename~\oldnumberline}%
+    \renewcommand{\numberline}[1]{\figurename~\oldnumberline{#1\enspace--}}%
     \listoffigures%
     }
     \thispagestyle{empty} % remove page number
@@ -186,7 +188,8 @@
 % Lista de quadros
     {%
     \let\oldnumberline\numberline%
-    \renewcommand{\numberline}{Quadro~\oldnumberline}%
+    % \renewcommand{\numberline}{Quadro~\oldnumberline}%
+    \renewcommand{\numberline}[1]{Quadro~\oldnumberline{#1\enspace--}}
     \listof{quadro}{LISTA DE QUADROS}%
     }
     \pagebreak
@@ -194,19 +197,26 @@
 % Lista de tabelas
     {%
     \let\oldnumberline\numberline%
-    \renewcommand{\numberline}{\tablename~\oldnumberline}%
+    \renewcommand{\numberline}[1]{\tablename~\oldnumberline{#1\enspace--}}%
     \listoftables%
     }
     \thispagestyle{empty} % remove page number
     \pagebreak
 
 % Lista de abreviaturas
+    % \renewcommand{\glossarypreamble}{\glsfindwidesttoplevelname[\currentglossary]}
+    \setglossarystyle{long}
+    \setlength\LTleft{1.5cm}
+    \setlength\LTright{0pt}
+    \setlength\glsdescwidth{0.8\hsize}
+    \doublespacing
     \printglossary[title=LISTA DE ABREVIATURAS E SIGLAS , type=\acronymtype]
-    \pagebreak
+    \setcounter{table}{0}
+    % \pagebreak
 
 % Lista de símbolos
     % \listofsymbols
-    \pagebreak
+    % \pagebreak
 
 % Sumário
     \doublespacing
@@ -217,9 +227,9 @@
     \thispagestyle{empty} % remove page number
     \pagebreak
 
-% Página em branco
-    \thispagestyle{empty}
-    \null\vfil
-    \pagebreak
+% % Página em branco
+%     \thispagestyle{empty}
+%     \null\vfil
+%     \pagebreak
 
 \pagestyle{myheadings} % numbering top right
